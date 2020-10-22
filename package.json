@@ -8,6 +8,7 @@
         "@testing-library/user-event": "^7.1.2",
         "antd": "^4.7.2",
         "firebase": "^7.24.0",
+        "iyzipay": "^2.0.48",
         "react": "^16.14.0",
         "react-chartjs-2": "^2.10.0",
         "react-dom": "^16.14.0",
