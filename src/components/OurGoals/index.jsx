@@ -1,7 +1,5 @@
-import React from "react";
+import React from 'react';
 
-const OurGoals = () => {
-  return <div>OurGoals here!</div>;
-};
+const OurGoals = () => <div>OurGoals here!</div>;
 
 export default OurGoals;

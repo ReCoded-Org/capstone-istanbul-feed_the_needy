@@ -1,7 +1,5 @@
-import React from "react";
+import React from 'react';
 
-const WorkingTogether = () => {
-  return <div>WorkingTogether here!</div>;
-};
+const WorkingTogether = () => <div>WorkingTogether here!</div>;
 
 export default WorkingTogether;
