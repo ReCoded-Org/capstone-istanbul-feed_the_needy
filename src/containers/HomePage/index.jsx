@@ -10,19 +10,21 @@ import Team from "../../components/Team";
 import WorkingTogether from "../../components/WorkingTogether";
 import YouCanHelp from "../../components/YouCanHelp";
 
-const HomePage = () => (
-  <div>
-    <NavBar />
-    <YouCanHelp />
-    <DonationProcess />
-    <OurGoals />
-    <WorkingTogether />
-    <OurSponsors />
-    <Blog />
-    <Team />
-    <JoinUs />
-    <Footer />
-  </div>
-);
+const HomePage = () => {
+  return (
+    <div>
+      <NavBar />
+      <YouCanHelp />
+      <DonationProcess />
+      <OurGoals />
+      <WorkingTogether />
+      <OurSponsors />
+      <Blog />
+      <Team />
+      <JoinUs />
+      <Footer />
+    </div>
+  );
+};
 
 export default HomePage;

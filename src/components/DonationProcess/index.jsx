@@ -1,5 +1,11 @@
 import React from "react";
 
-const DonationProcess = () => <div>DonationProcess here! </div>;
+const DonationProcess = () => {
+  return (
+    <div>
+      DonationProcess here!
+    </div>
+      );
+};
 
 export default DonationProcess;

@@ -1,5 +1,11 @@
 import React from "react";
 
-const WorkingTogether = () => <div>WorkingTogether here! </div>;
+const WorkingTogether = () => {
+  return (
+    <div>
+      WorkingTogether here! 
+    </div>
+);
+};
 
 export default WorkingTogether;
