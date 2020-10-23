@@ -1,5 +1,7 @@
-import React from 'react';
+import React from "react";
 
-const YouCanHelp = () => <div>YouCanHelp banner here!</div>;
+const YouCanHelp = () => {
+  return <div>YouCanHelp banner here!</div>;
+};
 
 export default YouCanHelp;

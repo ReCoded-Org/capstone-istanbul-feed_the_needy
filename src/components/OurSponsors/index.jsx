@@ -1,5 +1,7 @@
-import React from 'react';
+import React from "react";
 
-const OurSponsors = () => <div>OurSponsors here!</div>;
+const OurSponsors = () => {
+  return <div>OurSponsors here!</div>;
+};
 
 export default OurSponsors;
