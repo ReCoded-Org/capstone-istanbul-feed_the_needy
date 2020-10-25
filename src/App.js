@@ -16,7 +16,7 @@ function App() {
         <NavBar />
         <Content style={{ padding: "0 50px" }}>
           <div className="site-layout-content">
-            <Route path="/home" component={HomePage} />
+            <Route path="/" component={HomePage} />
             <Route path="/coupons" component="#" />
             <Route path="/blog" component="#" />
             <Route path="/admin" component="#" />
