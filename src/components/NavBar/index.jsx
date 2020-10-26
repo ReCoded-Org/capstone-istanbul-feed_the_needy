@@ -29,14 +29,12 @@ const NavBar = () => {
       <Header className="header">
         <div className="logo">
           <LogoSvg />
-          
         </div>
         <div className="title">
           <FoodOnCouponSvg />
         </div>
         <div className="stacked-title">
           <StackedTitleSvg />
-
         </div>
         <Menu
           style={{ background: "#F0B32C" }}

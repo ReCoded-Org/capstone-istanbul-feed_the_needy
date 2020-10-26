@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
 import { I18nextProvider } from "react-i18next";
-import i18n from "./i18n";
 import "antd/dist/antd.css";
 import { Layout } from "antd";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import i18n from "./i18n";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import HomePage from "./containers/HomePage";

@@ -13,44 +13,44 @@
   width: 50px;
   margin: 0px 80px 0px 0px;
   float: right;
- 
 }
 .admin {
   width: 50px;
   float: right;
-  
 }
 .header {
- 
   background-color: #f0b32c;
 }
-.stacked-title{
+.stacked-title {
   width: 50px;
   float: left;
   display: none;
-  margin-right: 16px ;
+  margin-right: 16px;
   height: 10%;
   transform: scale(1.5);
 }
 
-.ant-menu.ant-menu-dark  .ant-menu-item-selected  {
-    background-color: #BF5F06; /*Overriden property*/
-    opacity: 0.6;
+.ant-menu.ant-menu-dark .ant-menu-item-selected {
+  background-color: #bf5f06; /*Overriden property*/
+  opacity: 0.6;
 }
-.ant-menu.ant-menu-dark  .ant-menu-item:hover {
-    background-color: #BF5F06; /*Overriden property*/
-    opacity: 0.6;
+.ant-menu.ant-menu-dark .ant-menu-item:hover {
+  background-color: #bf5f06; /*Overriden property*/
+  opacity: 0.6;
 }
 
-.ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub, .ant-menu.ant-menu-dark .ant-menu-sub {  
+.ant-menu.ant-menu-dark,
+.ant-menu-dark .ant-menu-sub,
+.ant-menu.ant-menu-dark .ant-menu-sub {
   background: #f0b32c;
 }
 
-.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected{
-  background: #BF5F06;
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background: #bf5f06;
 }
 
-@media only screen and (max-width: 576px) { /*mobile*/
+@media only screen and (max-width: 576px) {
+  /*mobile*/
   .cart {
     float: none;
     margin: 0px;
@@ -59,33 +59,31 @@
     float: none;
   }
   .logo {
-    margin: 4px 16px 16px 0px; 
+    margin: 4px 16px 16px 0px;
   }
   .title {
     display: none;
   }
-  .stacked-title{
-    display: none ;
+  .stacked-title {
+    display: none;
   }
-
 }
-@media only screen and (max-width: 768px) and (min-width: 576px) { /*ipad*/
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+  /*ipad*/
   .title {
     display: none;
   }
-  .stacked-title{
-    display: initial ;
+  .stacked-title {
+    display: initial;
     margin: 0px 24px 0px 16px;
   }
-
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 768px) { /*ipad pro*/
-  
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  /*ipad pro*/
+
   .title {
     transform: scale(0.8);
     margin-right: auto;
   }
- 
-
 }
