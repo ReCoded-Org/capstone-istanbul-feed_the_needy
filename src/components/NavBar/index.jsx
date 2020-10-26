@@ -43,8 +43,7 @@ const NavBar = () => {
         >
           <Menu.Item key="1">
             {" "}
-            <Link to="/">{t("navbar.headers.header0")}</Link>
-            {" "}
+            <Link to="/">{t("navbar.headers.header0")}</Link>{" "}
           </Menu.Item>
           <Menu.Item key="2">
             <Link to="/coupons">{t("navbar.headers.header1")}</Link>
@@ -62,8 +61,7 @@ const NavBar = () => {
           <Menu.Item key="5" className="admin">
             <Link to="/admin">
               {" "}
-              <AdminIcon />
-              {" "}
+              <AdminIcon />{" "}
             </Link>
           </Menu.Item>
         </Menu>
