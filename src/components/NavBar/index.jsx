@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Icon from "@ant-design/icons";
 import { Layout, Menu } from "antd";
+import { useTranslation } from 'react-i18next';
 import { ReactComponent as AdminSvg } from "./admin.svg";
 import { ReactComponent as CartSvg } from "./cart.svg";
 import { ReactComponent as LogoSvg } from "../../images/logo.svg";
