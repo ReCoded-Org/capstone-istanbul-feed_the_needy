@@ -1,3 +1,11 @@
 {
-  "example": "Merhaba"
+  "example": "Merhaba",
+
+  "navbar": {
+    "headers": {
+      "header0": "Anasayfa",
+      "header1": "Blog",
+      "header2": "Kuponlar"
+    }
+  }
 }
