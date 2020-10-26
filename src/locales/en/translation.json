@@ -1,11 +1,11 @@
 {
   "example": "Hello",
-  
+
   "navbar": {
     "headers": {
       "header0": "Home",
-      "header1": "Blog",
-      "header2": "Coupons"
+      "header1": "Coupons",
+      "header2": "Blog"
     }
   }
 
