@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Icon from "@ant-design/icons";
 import { Layout, Menu } from "antd";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 import { ReactComponent as AdminSvg } from "./admin.svg";
 import { ReactComponent as CartSvg } from "./cart.svg";
 import { ReactComponent as LogoSvg } from "../../images/logo.svg";
@@ -13,7 +13,6 @@ import "./style.css";
 
 const { Header } = Layout;
 
-
 const AdminIcon = () => (
   <Icon style={{ transform: "scale(2)" }} component={AdminSvg} />
 );
@@ -22,8 +21,7 @@ const CartIcon = () => (
 );
 
 const NavBar = () => {
-
-const { t } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <>
@@ -49,10 +47,10 @@ const { t } = useTranslation();
             {" "}
           </Menu.Item>
           <Menu.Item key="2">
-            <Link to="/coupons">{t("navbar.headers.header2")}</Link>
+            <Link to="/coupons">{t("navbar.headers.header1")}</Link>
           </Menu.Item>
           <Menu.Item key="3">
-            <Link to="/blog">{t("navbar.headers.header1")}</Link>
+            <Link to="/blog">{t("navbar.headers.header2")}</Link>
           </Menu.Item>
 
           <Menu.Item key="4" className="cart">
