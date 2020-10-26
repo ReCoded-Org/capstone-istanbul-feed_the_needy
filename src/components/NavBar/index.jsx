@@ -13,9 +13,6 @@ import "./style.css";
 
 const { Header } = Layout;
 
-const home = "Home";
-const coupons = "Coupons";
-const blog = "Blog";
 
 const AdminIcon = () => (
   <Icon style={{ transform: "scale(2)" }} component={AdminSvg} />
@@ -25,7 +22,7 @@ const CartIcon = () => (
 );
 
 const NavBar = () => {
-  
+
 const { t } = useTranslation();
 
   return (
@@ -48,14 +45,14 @@ const { t } = useTranslation();
         >
           <Menu.Item key="1">
             {" "}
-            <Link to="/">{home}</Link>
+            <Link to="/">{t("navbar.headers.header0")}</Link>
             {" "}
           </Menu.Item>
           <Menu.Item key="2">
-            <Link to="/coupons">{coupons}</Link>
+            <Link to="/coupons">{t("navbar.headers.header2")}</Link>
           </Menu.Item>
           <Menu.Item key="3">
-            <Link to="/blog">{blog}</Link>
+            <Link to="/blog">{t("navbar.headers.header1")}</Link>
           </Menu.Item>
 
           <Menu.Item key="4" className="cart">
