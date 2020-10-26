@@ -25,6 +25,9 @@ const CartIcon = () => (
 );
 
 const NavBar = () => {
+  
+const { t } = useTranslation();
+
   return (
     <>
       <Header className="header">
