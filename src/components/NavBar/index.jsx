@@ -49,12 +49,12 @@ const NavBar = ({ isTesting }) => {
           <Menu.Item key="3">
             <Link to="/blog">{t("navbar.headers.header2")}</Link>
           </Menu.Item>
-          <Menu.Item key="4" className="cart">
+          <Menu.Item key="4" className="navbarCart">
             <Link to="/cart">
               <CartIcon />
             </Link>
           </Menu.Item>
-          <Menu.Item key="5" className="admin">
+          <Menu.Item key="5" className="navbarAdmin">
             <Link to="/admin">
               <AdminIcon />
             </Link>
