@@ -7,7 +7,7 @@ jest.mock("react-i18next", () => ({
   useTranslation: () => ({ t: (key) => key }),
 }));
 
-const isTesting = true
+const isTesting = true;
 
 it("Navbar renders correctly", () => {
   const tree = renderer
