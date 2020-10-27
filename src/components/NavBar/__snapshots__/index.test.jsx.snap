@@ -2,7 +2,7 @@
 
 exports[`Navbar renders correctly 1`] = `
 <header
-  className="ant-layout-header header"
+  className="ant-layout-header navbarHeader"
 >
   <div
     className="logo"
@@ -12,14 +12,14 @@ exports[`Navbar renders correctly 1`] = `
     </svg>
   </div>
   <div
-    className="title"
+    className="navbarTitle"
   >
     <svg>
       foodOnCoupon.svg
     </svg>
   </div>
   <div
-    className="stacked-title"
+    className="navbarStackedTitle"
   >
     <svg>
       stackedTitle.svg
@@ -37,21 +37,19 @@ exports[`Navbar renders correctly 1`] = `
     }
   >
     <li
-      className="ant-menu-item ant-menu-item-selected"
+      className="ant-menu-item ant-menu-item-only-child ant-menu-item-selected"
       onClick={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       role="menuitem"
       style={Object {}}
     >
-       
       <a
         href="/"
         onClick={[Function]}
       >
         navbar.headers.header0
       </a>
-       
     </li>
     <li
       className="ant-menu-item ant-menu-item-only-child"
@@ -84,7 +82,7 @@ exports[`Navbar renders correctly 1`] = `
       </a>
     </li>
     <li
-      className="ant-menu-item ant-menu-item-only-child cart"
+      className="ant-menu-item ant-menu-item-only-child navbarCart"
       onClick={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -118,7 +116,7 @@ exports[`Navbar renders correctly 1`] = `
       </a>
     </li>
     <li
-      className="ant-menu-item ant-menu-item-only-child admin"
+      className="ant-menu-item ant-menu-item-only-child navbarAdmin"
       onClick={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
@@ -129,7 +127,6 @@ exports[`Navbar renders correctly 1`] = `
         href="/admin"
         onClick={[Function]}
       >
-         
         <span
           className="anticon"
           role="img"
@@ -150,7 +147,6 @@ exports[`Navbar renders correctly 1`] = `
             admin.svg
           </svg>
         </span>
-         
       </a>
     </li>
   </ul>
