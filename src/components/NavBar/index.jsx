@@ -12,13 +12,6 @@ import "./style.css";
 
 const { Header } = Layout;
 
-const AdminIcon = () => (
-  <Icon style={{ transform: "scale(2)" }} component={AdminSvg} />
-);
-const CartIcon = () => (
-  <Icon style={{ transform: "scale(2)" }} component={CartSvg} />
-);
-
 const NavBar = ({ isTesting }) => {
   const { t } = useTranslation();
 
@@ -51,12 +44,12 @@ const NavBar = ({ isTesting }) => {
           </Menu.Item>
           <Menu.Item key="4" className="navbarCart">
             <Link to="/cart">
-              <CartIcon />
+              <Icon style={{ transform: "scale(2)" }} component={CartSvg} />
             </Link>
           </Menu.Item>
           <Menu.Item key="5" className="navbarAdmin">
             <Link to="/admin">
-              <AdminIcon />
+              <Icon style={{ transform: "scale(2)" }} component={AdminSvg} />
             </Link>
           </Menu.Item>
         </Menu>
