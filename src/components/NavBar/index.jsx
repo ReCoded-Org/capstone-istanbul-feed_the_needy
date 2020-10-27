@@ -24,14 +24,14 @@ const NavBar = ({ isTesting }) => {
 
   return (
     <>
-      <Header className="header">
+      <Header className="navbarHeader">
         <div className="logo">
           <LogoSvg />
         </div>
-        <div className="title">
+        <div className="navbarTitle">
           <FoodOnCouponSvg />
         </div>
-        <div className="stacked-title">
+        <div className="navbarStackedTitle">
           <StackedTitleSvg />
         </div>
         <Menu
