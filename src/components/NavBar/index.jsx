@@ -20,7 +20,7 @@ const CartIcon = () => (
   <Icon style={{ transform: "scale(2)" }} component={CartSvg} />
 );
 
-const NavBar = () => {
+const NavBar = ({ isTesting }) => {
   const { t } = useTranslation();
 
   return (
@@ -38,7 +38,7 @@ const NavBar = () => {
         <Menu
           style={{ background: "#F0B32C" }}
           theme="dark"
-          mode="horizontal"
+          mode={isTesting ? "vertical" : "horizontal"}
           defaultSelectedKeys={["1"]}
         >
           <Menu.Item key="1">
