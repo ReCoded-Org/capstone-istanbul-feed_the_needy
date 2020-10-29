@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-import Carousel from "./Carousel.jsx"
+import Carousel from "./Carousel.jsx";
 
 const Team = () => {
   return (
@@ -8,6 +8,6 @@ const Team = () => {
       <Carousel />
     </div>
   );
-}
+};
 
 export default Team;

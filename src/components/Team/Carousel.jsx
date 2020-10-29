@@ -1,96 +1,136 @@
 import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "antd/dist/antd.css";
-import { InstagramOutlined } from '@ant-design/icons';
+import {
+  InstagramOutlined,
+  FacebookFilled,
+  TwitterCircleFilled,
+  LinkedinFilled,
+} from "@ant-design/icons";
+import { Row, Col } from "antd";
 
-const teamMembers=[
+const teamMembers = [
   {
-  name:"Gizem Deniz",
-  imgFile:'https://media.kommunity.com/avatar/_avatar_5eb06c6384ffd.',
-  description: "In oculis quidem faciunt, ut dolore magnam aliquam causam ista, quae sine causa? quae fuerit causa, nollem me ab eo delectu rerum, quem modo ista sis.",
-  className:"rcorners"
+    name: "Gizem Deniz",
+    imgFile: "https://media.kommunity.com/avatar/_avatar_5eb06c6384ffd.",
+    description:
+      "In oculis quidem faciunt, ut dolore magnam aliquam causam ista, quae sine causa? quae fuerit causa, nollem me ab eo delectu rerum, quem modo ista sis.",
+    className: "rcorners",
+    instagram: "",
+    facebook: "",
+    twitter: "",
+    linkedin: "https://www.linkedin.com/in/gizem-deniz/",
   },
   {
-    name:"Bertaç Severcan",
-    imgFile:'https://media.kommunity.com/avatar/_avatar_5eb06c6384ffd.',
-    description: "In oculis quidem faciunt, ut dolore magnam aliquam causam ista, quae sine causa? quae fuerit causa, nollem me ab eo delectu rerum, quem modo ista sis.",
-    className:"rcorners"
+    name: "Bertaç Severcan",
+    imgFile: "https://media.kommunity.com/avatar/_avatar_5eb06c6384ffd.",
+    description:
+      "In oculis quidem faciunt, ut dolore magnam aliquam causam ista, quae sine causa? quae fuerit causa, nollem me ab eo delectu rerum, quem modo ista sis.",
+    className: "rcorners",
+    instagram: "",
+    facebook: "",
+    twitter: "",
+    linkedin: "",
+  },
+  {
+    name: "Ihab Sensei",
+    imgFile: "https://media.kommunity.com/avatar/_avatar_5eb06c6384ffd.",
+    description:
+      "In oculis quidem faciunt, ut dolore magnam aliquam causam ista, quae sine causa? quae fuerit causa, nollem me ab eo delectu rerum, quem modo ista sis.",
+    className: "rcorners",
+    instagram: "",
+    facebook: "",
+    twitter: "",
+    linkedin: "",
+  },
+  {
+    name: "Cihan Uygur",
+    imgFile: "https://media.kommunity.com/avatar/_avatar_5eb06c6384ffd.",
+    description:
+      "In oculis quidem faciunt, ut dolore magnam aliquam causam ista, quae sine causa? quae fuerit causa, nollem me ab eo delectu rerum, quem modo ista sis.",
+    className: "rcorners",
+    instagram: "",
+    facebook: "",
+    twitter: "",
+    linkedin: "",
+  },
+];
+//React-Slider Settings Autoplay example, I'll also add responsive features too.
+var settings = {
+  dots: true,
+  infinite: false,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 4,
+  initialSlide: 0,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true,
+      },
     },
     {
-    name:"Ihab Sensei",
-    imgFile:'https://media.kommunity.com/avatar/_avatar_5eb06c6384ffd.',
-    description: "In oculis quidem faciunt, ut dolore magnam aliquam causam ista, quae sine causa? quae fuerit causa, nollem me ab eo delectu rerum, quem modo ista sis.",
-    className:"rcorners"
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 2,
+        initialSlide: 2,
+      },
     },
     {
-      name:"Cihan Uygur",
-      imgFile:'https://media.kommunity.com/avatar/_avatar_5eb06c6384ffd.',
-      description: "In oculis quidem faciunt, ut dolore magnam aliquam causam ista, quae sine causa? quae fuerit causa, nollem me ab eo delectu rerum, quem modo ista sis.",
-      className:"rcorners"
-    }
-    
-  ]
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+};
 
-  //React-Slider Settings Autoplay example, I'll also add responsive features too.
-  var settings = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 4,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  };
-    
-const Carousel=()=> {
+const Carousel = () => {
   return (
     <div className="sliderTeam">
-      <Slider  {...settings} className="sliderrender">
-        {teamMembers.map((team)=>(
-      <div className="teamBorder">
-        <div className="image">
-        <img classname="teamImage" src={team.imgFile}/>
-        </div>
-        <div className="teamSection">
-          <div className="teamText"> 
-        <h2 className="rcorners">{team.name}</h2>
-        <div className="rcorners">{team.description}</div>
-        <InstagramOutlined />
-        </div>
-        </div>
-      </div>
-     ))}
+      <Slider {...settings} className="sliderrender">
+        {teamMembers.map((team) => (
+          <div className="teamBorder">
+            <div className="image">
+              <img
+                classname="teamImage"
+                src={team.imgFile}
+                alt="imageforTeam"
+              />
+            </div>
+            <div className="teamSection">
+              <div className="teamText">
+                <h2 className="rcorners">{team.name}</h2>
+                <div className="rcorners">{team.description}</div>
+                <Row align="center" around="xs">
+                  <Col span={4}>
+                    <InstagramOutlined href="#" /> {team.instagram}
+                  </Col>
+                  <Col span={4}>
+                    <FacebookFilled /> {team.facebook}
+                  </Col>
+                  <Col span={4}>
+                    <TwitterCircleFilled /> {team.twitter}
+                  </Col>
+                  <Col span={4}>
+                    <LinkedinFilled />
+                  </Col>
+                </Row>
+              </div>
+            </div>
+          </div>
+        ))}
       </Slider>
     </div>
-
-  )
-}
+  );
+};
 
 export default Carousel;
