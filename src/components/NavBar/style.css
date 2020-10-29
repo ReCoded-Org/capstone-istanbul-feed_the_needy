@@ -1,0 +1,100 @@
+.logo {
+  width: 50px;
+  height: 31px;
+  margin: 4px 16px 16px 24px;
+  float: left;
+}
+
+.navbarTitle {
+  height: 31px;
+  margin: 8px 80px 16px 16px;
+  float: left;
+}
+
+.navbarCart {
+  width: 50px;
+  margin: 0px 80px 0px 0px;
+  float: right;
+}
+
+.navbarAdmin {
+  width: 50px;
+  float: right;
+}
+
+.navbarHeader {
+  background-color: #f0b32c;
+}
+
+.navbarStackedTitle {
+  width: 50px;
+  float: left;
+  display: none;
+  margin-right: 16px;
+  height: 10%;
+  transform: scale(1.5);
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected {
+  background-color: #bf5f06; /*Overriden property*/
+  opacity: 0.6;
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item:hover {
+  background-color: #bf5f06; /*Overriden property*/
+  opacity: 0.6;
+}
+
+.ant-menu.ant-menu-dark,
+.ant-menu-dark .ant-menu-sub,
+.ant-menu.ant-menu-dark .ant-menu-sub {
+  background: #f0b32c;
+}
+
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background: #bf5f06;
+}
+
+@media only screen and (max-width: 576px) {
+  /*mobile*/
+  .navbarCart {
+    float: none;
+    margin: 0px;
+  }
+
+  .navbarAdmin {
+    float: none;
+  }
+
+  .logo {
+    margin: 4px 16px 16px 0px;
+  }
+
+  .navbarTitle {
+    display: none;
+  }
+
+  .navbarStackedTitle {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+  /*ipad*/
+  .navbarTitle {
+    display: none;
+  }
+
+  .navbarStackedTitle {
+    display: initial;
+    margin: 0px 24px 0px 16px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  /*ipad pro*/
+  .navbarTitle {
+    transform: scale(0.8);
+    margin-right: auto;
+  }
+}
