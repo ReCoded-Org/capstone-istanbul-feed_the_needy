@@ -17,7 +17,7 @@ function App() {
       <Router>
         <Layout className="layout">
           <NavBar />
-          <Content style={{ background: "white", padding: "0 50px" }}>
+          <Content style={{ background: "white", padding: "0 5px" }}>
             <div className="site-layout-content">
               <Route path="/" component={HomePage} />
               <Route path="/coupons" component="#" />
