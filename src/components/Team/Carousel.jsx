@@ -21,7 +21,7 @@ const teamMembers = [
     instagram: "",
     facebook: "",
     twitter: "",
-    linkedin: "https://www.linkedin.com/in/gizem-deniz/",
+    linkedin: "https://www.linkedin.com/in/gizem-deniz/"
   },
   {
     name: "Bertaç Severcan",
@@ -32,7 +32,7 @@ const teamMembers = [
     instagram: "",
     facebook: "",
     twitter: "",
-    linkedin: "",
+    linkedin: ""
   },
   {
     name: "Ihab Sensei",
@@ -43,7 +43,7 @@ const teamMembers = [
     instagram: "",
     facebook: "",
     twitter: "",
-    linkedin: "",
+    linkedin: ""
   },
   {
     name: "Cihan Uygur",
@@ -54,7 +54,7 @@ const teamMembers = [
     instagram: "",
     facebook: "",
     twitter: "",
-    linkedin: "",
+    linkedin: ""
   },
 ];
 //React-Slider Settings Autoplay example, I'll also add responsive features too.
