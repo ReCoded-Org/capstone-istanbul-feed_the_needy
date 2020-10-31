@@ -1,0 +1,32 @@
+.workingTogether {
+  display: flex;
+  margin: 2rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.workingTogetherWrittenContent {
+  margin-left: 3rem;
+  width: 55%;
+}
+
+.workingTogetherText {
+  height: 12.5rem;
+  overflow: scroll;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .workingTogether {
+    flex-direction: column;
+  }
+
+  .workingTogetherWrittenContent {
+    margin: 1rem 0 0 0;
+    width: 100%;
+  }
+
+  .workingTogetherVideo {
+    width: 100%;
+  }
+}

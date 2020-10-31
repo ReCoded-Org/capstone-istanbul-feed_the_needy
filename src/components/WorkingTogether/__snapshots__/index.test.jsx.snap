@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Working together renders correctly 1`] = `
+<div
+  className="workingTogether"
+>
+  <iframe
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen={true}
+    className="workingTogetherVideo"
+    frameBorder="0"
+    height="auto"
+    src="https://www.youtube.com/embed/iteCytv0RqY"
+    title="Zero Hunger"
+    width="50%"
+  />
+  <div
+    className="workingTogetherWrittenContent"
+  >
+    <h1
+      className="ant-typography"
+      style={
+        Object {
+          "WebkitLineClamp": null,
+        }
+      }
+    >
+      workingTogether.title
+    </h1>
+    <div
+      className="workingTogetherText"
+    >
+      <span
+        className="ant-typography"
+        style={
+          Object {
+            "WebkitLineClamp": null,
+          }
+        }
+      >
+        workingTogether.text
+      </span>
+    </div>
+  </div>
+</div>
+`;

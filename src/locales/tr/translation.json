@@ -1,6 +1,9 @@
 {
   "example": "Merhaba",
-
+  "workingTogether": {
+    "title": "Açlığa Son Vermek İçin Birlikte Çalışıyoruz",
+    "text": "Dünya Gıda Programı'na göre, 135 milyon insan; savaşlar, iklim değişikliği ve ekonomik gerileme yüzünden akut bir şekilde açlık çekiyor. Bu sayıları, COVID-19 salgını iki katına çıkararak, 2020'nin sonuna kadar 130 milyon insan daha aç kalabilir. Çeyrek milyardan fazla insan potansiyel olarak açlığın eşiğinde olduğundan, en riskli bölgelere gıda ve insani yardım sağlamak için hızlı hareket edilmesi gerekiyor."
+  },
   "navbar": {
     "headers": {
       "header0": "Anasayfa",

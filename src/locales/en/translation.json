@@ -1,6 +1,9 @@
 {
   "example": "Hello",
-
+  "workingTogether": {
+    "title": "Working Together to End Hunger",
+    "text": "According to the World Food Programme, 135 million suffer from acute hunger largely due to man-made conflicts, climate change and economic downturns. The COVID-19 pandemic could now double that number, putting an additional 130 million people at risk of suffering acute hunger by the end of 2020. With more than a quarter of a billion people potentially at the brink of starvation, swift action needs to be taken to provide food and humanitarian relief to the most at-risk regions."
+  },
   "navbar": {
     "headers": {
       "header0": "Home",
