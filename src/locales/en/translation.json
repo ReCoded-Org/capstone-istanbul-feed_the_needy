@@ -18,5 +18,14 @@
       "ihabdescription":  "iIn oculis quidem faciunt, ut dolore magnam aliquam causam ista, quae sine causa? quae fuerit causa, nollem me ab eo delectu rerum, quem modo ista sis.",
       "cihandesription": "cIn oculis quidem faciunt, ut dolore magnam aliquam causam ista, quae sine causa? quae fuerit causa, nollem me ab eo delectu rerum, quem modo ista sis."
     }
+  "footer": {
+    "headers": {
+      "header0": "HOME",
+      "header1": "COUPONS",
+      "header2": "BLOG"
+    },
+    "summary": "Food On Coupon is a platform which donators can donate food coupons to people in need from the chosen restaurants.",
+    "location": "Istanbul/Turkey",
+    "rights": "All rights reserved"
   }
 }
