@@ -12,8 +12,6 @@ import {
 import { Row, Col } from "antd";
 import { useTranslation } from "react-i18next";
 
-
-
 const teamMembers = [
   {
     name: "Gizem Deniz",
@@ -22,17 +20,17 @@ const teamMembers = [
     instagram: "",
     facebook: "",
     twitter: "",
-    linkedin: "https://www.linkedin.com/in/gizem-deniz/"
+    linkedin: "https://www.linkedin.com/in/gizem-deniz/",
   },
   {
     name: "Bertaç Severcan",
     imgFile: "https://media.kommunity.com/avatar/_avatar_5eb06c6384ffd.",
-    description:"team.headers.bertacdescription",
+    description: "team.headers.bertacdescription",
     className: "rcorners",
     instagram: "",
     facebook: "",
     twitter: "",
-    linkedin: ""
+    linkedin: "",
   },
   {
     name: "Ihab Sensei",
@@ -42,7 +40,7 @@ const teamMembers = [
     instagram: "",
     facebook: "",
     twitter: "",
-    linkedin: ""
+    linkedin: "",
   },
   {
     name: "Cihan Uygur",
@@ -51,7 +49,7 @@ const teamMembers = [
     instagram: "",
     facebook: "",
     twitter: "",
-    linkedin: ""
+    linkedin: "",
   },
 ];
 //React-Slider Settings Autoplay example, I'll also add responsive features too.
@@ -91,7 +89,6 @@ var settings = {
 };
 
 const Carousel = () => {
-
   const { t } = useTranslation();
   return (
     <div className="sliderTeam">
