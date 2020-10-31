@@ -1,0 +1,130 @@
+.footer {
+  display: flex;
+  height: 12.5rem;
+  background-color: #fa9600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.footerBottom {
+  background-color: #637381;
+  color: white;
+}
+
+.footerLogo {
+  height: min-content;
+}
+
+.footerLinks a {
+  text-decoration: none;
+  color: white;
+}
+
+.footerSummary {
+  font-size: xx-small;
+  width: min-content;
+  color: white;
+}
+
+.footerLocation {
+  width: min-content;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.footerPhone {
+  width: min-content;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.footerContact {
+  display: flex;
+  width: max-content;
+}
+
+.footerContact div {
+  margin-right: 1em;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  height: min-content;
+}
+
+.footerContact div span {
+  color: white;
+}
+
+.footerSocial {
+  transform: scale(2);
+  display: flex;
+  height: min-content;
+  margin-top: 5rem;
+  margin-left: 10rem;
+}
+
+.footerMiddle {
+  height: min-content;
+  margin-left: 3rem;
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+  .footerSocial {
+    margin-left: 4rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .footerSocial {
+    transform: scale(1.5);
+    bottom: -8rem;
+    position: absolute;
+    left: 18.5rem;
+  }
+
+  .footerMiddle {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .footerSocial div {
+    flex-direction: row;
+  }
+
+  .footerSocial {
+    margin: 3rem 0 1rem 8rem;
+    transform: scale(2);
+    width: min-content;
+  }
+
+  .footerContact {
+    margin-left: 5.5rem;
+    flex-direction: column;
+    width: min-content;
+  }
+
+  .footerContact div {
+    flex-direction: row;
+  }
+
+  .footerSummary {
+    font-size: small;
+  }
+
+  .footerLinks {
+    margin-top: 1rem;
+    margin-left: 3rem;
+  }
+
+  .footerMiddle {
+    margin-left: 0;
+  }
+}
