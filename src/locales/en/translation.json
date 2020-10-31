@@ -10,5 +10,13 @@
       "header1": "Coupons",
       "header2": "Blog"
     }
+  },
+  "team": {
+    "headers": {
+      "gizemdescription": "gIn oculis quidem faciunt, ut dolore magnam aliquam causam ista, quae sine causa? quae fuerit causa, nollem me ab eo delectu rerum, quem modo ista sis.",
+      "bertacdescription":  "bIn oculis quidem faciunt, ut dolore magnam aliquam causam ista, quae sine causa? quae fuerit causa, nollem me ab eo delectu rerum, quem modo ista sis.",
+      "ihabdescription":  "iIn oculis quidem faciunt, ut dolore magnam aliquam causam ista, quae sine causa? quae fuerit causa, nollem me ab eo delectu rerum, quem modo ista sis.",
+      "cihandesription": "cIn oculis quidem faciunt, ut dolore magnam aliquam causam ista, quae sine causa? quae fuerit causa, nollem me ab eo delectu rerum, quem modo ista sis."
+    }
   }
 }

@@ -10,14 +10,15 @@ import {
   LinkedinFilled,
 } from "@ant-design/icons";
 import { Row, Col } from "antd";
+import { useTranslation } from "react-i18next";
+
+
 
 const teamMembers = [
   {
     name: "Gizem Deniz",
     imgFile: "https://media.kommunity.com/avatar/_avatar_5eb06c6384ffd.",
-    description:
-      "In oculis quidem faciunt, ut dolore magnam aliquam causam ista, quae sine causa? quae fuerit causa, nollem me ab eo delectu rerum, quem modo ista sis.",
-    className: "rcorners",
+    description: "team.headers.gizemdescription",
     instagram: "",
     facebook: "",
     twitter: "",
@@ -26,8 +27,7 @@ const teamMembers = [
   {
     name: "Bertaç Severcan",
     imgFile: "https://media.kommunity.com/avatar/_avatar_5eb06c6384ffd.",
-    description:
-      "In oculis quidem faciunt, ut dolore magnam aliquam causam ista, quae sine causa? quae fuerit causa, nollem me ab eo delectu rerum, quem modo ista sis.",
+    description:"team.headers.bertacdescription",
     className: "rcorners",
     instagram: "",
     facebook: "",
@@ -37,8 +37,7 @@ const teamMembers = [
   {
     name: "Ihab Sensei",
     imgFile: "https://media.kommunity.com/avatar/_avatar_5eb06c6384ffd.",
-    description:
-      "In oculis quidem faciunt, ut dolore magnam aliquam causam ista, quae sine causa? quae fuerit causa, nollem me ab eo delectu rerum, quem modo ista sis.",
+    description: "team.headers.ihabdescription",
     className: "rcorners",
     instagram: "",
     facebook: "",
@@ -48,9 +47,7 @@ const teamMembers = [
   {
     name: "Cihan Uygur",
     imgFile: "https://media.kommunity.com/avatar/_avatar_5eb06c6384ffd.",
-    description:
-      "In oculis quidem faciunt, ut dolore magnam aliquam causam ista, quae sine causa? quae fuerit causa, nollem me ab eo delectu rerum, quem modo ista sis.",
-    className: "rcorners",
+    description: "team.headers.cihandesription",
     instagram: "",
     facebook: "",
     twitter: "",
@@ -94,6 +91,8 @@ var settings = {
 };
 
 const Carousel = () => {
+
+  const { t } = useTranslation();
   return (
     <div className="sliderTeam">
       <Slider {...settings} className="sliderrender">
@@ -109,7 +108,7 @@ const Carousel = () => {
             <div className="teamSection">
               <div className="teamText">
                 <h2 className="rcorners">{team.name}</h2>
-                <div className="rcorners">{team.description}</div>
+                <div className="rcorners">{t(team.description)}</div>
                 <Row align="center" around="xs">
                   <Col span={4}>
                     <InstagramOutlined href="#" /> {team.instagram}
