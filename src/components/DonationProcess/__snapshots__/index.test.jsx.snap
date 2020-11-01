@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Donation Process renders correctly 1`] = `
+<div
+  align="center"
+  justify="center"
+>
+  <div
+    className="ant-row ant-row-center donationProcessTitle"
+    style={
+      Object {
+        "marginLeft": -8,
+        "marginRight": -8,
+      }
+    }
+  >
+    <h1
+      className="ant-typography"
+      style={
+        Object {
+          "WebkitLineClamp": null,
+        }
+      }
+    >
+      donationProcessComp.card.title0
+    </h1>
+  </div>
+  <div
+    className="ant-row ant-row-space-around"
+    style={
+      Object {
+        "marginLeft": -28,
+        "marginRight": -28,
+      }
+    }
+  >
+    <div
+      className="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-12 ant-col-xl-8"
+      style={
+        Object {
+          "paddingLeft": 28,
+          "paddingRight": 28,
+        }
+      }
+    >
+      <div
+        className="ant-card"
+      >
+        <div
+          className="ant-card-body"
+          style={Object {}}
+        >
+          <div
+            className="donationProcessText"
+          >
+            <svg>
+              stepDonation.svg
+            </svg>
+            <h2
+              className="ant-typography"
+              style={
+                Object {
+                  "WebkitLineClamp": null,
+                }
+              }
+            >
+              donationProcessComp.card.title1
+            </h2>
+            <h5
+              className="ant-typography"
+              style={
+                Object {
+                  "WebkitLineClamp": null,
+                }
+              }
+            >
+              donationProcessComp.card.title4
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-12 ant-col-xl-8"
+      style={
+        Object {
+          "paddingLeft": 28,
+          "paddingRight": 28,
+        }
+      }
+    >
+      <div
+        className="ant-card"
+      >
+        <div
+          className="ant-card-body"
+          style={Object {}}
+        >
+          <div
+            className="donationProcessText"
+          >
+            <svg>
+              stepFood.svg
+            </svg>
+            <h2
+              className="ant-typography"
+              style={
+                Object {
+                  "WebkitLineClamp": null,
+                }
+              }
+            >
+              donationProcessComp.card.title2
+            </h2>
+            <h5
+              className="ant-typography"
+              style={
+                Object {
+                  "WebkitLineClamp": null,
+                }
+              }
+            >
+              donationProcessComp.card.title5
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-12 ant-col-xl-8"
+      style={
+        Object {
+          "paddingLeft": 28,
+          "paddingRight": 28,
+        }
+      }
+    >
+      <div
+        className="ant-card"
+      >
+        <div
+          className="ant-card-body"
+          style={Object {}}
+        >
+          <div
+            className="donationProcessText"
+          >
+            <svg>
+              stepCoupon.svg
+            </svg>
+            <h2
+              className="ant-typography"
+              style={
+                Object {
+                  "WebkitLineClamp": null,
+                }
+              }
+            >
+              donationProcessComp.card.title3
+            </h2>
+            <h5
+              className="ant-typography"
+              style={
+                Object {
+                  "WebkitLineClamp": null,
+                }
+              }
+            >
+              donationProcessComp.card.title6
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
