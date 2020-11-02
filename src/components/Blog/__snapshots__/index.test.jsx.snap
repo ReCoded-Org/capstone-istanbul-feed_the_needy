@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Blog renders correctly 1`] = `
+<div
+  className="blogSection"
+>
+  <div
+    className="ant-row ant-row-center"
+    style={Object {}}
+  >
+    <h2
+      className="ant-typography"
+      style={
+        Object {
+          "WebkitLineClamp": null,
+        }
+      }
+    >
+      Blog
+    </h2>
+  </div>
+  <div
+    className="ant-row ant-row-center ant-row-middle"
+    style={Object {}}
+  >
+    <div
+      className="ant-col blogSectionPost ant-col-xs-20 ant-col-sm-20 ant-col-md-10 ant-col-xl-10"
+      style={Object {}}
+    >
+      <div
+        className="ant-image"
+        onClick={[Function]}
+        style={
+          Object {
+            "height": undefined,
+            "width": undefined,
+          }
+        }
+      >
+        <img
+          alt="BlogPost1"
+          className="ant-image-img"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="blogpost1.png"
+        />
+      </div>
+      <div
+        className="blogSectionText"
+      >
+        <h4
+          className="ant-typography"
+          style={
+            Object {
+              "WebkitLineClamp": null,
+            }
+          }
+        >
+          blog.blog0.title
+        </h4>
+        <div
+          className="ant-typography"
+          style={
+            Object {
+              "WebkitLineClamp": null,
+            }
+          }
+        >
+          blog.blog0.paragraph
+        </div>
+        <div
+          className="blogSectionFooter"
+        >
+          <span
+            className="ant-typography"
+            style={
+              Object {
+                "WebkitLineClamp": null,
+                "marginLeft": "1em",
+              }
+            }
+          >
+            21 September 2019
+          </span>
+          <button
+            type="button"
+          >
+            Read more 
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-col blogSectionPost ant-col-xs-20 ant-col-sm-20 ant-col-md-10 ant-col-xl-10"
+      style={Object {}}
+    >
+      <div
+        className="ant-image"
+        onClick={[Function]}
+        style={
+          Object {
+            "height": undefined,
+            "width": undefined,
+          }
+        }
+      >
+        <img
+          alt="BlogPost2"
+          className="ant-image-img"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="blogpost2.png"
+        />
+      </div>
+      <div
+        className="blogSectionText"
+      >
+        <h4
+          className="ant-typography"
+          style={
+            Object {
+              "WebkitLineClamp": null,
+            }
+          }
+        >
+          blog.blog1.title
+        </h4>
+        <div
+          className="ant-typography"
+          style={
+            Object {
+              "WebkitLineClamp": null,
+            }
+          }
+        >
+          blog.blog1.paragraph
+        </div>
+      </div>
+      <div
+        className="blogSectionFooter"
+      >
+        <span
+          className="ant-typography"
+          style={
+            Object {
+              "WebkitLineClamp": null,
+              "marginLeft": "1em",
+            }
+          }
+        >
+          09 June 2020
+        </span>
+        <button
+          type="button"
+        >
+          Read more 
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

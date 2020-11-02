@@ -11,6 +11,17 @@
       "header2": "Blog"
     }
   },
+  "blog": {
+    "blog0": {
+      "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe.",
+      "paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At magni iste quos, deserunt eaque aut quae porro asperiores voluptate, quod molestiae quibusdam quidem similique. Enim."
+    },
+    "blog1": {
+      "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe.",
+      "paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At magni iste quos, deserunt eaque aut quae porro asperiores voluptate, quod molestiae quibusdam quidem similique. Enim."
+    },
+    "readMoreBtn": "Read more"
+  },
   "donationProcessComp": {
     "card": {
       "title0": "Donation Process",
