@@ -95,7 +95,7 @@ const Carousel = () => {
       <Slider {...settings} className="sliderrender">
         {teamMembers.map((team) => (
           <div className="teamBorder">
-            <div className="image">
+            <div>
               <img
                 classname="teamImage"
                 src={team.imgFile}
@@ -122,7 +122,7 @@ const Carousel = () => {
                 </Row>
               </div>
             </div>
-          </div>
+            </div>
         ))}
       </Slider>
     </div>
