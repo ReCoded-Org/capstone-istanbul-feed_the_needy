@@ -97,7 +97,7 @@ const Carousel = () => {
           <div className="teamBorder">
             <div>
               <img
-                classname="teamImage"
+                className="teamImage"
                 src={team.imgFile}
                 alt="imageforTeam"
               />
@@ -122,7 +122,7 @@ const Carousel = () => {
                 </Row>
               </div>
             </div>
-            </div>
+          </div>
         ))}
       </Slider>
     </div>
