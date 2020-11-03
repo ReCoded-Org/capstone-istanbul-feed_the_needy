@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="containerYoucanhelp"
+>
+  <div
+    className="ant-row ant-row-space-between"
+    md={36}
+    sm={20}
+    span={36}
+    style={Object {}}
+    xl={30}
+    xs={24}
+  >
+    <div
+      className="ant-col ant-col-16 youCanHelpToo ant-col-xs-24 ant-col-sm-20 ant-col-md-24 ant-col-xl-10"
+      style={Object {}}
+    >
+      <div
+        className="ant-col youCanHelpText"
+        style={Object {}}
+      >
+        <h1>
+          You can help too!
+        </h1>
+        <span>
+          youcanhelp.headers.textSection1
+        </span>
+        <div
+          className="ant-col"
+          style={Object {}}
+        >
+          <button>
+            Donate
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-col ant-col-36 imageSection ant-col-xs-8 ant-col-sm-20 ant-col-md-24 ant-col-xl-12"
+      style={Object {}}
+    >
+      <img
+        alt="help"
+        className="foodImage"
+        md={24}
+        sm={20}
+        span={36}
+        src="image.png"
+        xl={12}
+        xs={8}
+      />
+    </div>
+  </div>
+</div>
+`;
