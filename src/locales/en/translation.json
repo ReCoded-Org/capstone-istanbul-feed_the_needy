@@ -11,6 +11,11 @@
       "header2": "Blog"
     }
   },
+  "joinUs": {
+    "title": "Join us",
+    "description": "Join our mission to end hunger. You can join as a restaurant owner where you can add your own coupons so that donors can buy them.",
+    "button": "Create account"
+  },
   "footer": {
     "headers": {
       "header0": "HOME",
