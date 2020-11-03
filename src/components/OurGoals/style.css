@@ -1,0 +1,12 @@
+.ourGoalsTitle {
+  justify-content: center;
+  text-align: center;
+}
+
+.ourGoalsCardText {
+  width: 65%;
+  padding: 1em;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}

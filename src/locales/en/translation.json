@@ -11,6 +11,14 @@
       "header2": "Blog"
     }
   },
+  "ourGoalsComp": {
+    "card": {
+      "title0": "Our Goals",
+      "title1": "End poverty in all its forms everywhere",
+      "title2": "End hunger and achieve food security ",
+      "title3": "Ensure healthy lives and promote well-being at for all at all ages"
+    }
+  },
   "ourSponsorsComp": {
     "card": {
       "title0": "Our Sponsors"
