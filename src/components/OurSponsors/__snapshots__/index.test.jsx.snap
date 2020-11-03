@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Our Sponsors renders correctly 1`] = `
+<div>
+  <div
+    className="ant-row ourSponsorsTitle"
+    style={
+      Object {
+        "marginLeft": -8,
+        "marginRight": -8,
+      }
+    }
+  >
+    <h1
+      className="ant-typography"
+      style={
+        Object {
+          "WebkitLineClamp": null,
+        }
+      }
+    >
+      ourSponsorsComp.card.title0
+    </h1>
+  </div>
+  <div
+    className="ant-row ant-row-space-around"
+    style={
+      Object {
+        "marginLeft": -8,
+        "marginRight": -8,
+      }
+    }
+  >
+    <div
+      className="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-12 ant-col-xl-6"
+      style={
+        Object {
+          "paddingLeft": 8,
+          "paddingRight": 8,
+        }
+      }
+    >
+      <svg
+        className="burgerKing"
+      >
+        BurgerKing.svg
+      </svg>
+    </div>
+    <div
+      className="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-12 ant-col-xl-6"
+      style={
+        Object {
+          "paddingLeft": 8,
+          "paddingRight": 8,
+        }
+      }
+    >
+      <svg>
+        McDonalds.svg
+      </svg>
+    </div>
+    <div
+      className="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-12 ant-col-xl-6"
+      style={
+        Object {
+          "paddingLeft": 8,
+          "paddingRight": 8,
+        }
+      }
+    >
+      <svg
+        className="tesco"
+      >
+        Tesco.svg
+      </svg>
+    </div>
+    <div
+      className="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-12 ant-col-xl-6"
+      style={
+        Object {
+          "paddingLeft": 8,
+          "paddingRight": 8,
+        }
+      }
+    >
+      <svg>
+        PizzaHut.svg
+      </svg>
+    </div>
+  </div>
+</div>
+`;

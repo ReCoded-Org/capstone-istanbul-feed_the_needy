@@ -11,6 +11,11 @@
       "header2": "Blog"
     }
   },
+  "ourSponsorsComp": {
+    "card": {
+      "title0": "Our Sponsors"
+    }
+  },
   "blog": {
     "blog0": {
       "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe.",
@@ -31,16 +36,16 @@
       "title4": "Donator buy the coupon in the website",
       "title5": "The person in need can eat without asking in available restaurants",
       "title6": "The restaurant delete the used coupon in the website"
-    },
-    "footer": {
-      "headers": {
-        "header0": "HOME",
-        "header1": "COUPONS",
-        "header2": "BLOG"
-      },
-      "summary": "Food On Coupon is a platform which donators can donate food coupons to people in need from the chosen restaurants.",
-      "location": "Istanbul/Turkey",
-      "rights": "All rights reserved"
     }
+  },
+  "footer": {
+    "headers": {
+      "header0": "HOME",
+      "header1": "COUPONS",
+      "header2": "BLOG"
+    },
+    "summary": "Food On Coupon is a platform which donators can donate food coupons to people in need from the chosen restaurants.",
+    "location": "Istanbul/Turkey",
+    "rights": "All rights reserved"
   }
 }
