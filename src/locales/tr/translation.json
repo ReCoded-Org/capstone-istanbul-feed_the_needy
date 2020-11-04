@@ -11,20 +11,18 @@
       "header2": "Blog"
     }
   },
-<<<<<<< HEAD
-
   "team": {
     "headers": {
       "gizemdescription": "gIn oculis quidem faciunt, ut dolore magnam aliquam causam ista, quae sine causa? quae fuerit causa, nollem me ab eo delectu rerum, quem modo ista sis.",
       "bertacdescription": "bIn oculis quidem faciunt, ut dolore magnam aliquam causam ista, quae sine causa? quae fuerit causa, nollem me ab eo delectu rerum, quem modo ista sis.",
       "ihabdescription": "iIn oculis quidem faciunt, ut dolore magnam aliquam causam ista, quae sine causa? quae fuerit causa, nollem me ab eo delectu rerum, quem modo ista sis.",
       "cihandesription": "cIn oculis quidem faciunt, ut dolore magnam aliquam causam ista, quae sine causa? quae fuerit causa, nollem me ab eo delectu rerum, quem modo ista sis."
-=======
+    }
+  },
   "youcanhelp": {
     "headers": {
       "textSection1": "İlgilendiğiniz nedenlere bağış yapmak yalnızca hayır kurumlarına fayda sağlamakla kalmaz, aynı zamanda sizin için de son derece ödüllendirici olabilir. Milyonlarca insan inandıkları nedenleri ve bunun kendi yaşamları üzerindeki olumlu etkisini desteklemek için düzenli olarak hayır kurumlarına bağış yapıyor ..",
       "button": "Bağış Yap"
->>>>>>> 2464fd139c12198ccdba8fae6adf207628d1c544
     }
   }
 }
