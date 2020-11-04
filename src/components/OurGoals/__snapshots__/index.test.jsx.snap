@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Our Goals renders correctly 1`] = `
+<div
+  align="center"
+  justify="center"
+>
+  <div
+    className="ant-row ourGoalsTitle"
+    style={
+      Object {
+        "marginLeft": -8,
+        "marginRight": -8,
+      }
+    }
+  >
+    <h1
+      className="ant-typography"
+      style={
+        Object {
+          "WebkitLineClamp": null,
+        }
+      }
+    >
+      ourGoalsComp.card.title0
+    </h1>
+  </div>
+  <div
+    className="ant-row ant-row-center"
+    style={
+      Object {
+        "marginLeft": -28,
+        "marginRight": -28,
+      }
+    }
+  >
+    <div
+      className="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-12 ant-col-xl-8"
+      style={
+        Object {
+          "paddingLeft": 28,
+          "paddingRight": 28,
+        }
+      }
+    >
+      <div
+        className="ant-card"
+      >
+        <div
+          className="ant-card-body"
+          style={Object {}}
+        >
+          <div
+            className="ourGoalsCard"
+          >
+            <svg>
+              NoPoverty.svg
+            </svg>
+            <h3
+              className="ant-typography ourGoalsCardText"
+              style={
+                Object {
+                  "WebkitLineClamp": null,
+                }
+              }
+            >
+              ourGoalsComp.card.title1
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-12 ant-col-xl-8"
+      style={
+        Object {
+          "paddingLeft": 28,
+          "paddingRight": 28,
+        }
+      }
+    >
+      <div
+        className="ant-card"
+      >
+        <div
+          className="ant-card-body"
+          style={Object {}}
+        >
+          <div
+            className="ourGoalsCard"
+          >
+            <svg>
+              ZeroHunger.svg
+            </svg>
+            <h3
+              className="ant-typography ourGoalsCardText"
+              style={
+                Object {
+                  "WebkitLineClamp": null,
+                }
+              }
+            >
+              ourGoalsComp.card.title2
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-12 ant-col-xl-8"
+      style={
+        Object {
+          "paddingLeft": 28,
+          "paddingRight": 28,
+        }
+      }
+    >
+      <div
+        className="ant-card"
+      >
+        <div
+          className="ant-card-body"
+          style={Object {}}
+        >
+          <div
+            className="ourGoalsCard"
+          >
+            <svg>
+              GoodHealth.svg
+            </svg>
+            <h3
+              className="ant-typography ourGoalsCardText"
+              style={
+                Object {
+                  "WebkitLineClamp": null,
+                }
+              }
+            >
+              ourGoalsComp.card.title3
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

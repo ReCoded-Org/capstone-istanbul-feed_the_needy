@@ -11,15 +11,51 @@
       "header2": "Blog"
     }
   },
-  "team": {
+  "joinUs": {
+    "title": "Join us",
+    "description": "Join our mission to end hunger. You can join as a restaurant owner where you can add your own coupons so that donors can buy them.",
+    "button": "Create account"
+  },
+  "footer": {
     "headers": {
-      "gizemdescription": "gIn oculis quidem faciunt, ut dolore magnam aliquam causam ista, quae sine causa? quae fuerit causa, nollem me ab eo delectu rerum, quem modo ista sis.",
-      "bertacdescription": "bIn oculis quidem faciunt, ut dolore magnam aliquam causam ista, quae sine causa? quae fuerit causa, nollem me ab eo delectu rerum, quem modo ista sis.",
-      "ihabdescription": "iIn oculis quidem faciunt, ut dolore magnam aliquam causam ista, quae sine causa? quae fuerit causa, nollem me ab eo delectu rerum, quem modo ista sis.",
-      "cihandesription": "cIn oculis quidem faciunt, ut dolore magnam aliquam causam ista, quae sine causa? quae fuerit causa, nollem me ab eo delectu rerum, quem modo ista sis."
+      "header0": "HOME",
+      "header1": "COUPONS",
+      "header2": "BLOG"
+    },
+    "summary": "Food On Coupon is a platform which donators can donate food coupons to people in need from the chosen restaurants.",
+    "location": "Istanbul/Turkey",
+    "rights": "All rights reserved"
+  },
+  "youcanhelp": {
+    "headers": {
+      "textSection1": "Donation to the causes you care about not only benefits the charities themselves, it can be deeply rewarding for you too. Millions of people give to charity on a regular basis to support causes they believe in, as well as for the positive effect it has on their own lives..",
+      "button": "Donate"
     }
   },
-
+  "ourGoalsComp": {
+    "card": {
+      "title0": "Our Goals",
+      "title1": "End poverty in all its forms everywhere",
+      "title2": "End hunger and achieve food security ",
+      "title3": "Ensure healthy lives and promote well-being at for all at all ages"
+    }
+  },
+  "ourSponsorsComp": {
+    "card": {
+      "title0": "Our Sponsors"
+    }
+  },
+  "blog": {
+    "blog0": {
+      "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe.",
+      "paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At magni iste quos, deserunt eaque aut quae porro asperiores voluptate, quod molestiae quibusdam quidem similique. Enim."
+    },
+    "blog1": {
+      "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe.",
+      "paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At magni iste quos, deserunt eaque aut quae porro asperiores voluptate, quod molestiae quibusdam quidem similique. Enim."
+    },
+    "readMoreBtn": "Read more"
+  },
   "donationProcessComp": {
     "card": {
       "title0": "Donation Process",
@@ -30,16 +66,5 @@
       "title5": "The person in need can eat without asking in available restaurants",
       "title6": "The restaurant delete the used coupon in the website"
     }
-  },
-
-  "footer": {
-    "headers": {
-      "header0": "HOME",
-      "header1": "COUPONS",
-      "header2": "BLOG"
-    },
-    "summary": "Food On Coupon is a platform which donators can donate food coupons to people in need from the chosen restaurants.",
-    "location": "Istanbul/Turkey",
-    "rights": "All rights reserved"
   }
 }

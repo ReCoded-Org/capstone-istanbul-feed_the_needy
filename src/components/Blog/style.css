@@ -1,0 +1,19 @@
+.blogSectionPost {
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blogSectionText {
+  margin-top: 3em;
+  width: 95%;
+}
+
+.blogSectionFooter {
+  background-color: #f4f6f6;
+  width: -webkit-fill-available;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

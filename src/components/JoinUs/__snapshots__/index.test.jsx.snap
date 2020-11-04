@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JoinUs renders correctly 1`] = `
+<div
+  className="joinUsSection"
+>
+  <div
+    className="ant-image joinUsSectionImg"
+    onClick={[Function]}
+    style={
+      Object {
+        "height": undefined,
+        "width": undefined,
+      }
+    }
+  >
+    <img
+      alt="JoinHands"
+      className="ant-image-img"
+      onError={[Function]}
+      onLoad={[Function]}
+      src="joinHands.png"
+    />
+  </div>
+  <div
+    className="joinUsSectionDescription"
+  >
+    <div
+      style={
+        Object {
+          "margin": "1em",
+        }
+      }
+    >
+      <h2
+        className="ant-typography"
+        style={
+          Object {
+            "WebkitLineClamp": null,
+            "color": "#f4f6f6",
+          }
+        }
+      >
+        joinUs.title
+      </h2>
+      <div
+        className="ant-typography"
+        style={
+          Object {
+            "WebkitLineClamp": null,
+            "color": "#f4f6f6",
+          }
+        }
+      >
+        joinUs.description
+      </div>
+      <button
+        type="button"
+      >
+        Create account
+      </button>
+    </div>
+  </div>
+</div>
+`;

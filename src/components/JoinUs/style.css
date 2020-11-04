@@ -1,0 +1,24 @@
+.joinUsSection {
+  display: flex;
+  background-color: #48555e;
+}
+
+.joinUsSectionImg {
+  max-width: 21em;
+}
+
+@media only screen and (max-width: 943px) {
+  .joinUsSectionImg {
+    display: none;
+  }
+}
+
+.joinUsSectionBtn {
+  margin-top: 1em;
+  width: 12em;
+  height: 4em;
+  color: #48555e;
+  background-color: #f4f6f6;
+  border-width: 0em;
+  border-radius: 0em;
+}

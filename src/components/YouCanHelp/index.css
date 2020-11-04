@@ -1,6 +1,10 @@
 .containerYoucanhelp {
+<<<<<<< HEAD
   margin: 0;
   padding: 0;
+=======
+  margin-bottom: 10em;
+>>>>>>> 2464fd139c12198ccdba8fae6adf207628d1c544
 }
 
 .youCanHelpToo {
@@ -8,9 +12,27 @@
   justify-content: center;
 }
 
+<<<<<<< HEAD
 .flex {
   display: flex;
   justify-content: space-between;
+=======
+.imageSection {
+  width: 20em;
+  height: 30em;
+  display: flex;
+  justify-content: center;
+}
+
+.foodImage {
+  width: 50em;
+  height: 30em;
+  display: flex;
+  justify-content: center;
+  border-bottom-left-radius: 10em;
+  border-top-left-radius: 10em;
+  margin-left: 8em;
+>>>>>>> 2464fd139c12198ccdba8fae6adf207628d1c544
 }
 
 .youCanHelpText {
@@ -21,6 +43,7 @@
 }
 
 .youCanHelpText span {
+<<<<<<< HEAD
   font-size: 2em;
 }
 
@@ -49,3 +72,21 @@
   height: 100%;
   width: 100%;
 }
+=======
+  font-size: 1.5em;
+}
+
+.youCanHelpText h1 {
+  font-size: 3.3em;
+  text-shadow: 0.1em 0.1em rgb(219, 212, 212);
+}
+
+.donateButton {
+  width: 20em;
+  height: 3em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  background-color: #ff3c21;
+  color: #ffffff;
+}
+>>>>>>> 2464fd139c12198ccdba8fae6adf207628d1c544
