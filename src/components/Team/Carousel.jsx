@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "antd/dist/antd.css";
-import {teamMembers} from  "./TeamDetails.js";
+import { teamMembers } from "./TeamDetails.js";
 import {
   InstagramOutlined,
   FacebookFilled,
@@ -12,7 +12,6 @@ import {
 } from "@ant-design/icons";
 import { Row, Col } from "antd";
 import { useTranslation } from "react-i18next";
-
 
 var settings = {
   dots: true,
@@ -50,9 +49,6 @@ var settings = {
 };
 
 const Carousel = (props) => {
-  console.log(props)
-
-
   const { t } = useTranslation();
   return (
     <div className="sliderTeam">
