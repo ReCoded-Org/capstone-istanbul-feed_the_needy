@@ -70,7 +70,7 @@ const Carousel = (props) => {
                     <InstagramOutlined href="#" /> {team.instagram}
                   </Col>
                   <Col span={4}>
-                    <FacebookFilled  href="#" /> {team.facebook}
+                    <FacebookFilled href="#" /> {team.facebook}
                   </Col>
                   <Col span={4}>
                     <TwitterCircleFilled href="#" /> {team.twitter}
