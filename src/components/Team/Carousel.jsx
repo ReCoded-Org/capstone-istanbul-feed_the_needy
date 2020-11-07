@@ -2,7 +2,6 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "antd/dist/antd.css";
 import { teamMembers } from "./TeamDetails.js";
 import {
   InstagramOutlined,
@@ -71,13 +70,13 @@ const Carousel = (props) => {
                     <InstagramOutlined href="#" /> {team.instagram}
                   </Col>
                   <Col span={4}>
-                    <FacebookFilled /> {team.facebook}
+                    <FacebookFilled  href="#" /> {team.facebook}
                   </Col>
                   <Col span={4}>
-                    <TwitterCircleFilled /> {team.twitter}
+                    <TwitterCircleFilled href="#" /> {team.twitter}
                   </Col>
                   <Col span={4}>
-                    <LinkedinFilled />
+                    <LinkedinFilled href="#" /> {team.linkedin}
                   </Col>
                 </Row>
               </div>
