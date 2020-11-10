@@ -1,11 +1,11 @@
 .teamBorder {
-  width: auto;
+  width: 80em;
   height: auto;
 }
 
 .slick-slider {
   margin: 5em auto 5em;
-  width: auto;
+  
 }
 
 .rcorners {
@@ -15,8 +15,9 @@
 }
 
 .sliderrender {
-  width: 90em;
   justify-content: center;
+  display: flex;
+
 }
 
 .teamImage {
@@ -41,8 +42,7 @@
 }
 
 .teamSection {
-  width: auto;
-  height: auto;
+
   background-color: #f5f6f6;
   justify-content: center;
   position: relative;

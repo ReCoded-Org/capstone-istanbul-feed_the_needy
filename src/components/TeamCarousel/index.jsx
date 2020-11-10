@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
+import "./carousel.css";
 import "slick-carousel/slick/slick-theme.css";
 import { teamMembers } from "../Team/TeamDetails.js";
 import {
@@ -27,6 +28,7 @@ var settings = {
         slidesToScroll: 3,
         infinite: true,
         dots: true,
+        
       },
     },
     {
@@ -35,6 +37,7 @@ var settings = {
         slidesToShow: 1,
         slidesToScroll: 2,
         initialSlide: 2,
+        
       },
     },
     {
@@ -42,16 +45,17 @@ var settings = {
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        
       },
     },
   ],
 };
 
-const Carousel = (props) => {
+const Carousel = () => {
   const { t } = useTranslation();
   return (
-    <div className="sliderTeam">
-      <Slider {...settings} className="sliderrender">
+    <div className="sliderTeam" >
+      <Slider  className="sliderrender" {...settings}>
         {teamMembers.map((team) => (
           <div className="teamBorder">
             <div>
