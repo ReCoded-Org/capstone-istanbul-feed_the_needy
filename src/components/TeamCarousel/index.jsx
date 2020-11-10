@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { teamMembers } from "./TeamDetails.js";
+import { teamMembers } from "../Team/TeamDetails.js";
 import {
   InstagramOutlined,
   FacebookFilled,
@@ -89,3 +89,6 @@ const Carousel = (props) => {
 };
 
 export default Carousel;
+
+
+

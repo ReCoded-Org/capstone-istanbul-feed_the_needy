@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-import Carousel from "./Carousel.jsx";
+import Carousel from "../TeamCarousel/index.jsx";
 
 const Team = () => {
   return (

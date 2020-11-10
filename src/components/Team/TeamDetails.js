@@ -6,7 +6,7 @@ export const teamMembers = [
     instagram: "",
     facebook: "",
     twitter: "",
-    linkedin: "https://www.linkedin.com/in/gizem-deniz/",
+    linkedin: "",
   },
   {
     name: "Bertaç Severcan",
