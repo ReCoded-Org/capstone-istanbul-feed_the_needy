@@ -28,7 +28,6 @@ var settings = {
         slidesToScroll: 3,
         infinite: true,
         dots: true,
-        
       },
     },
     {
@@ -37,7 +36,6 @@ var settings = {
         slidesToShow: 1,
         slidesToScroll: 2,
         initialSlide: 2,
-        
       },
     },
     {
@@ -45,7 +43,6 @@ var settings = {
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        
       },
     },
   ],
@@ -54,8 +51,8 @@ var settings = {
 const Carousel = () => {
   const { t } = useTranslation();
   return (
-    <div className="sliderTeam" >
-      <Slider  className="sliderrender" {...settings}>
+    <div className="sliderTeam">
+      <Slider className="sliderrender" {...settings}>
         {teamMembers.map((team) => (
           <div className="teamBorder">
             <div>
@@ -93,6 +90,3 @@ const Carousel = () => {
 };
 
 export default Carousel;
-
-
-

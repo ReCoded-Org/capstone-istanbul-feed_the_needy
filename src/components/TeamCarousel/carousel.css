@@ -5,7 +5,6 @@
 
 .slick-slider {
   margin: 5em auto 5em;
-  
 }
 
 .rcorners {
@@ -17,7 +16,6 @@
 .sliderrender {
   justify-content: center;
   display: flex;
-
 }
 
 .teamImage {
@@ -42,7 +40,6 @@
 }
 
 .teamSection {
-
   background-color: #f5f6f6;
   justify-content: center;
   position: relative;
