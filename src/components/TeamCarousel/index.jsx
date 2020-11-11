@@ -13,7 +13,7 @@ import {
 import { Row, Col } from "antd";
 import { useTranslation } from "react-i18next";
 
-var settings = {
+const settings = {
   dots: true,
   infinite: false,
   speed: 500,
