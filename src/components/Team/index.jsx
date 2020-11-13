@@ -1,10 +1,10 @@
 import React from "react";
-import Carousel from "../TeamCarousel";
+import TeamCarousel from "../TeamCarousel";
 
-const Team = (props) => {
+const Team = () => {
   return (
     <div className="App">
-      <Carousel />
+      <TeamCarousel />
     </div>
   );
 };
