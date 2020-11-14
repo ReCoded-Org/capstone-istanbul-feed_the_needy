@@ -1,0 +1,56 @@
+.teamBorder {
+  width: 80em;
+  height: auto;
+}
+
+.slick-slider {
+  margin: 5em auto 5em;
+}
+
+.rcorners {
+  color: #3e4042;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+.sliderrender {
+  justify-content: center;
+  display: flex;
+}
+
+.teamImage {
+  width: 15em;
+  height: 10em;
+}
+
+.teamBorder {
+  justify-content: center;
+  position: relative;
+}
+
+.teamBorder img {
+  justify-content: center;
+  width: 10em;
+  height: 10em;
+  margin-bottom: -5em;
+  border-radius: 5em;
+  z-index: 2;
+  position: relative;
+  display: inline-block !important;
+}
+
+.teamSection {
+  background-color: #f5f6f6;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  margin: 1em;
+  z-index: 1;
+  padding: 2em;
+}
+
+.teamText {
+  padding-top: 5em;
+  width: 100em;
+  height: 20em;
+}
