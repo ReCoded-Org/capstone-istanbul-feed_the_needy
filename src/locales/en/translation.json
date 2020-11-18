@@ -74,5 +74,38 @@
       "title5": "The person in need can eat without asking in available restaurants",
       "title6": "The restaurant delete the used coupon in the website"
     }
+  },
+  "createCoupons": {
+    "title": "Choose Your Coupons",
+    "text": "Please choose four coupon amounts for your restaurant and we'll create them for you. You can rechoose later!",
+    "createButton": "Create",
+    "message": {
+      "success": "Succesfully created your coupons!",
+      "warning": "Failed to create your coupons!"
+    }
+  },
+  "editOrganization": {
+    "title": "Organization Details",
+    "placeholders": {
+      "placeholder0": "Organization Name",
+      "placeholder1": "Organization Email",
+      "placeholder2": "Organization Website",
+      "placeholder3": "Organization description"
+    },
+    "upload": {
+      "text": "Click or drag image file to this area to upload your logo",
+      "tip": "Accepted file types are; jpeg, png, etc."
+    },
+    "buttons": {
+      "button0": "Save",
+      "button1": "Reset Password"
+    },
+    "messages": {
+      "message0": "Name is required!",
+      "message1": "Input must be a valid email!"
+    },
+    "exampleCoupon": {
+      "link": "Go to restaurant's website"
+    }
   }
 }

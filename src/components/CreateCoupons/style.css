@@ -1,0 +1,41 @@
+.ant-btn.ant-btn-primary.ant-btn-round.ant-btn-lg.ant-btn-background-ghost.couponPrices {
+  /*priceButtons*/
+  font-size: large;
+  color: black;
+  width: 6rem;
+}
+
+.ant-btn.ant-btn-primary.ant-btn-round.ant-btn-lg.couponPrices {
+  /*selectedPriceButton*/
+  width: 6rem;
+  background-color: #e17007;
+  font-size: large;
+}
+
+.ant-avatar.ant-avatar-circle.ant-avatar-icon.couponInfo {
+  /*infoAvatar*/
+  background-color: white;
+  color: black;
+}
+
+.ant-btn.ant-btn-primary.ant-btn-lg.couponCreateButton {
+  /*createButton*/
+  width: 10rem;
+  background-color: #e17007;
+  color: white;
+}
+.coupons {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.couponInfoWrapper {
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.createCouponsTitle {
+  padding-bottom: 1rem;
+}

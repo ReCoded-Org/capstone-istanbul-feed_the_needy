@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateCoupons renders correctly 1`] = `
+<div
+  className="coupons"
+>
+  <h3
+    className="ant-typography ant-typography-primary createCouponsTitle"
+    style={
+      Object {
+        "WebkitLineClamp": null,
+      }
+    }
+  >
+    createCoupons.title
+  </h3>
+  <div
+    className="ant-row"
+    style={
+      Object {
+        "marginBottom": 8,
+        "marginLeft": -8,
+        "marginRight": -8,
+        "marginTop": -8,
+      }
+    }
+  >
+    <div
+      className="ant-col ant-col-8"
+      style={
+        Object {
+          "paddingBottom": 8,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 8,
+        }
+      }
+    >
+      <button
+        type="button"
+      >
+        25₺
+      </button>
+    </div>
+    <div
+      className="ant-col ant-col-8"
+      style={
+        Object {
+          "paddingBottom": 8,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 8,
+        }
+      }
+    >
+      <button
+        type="button"
+      >
+        50₺
+      </button>
+    </div>
+    <div
+      className="ant-col ant-col-8"
+      style={
+        Object {
+          "paddingBottom": 8,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 8,
+        }
+      }
+    >
+      <button
+        type="button"
+      >
+        75₺
+      </button>
+    </div>
+  </div>
+  <div
+    className="ant-row"
+    style={
+      Object {
+        "marginBottom": 8,
+        "marginLeft": -8,
+        "marginRight": -8,
+        "marginTop": -8,
+      }
+    }
+  >
+    <div
+      className="ant-col ant-col-8"
+      style={
+        Object {
+          "paddingBottom": 8,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 8,
+        }
+      }
+    >
+      <button
+        type="button"
+      >
+        100₺
+      </button>
+    </div>
+    <div
+      className="ant-col ant-col-8"
+      style={
+        Object {
+          "paddingBottom": 8,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 8,
+        }
+      }
+    >
+      <button
+        type="button"
+      >
+        150₺
+      </button>
+    </div>
+    <div
+      className="ant-col ant-col-8"
+      style={
+        Object {
+          "paddingBottom": 8,
+          "paddingLeft": 8,
+          "paddingRight": 8,
+          "paddingTop": 8,
+        }
+      }
+    >
+      <button
+        type="button"
+      >
+        200₺
+      </button>
+    </div>
+  </div>
+  <div
+    className="couponInfoWrapper"
+  >
+    <span
+      className="ant-avatar ant-avatar-circle ant-avatar-icon couponInfo"
+      style={Object {}}
+    >
+      <span
+        aria-label="info-circle"
+        className="anticon anticon-info-circle"
+        role="img"
+      >
+        <svg
+          aria-hidden="true"
+          className=""
+          data-icon="info-circle"
+          fill="currentColor"
+          focusable="false"
+          height="1em"
+          viewBox="64 64 896 896"
+          width="1em"
+        >
+          <path
+            d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"
+          />
+          <path
+            d="M464 336a48 48 0 1096 0 48 48 0 10-96 0zm72 112h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V456c0-4.4-3.6-8-8-8z"
+          />
+        </svg>
+      </span>
+    </span>
+    <span
+      className="ant-typography"
+      style={
+        Object {
+          "WebkitLineClamp": null,
+        }
+      }
+    >
+      <b>
+        createCoupons.text
+      </b>
+    </span>
+  </div>
+  <button
+    type="button"
+  >
+    25₺
+  </button>
+</div>
+`;

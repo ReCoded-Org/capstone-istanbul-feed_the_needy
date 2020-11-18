@@ -1,0 +1,187 @@
+import React, { useState } from "react";
+import "./style.css";
+import { Typography, Button, Row, Col, Avatar, message } from "antd";
+import { InfoCircleOutlined } from "@ant-design/icons";
+import { useTranslation } from "react-i18next";
+import firebase from "../../firebaseConfig";
+
+const db = firebase.firestore();
+const timestamp = firebase.firestore.FieldValue.serverTimestamp;
+const { Title, Text } = Typography;
+
+const CreateCoupons = ({ isTesting }) => {
+  const { t } = useTranslation();
+  const [count, setCount] = useState(1);
+  const [newCoupons, setNewCoupons] = useState({
+    compName: "",
+    amounts: {
+      25: false,
+      50: false,
+      75: false,
+      100: false,
+      150: false,
+      200: false,
+    },
+  });
+  const [ghosted, setGhosted] = useState({
+    // ghost property in antd button removes the styling from it
+    "25₺": true,
+    "50₺": true,
+    "75₺": true,
+    "100₺": true,
+    "150₺": true,
+    "200₺": true,
+  });
+
+  const postCoupons = () => {
+    // db.collection("restaurants").where("uid", "==", "") get the uid from the auth()
+    db.collection("coupons")
+      .add({
+        compName: newCoupons.compName,
+        amounts: { ...newCoupons.amounts },
+        createdAt: timestamp(),
+        img:
+          "https://image.freepik.com/free-photo/wooden-board-empty-table-top-blurred-background_1253-1584.jpg",
+      })
+      .then((docRef) =>
+        db.collection("coupons").doc(docRef.id).update({
+          id: docRef.id,
+        })
+      )
+      .then(() => message.success(t("createCoupons.message.success")))
+      .catch(() => message.warning(t("createCoupons.message.warning")));
+  };
+
+  const selectCoupon = (e) => {
+    const key = e.target.innerText;
+    const slicedKey = key.slice(0, key.length - 1);
+    setGhosted({
+      ...ghosted,
+      [key]: !ghosted[key],
+    });
+
+    setNewCoupons({
+      ...newCoupons,
+      compName: "Arby's",
+      amounts: {
+        ...newCoupons.amounts,
+        [slicedKey]: !newCoupons.amounts[slicedKey],
+      },
+    });
+
+    if (ghosted[key] === false) {
+      setCount((previous) => previous - 1);
+    } else {
+      setCount((previous) => previous + 1);
+    }
+  };
+
+  const handleSubmit = () => {
+    postCoupons();
+    setGhosted({
+      "25₺": true,
+      "50₺": true,
+      "75₺": true,
+      "100₺": true,
+      "150₺": true,
+      "200₺": true,
+    });
+    setCount(1);
+  };
+
+  const firstRowList = [];
+  const secondRowList = [];
+  const ghostList = [
+    ghosted["25₺"],
+    ghosted["50₺"],
+    ghosted["75₺"],
+    ghosted["100₺"],
+    ghosted["150₺"],
+    ghosted["200₺"],
+  ];
+  const coupons = ["25₺", "50₺", "75₺", "100₺", "150₺", "200₺"];
+
+  for (let i = 0; i < ghostList.length / 2; i += 1) {
+    firstRowList.push({ ghost: ghostList[i], text: coupons[i] });
+  }
+  for (let i = ghostList.length / 2; i < ghostList.length; i += 1) {
+    secondRowList.push({ ghost: ghostList[i], text: coupons[i] });
+  }
+
+  const MAXSELECTABLECOUPON = 4;
+
+  return (
+    <div className="coupons">
+      <Title className="createCouponsTitle" level={3} type="primary">
+        {t("createCoupons.title")}
+      </Title>
+      <Row gutter={[16, 16]}>
+        {firstRowList.map((row) => (
+          <Col key={row.text} span={8}>
+            {isTesting ? (
+              <button type="button">{row.text}</button>
+            ) : (
+              <Button
+                className="couponPrices"
+                onClick={selectCoupon}
+                size="large"
+                shape="round"
+                ghost={row.ghost} // default is true and when selected false
+                type="primary"
+                disabled={count > MAXSELECTABLECOUPON && row.ghost}
+              >
+                <b>{row.text}</b>
+              </Button>
+            )}
+          </Col>
+        ))}
+      </Row>
+      <Row gutter={[16, 16]}>
+        {secondRowList.map((row) => (
+          <Col key={row.text} span={8}>
+            {isTesting ? (
+              <button type="button">{row.text}</button>
+            ) : (
+              <Button
+                className="couponPrices"
+                onClick={selectCoupon}
+                size="large"
+                shape="round"
+                ghost={row.ghost}
+                type="primary"
+                disabled={count > MAXSELECTABLECOUPON && row.ghost}
+              >
+                <b>{row.text}</b>
+              </Button>
+            )}
+          </Col>
+        ))}
+      </Row>
+      <div className="couponInfoWrapper">
+        <Avatar
+          className="couponInfo"
+          size={{ xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 100 }}
+          icon={<InfoCircleOutlined />}
+        />
+        <Text>
+          <b>{t("createCoupons.text")}</b>
+        </Text>
+      </div>
+      {isTesting ? (
+        <button type="button">25₺</button>
+      ) : (
+        <Button
+          onClick={handleSubmit}
+          className="couponCreateButton"
+          type="primary"
+          size="large"
+          disabled={count <= MAXSELECTABLECOUPON}
+        >
+          {t("createCoupons.createButton")}
+        </Button>
+      )}
+    </div>
+  );
+};
+
+export default CreateCoupons;
