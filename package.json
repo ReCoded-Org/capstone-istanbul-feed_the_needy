@@ -9,6 +9,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "antd": "^4.7.2",
+    "chart.js": "^2.9.4",
     "firebase": "^7.24.0",
     "i18next": "^19.8.2",
     "i18next-browser-languagedetector": "^6.0.1",

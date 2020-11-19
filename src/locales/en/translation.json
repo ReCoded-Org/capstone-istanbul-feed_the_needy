@@ -75,6 +75,29 @@
       "title6": "The restaurant delete the used coupon in the website"
     }
   },
+  "couponsChart": {
+    "title": "Sold Coupons",
+    "statistics": [
+      "Daily Coupons Sold",
+      "Monthly Coupons Sold",
+      "Yearly Coupons Sold",
+      "Total Coupons Sold"
+    ],
+    "labels": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ]
+  },
   "couponsPage": {
     "coupon": {
       "addBtn": "Add to cart",
@@ -115,5 +138,6 @@
     "exampleCoupon": {
       "link": "Go to restaurant's website"
     }
-  }
+  },
+  "spin": "Loading..."
 }
