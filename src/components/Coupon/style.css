@@ -1,0 +1,53 @@
+.couponCard div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.addBtn {
+  background-color: #ff6600;
+  border-color: #ff6600;
+  --antd-wave-shadow-color: #ff6600;
+}
+
+.addBtn:hover,
+.addBtn:focus {
+  background-color: #ff5100;
+  border-color: #ff6600;
+}
+
+.couponPrices {
+  display: flex;
+  align-self: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 32em;
+  margin: 1em 1em;
+}
+
+.couponBody {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+.singlePrice {
+  margin: 1em 1em;
+}
+
+.singlePrice:hover,
+.singlePrice:focus {
+  color: #262626;
+  background: #fff8f0;
+  border-color: #ff9125;
+}
+
+.ant-btn-primary.singlePrice {
+  color: #fff;
+  background: #ff6600;
+  border-color: #ff6600;
+}
+
+.singlePrice > * {
+  pointer-events: none;
+}

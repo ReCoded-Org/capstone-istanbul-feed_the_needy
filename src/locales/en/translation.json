@@ -75,6 +75,14 @@
       "title6": "The restaurant delete the used coupon in the website"
     }
   },
+  "couponsPage": {
+    "coupon": {
+      "addBtn": "Add to cart",
+      "amount": "Selected amount"
+    },
+    "header": "Your donation can help people!",
+    "restaurants": "Restaurants"
+  },
   "createCoupons": {
     "title": "Choose Your Coupons",
     "text": "Please choose four coupon amounts for your restaurant and we'll create them for you. You can rechoose later!",

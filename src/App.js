@@ -8,6 +8,7 @@ import i18n from "./i18n";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import HomePage from "./containers/HomePage";
+import CouponsPage from "./containers/CouponsPage";
 import AdminDashboard from "./containers/AdminDashboard";
 
 const { Content } = Layout;
@@ -21,7 +22,7 @@ function App() {
           <Content style={{ background: "white", padding: "0 5px" }}>
             <div className="site-layout-content">
               <Route exact path="/" component={HomePage} />
-              <Route path="/coupons" component="#" />
+              <Route path="/coupons" component={CouponsPage} />
               <Route path="/blog" component="#" />
               <Route path="/admin" component={AdminDashboard} />
               <Route path="/cart" component="#" />
