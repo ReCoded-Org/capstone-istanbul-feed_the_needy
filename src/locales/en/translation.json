@@ -9,6 +9,11 @@
       "header0": "Home",
       "header1": "Coupons",
       "header2": "Blog"
+    },
+    "languages": {
+      "lang0": "Turkish",
+      "lang1": "English",
+      "lang2": "Arabic"
     }
   },
   "joinUs": {
