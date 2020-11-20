@@ -154,6 +154,27 @@
       "link": "Go to restaurant's website"
     }
   },
+  "usedCoupons": {
+    "title": "Used Coupons",
+    "placeholder": "Search",
+    "message": {
+      "success": "Succesfully marked the coupon as active!",
+      "warning": "Failed to mark the coupon as active!"
+    },
+    "columns": {
+      "titles": {
+        "title0": "Type",
+        "title1": "Use date",
+        "title2": "ID",
+        "title3": "Action"
+      }
+    },
+    "buttons": {
+      "button0": "Search",
+      "button1": "Reset",
+      "button2": "Mark Active"
+    }
+  },
   "cartCont": {
     "title": "Your Donation Cart",
     "showCartComp": {

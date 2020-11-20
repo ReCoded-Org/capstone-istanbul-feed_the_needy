@@ -1,0 +1,22 @@
+.usedCoupons {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.spin {
+  padding-top: inherit;
+  color: #e17007;
+  width: 100%;
+}
+
+.spin .ant-spin-dot-item {
+  background-color: #e17007;
+}
+
+.ant-btn.ant-btn-primary {
+  background-color: #e17007;
+}
+
+.ant-btn.ant-btn-sm:hover {
+  color: #e17007;
+}
