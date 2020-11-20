@@ -8,6 +8,7 @@ import i18n from "./i18n";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import HomePage from "./containers/HomePage";
+import Cart from "./containers/Cart";
 import CouponsPage from "./containers/CouponsPage";
 import AdminDashboard from "./containers/AdminDashboard";
 
@@ -24,8 +25,8 @@ function App() {
               <Route exact path="/" component={HomePage} />
               <Route path="/coupons" component={CouponsPage} />
               <Route path="/blog" component="#" />
+              <Route path="/cart" component={Cart} />
               <Route path="/admin" component={AdminDashboard} />
-              <Route path="/cart" component="#" />
             </div>
           </Content>
           <Footer />

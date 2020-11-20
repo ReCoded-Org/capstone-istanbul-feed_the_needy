@@ -144,5 +144,13 @@
       "link": "Go to restaurant's website"
     }
   },
+  "cartCont": {
+    "title": "Your Donation Cart",
+    "showCartComp": {
+      "totalAmount": "Total Amount:",
+      "clearCart": "Clear Cart",
+      "goToCheckout": "Go to Checkout"
+    }
+  },
   "spin": "Loading..."
 }
