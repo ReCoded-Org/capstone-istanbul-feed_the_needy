@@ -9,6 +9,11 @@
       "header0": "Home",
       "header1": "Coupons",
       "header2": "Blog"
+    },
+    "languages": {
+      "lang0": "Turkish",
+      "lang1": "English",
+      "lang2": "Arabic"
     }
   },
   "joinUs": {
@@ -74,5 +79,109 @@
       "title5": "The person in need can eat without asking in available restaurants",
       "title6": "The restaurant delete the used coupon in the website"
     }
-  }
+  },
+  "activeCoupons": {
+    "title": "Active Coupons",
+    "button": "Mark One Used",
+    "text": "sold",
+    "message": {
+      "success": "Succesfully marked one of the coupons as used!",
+      "warning0": "Failed to mark one of the coupons!",
+      "warning1": "No coupons to count!"
+    }
+  },
+  "couponsChart": {
+    "title": "Sold Coupons",
+    "statistics": [
+      "Daily Coupons Sold",
+      "Monthly Coupons Sold",
+      "Yearly Coupons Sold",
+      "Total Coupons Sold"
+    ],
+    "labels": [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December"
+    ]
+  },
+  "couponsPage": {
+    "coupon": {
+      "addBtn": "Add to cart",
+      "amount": "Selected amount"
+    },
+    "header": "Your donation can help people!",
+    "restaurants": "Restaurants"
+  },
+  "createCoupons": {
+    "title": "Choose Your Coupons",
+    "text": "Please choose four coupon amounts for your restaurant and we'll create them for you. You can rechoose later!",
+    "createButton": "Create",
+    "message": {
+      "success": "Succesfully created your coupons!",
+      "warning": "Failed to create your coupons!"
+    }
+  },
+  "editOrganization": {
+    "title": "Organization Details",
+    "placeholders": {
+      "placeholder0": "Organization Name",
+      "placeholder1": "Organization Email",
+      "placeholder2": "Organization Website",
+      "placeholder3": "Organization description"
+    },
+    "upload": {
+      "text": "Click or drag image file to this area to upload your logo",
+      "tip": "Accepted file types are; jpeg, png, etc."
+    },
+    "buttons": {
+      "button0": "Save",
+      "button1": "Reset Password"
+    },
+    "messages": {
+      "message0": "Name is required!",
+      "message1": "Input must be a valid email!"
+    },
+    "exampleCoupon": {
+      "link": "Go to restaurant's website"
+    }
+  },
+  "usedCoupons": {
+    "title": "Used Coupons",
+    "placeholder": "Search",
+    "message": {
+      "success": "Succesfully marked the coupon as active!",
+      "warning": "Failed to mark the coupon as active!"
+    },
+    "columns": {
+      "titles": {
+        "title0": "Type",
+        "title1": "Use date",
+        "title2": "ID",
+        "title3": "Action"
+      }
+    },
+    "buttons": {
+      "button0": "Search",
+      "button1": "Reset",
+      "button2": "Mark Active"
+    }
+  },
+  "cartCont": {
+    "title": "Your Donation Cart",
+    "showCartComp": {
+      "totalAmount": "Total Amount:",
+      "clearCart": "Clear Cart",
+      "goToCheckout": "Go to Checkout"
+    }
+  },
+  "spin": "Loading..."
 }

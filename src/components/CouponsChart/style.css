@@ -1,0 +1,17 @@
+.couponsChartTitle {
+  padding: 1rem 0;
+}
+
+.couponsChartStatistics {
+  padding-bottom: 1rem;
+}
+
+.spin {
+  padding-top: inherit;
+  color: #e17007;
+  width: 100%;
+}
+
+.spin .ant-spin-dot-item {
+  background-color: #e17007;
+}

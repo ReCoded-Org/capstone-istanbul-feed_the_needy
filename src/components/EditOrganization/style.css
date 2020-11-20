@@ -1,0 +1,48 @@
+.ant-btn.ant-btn-primary.editOrgButton {
+  background-color: #e17007;
+  color: white;
+}
+
+.editOrg {
+  padding-top: 1rem;
+}
+
+.spin {
+  padding-top: inherit;
+  color: #e17007;
+  width: 100%;
+}
+
+.spin .ant-spin-dot-item {
+  background-color: #e17007;
+}
+
+.editOrgDivider {
+  padding-bottom: 1rem;
+}
+
+.editOrgFlex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.editOrgFlexChild {
+  flex: 1;
+}
+
+.editOrgFlexChild:first-child {
+  padding-right: 1rem;
+}
+
+.editOrgFlexChild:last-child {
+  width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .editOrgFlexChild:first-child {
+    padding-right: unset;
+  }
+  .editOrgFlexChild {
+    flex: unset;
+  }
+}

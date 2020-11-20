@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SingleCoupon renders correctly 1`] = `
+<div>
+  <div
+    className="ant-row"
+    style={Object {}}
+  >
+    <div
+      className="ant-col"
+      style={Object {}}
+    >
+      <div
+        align="center"
+        className="ant-card ant-card-bordered ant-card-hoverable couponCards"
+      >
+        <div
+          className="ant-card-body"
+          style={Object {}}
+        >
+          <div
+            className="ant-row"
+            style={Object {}}
+          >
+            <div
+              className="ant-col"
+              style={Object {}}
+            >
+              <button
+                type="button"
+              >
+                x
+              </button>
+            </div>
+          </div>
+          <h1
+            className="ant-typography"
+            style={
+              Object {
+                "WebkitLineClamp": null,
+              }
+            }
+          />
+          <img
+            alt="logo"
+            src={null}
+            width="120em"
+          />
+          <h1
+            className="ant-typography"
+            style={
+              Object {
+                "WebkitLineClamp": null,
+              }
+            }
+          >
+            <span>
+              ₺
+            </span>
+          </h1>
+          <button
+            type="button"
+          >
+            -
+          </button>
+          <span
+            className="couponAmount"
+          >
+            1
+          </span>
+          <button
+            type="button"
+          >
+            +
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

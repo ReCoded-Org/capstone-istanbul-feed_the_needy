@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Coupon renders correctly 1`] = `
+<div
+  className="coupon"
+>
+  <h2
+    className="ant-typography"
+    style={
+      Object {
+        "WebkitLineClamp": null,
+        "textAlign": "center",
+      }
+    }
+  >
+    
+  </h2>
+  <div
+    className="couponBody"
+  >
+    <div
+      className="ant-card ant-card-bordered ant-card-hoverable couponCard"
+      style={
+        Object {
+          "width": 350,
+        }
+      }
+    >
+      <div
+        className="ant-card-body"
+        style={Object {}}
+      >
+        <img
+          alt="logo"
+          width={200}
+        />
+        <span
+          className="ant-typography"
+          style={
+            Object {
+              "WebkitLineClamp": null,
+              "fontSize": "2em",
+            }
+          }
+        >
+          <strong>
+            couponsPage.coupon.amount
+          </strong>
+        </span>
+        <button
+          type="button"
+        >
+          Add to cart
+        </button>
+      </div>
+    </div>
+    <div
+      className="couponPrices"
+    >
+      <button
+        type="button"
+      >
+        price
+      </button>
+    </div>
+  </div>
+</div>
+`;

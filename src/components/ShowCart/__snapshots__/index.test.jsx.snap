@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShowCart renders correctly 1`] = `
+Array [
+  <br />,
+  <div
+    className="ant-row ant-row-space-around"
+    style={
+      Object {
+        "marginBottom": 20,
+        "marginLeft": -12,
+        "marginRight": -12,
+        "marginTop": -20,
+      }
+    }
+  />,
+  <div
+    className="ant-row ant-row-center"
+    style={
+      Object {
+        "marginBottom": 24,
+        "marginLeft": -24,
+        "marginRight": -24,
+        "marginTop": -24,
+      }
+    }
+  >
+    <div
+      className="ant-col totalAmount"
+      style={
+        Object {
+          "paddingBottom": 24,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 24,
+        }
+      }
+    >
+      cartCont.showCartComp.totalAmount
+      0
+      <span>
+        ₺
+      </span>
+    </div>
+  </div>,
+  <br />,
+  <br />,
+  <div
+    className="ant-row ant-row-center ant-row-bottom"
+    style={
+      Object {
+        "marginBottom": 24,
+        "marginLeft": -24,
+        "marginRight": -24,
+        "marginTop": -24,
+      }
+    }
+  >
+    <div
+      className="ant-col"
+      style={
+        Object {
+          "paddingBottom": 24,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 24,
+        }
+      }
+    >
+      <button
+        type="button"
+      />
+    </div>
+    <div
+      className="ant-col"
+      style={
+        Object {
+          "paddingBottom": 24,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 24,
+        }
+      }
+    >
+      <button
+        type="button"
+      />
+    </div>
+  </div>,
+]
+`;

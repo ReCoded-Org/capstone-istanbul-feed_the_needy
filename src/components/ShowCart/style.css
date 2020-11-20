@@ -1,0 +1,60 @@
+.couponCards {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.ant-btn.ant-btn-primary.cardButton {
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  font-size: xx-large;
+  height: 1.8em;
+  width: 1.5em;
+  border-radius: 0.3em;
+  background-color: #627280;
+}
+
+.ant-btn.ant-btn-primary.cardDeleteButton {
+  font-size: small;
+  font-weight: bold;
+  border: none;
+  width: auto;
+  height: auto;
+  border-radius: 0.3em;
+  margin-bottom: 1.4em;
+  color: white;
+  background-color: rgb(100, 6, 6);
+}
+
+.couponAmount {
+  display: inline-block;
+  text-align: center;
+  font-size: xx-large;
+  height: 1.5em;
+  width: 2em;
+  color: white;
+  background-color: #ffaa05;
+}
+
+.totalAmount {
+  font-size: xx-large;
+  font-weight: bold;
+  margin-top: 1.2em;
+}
+
+.clearCartButton {
+  width: auto;
+  height: auto;
+  font-size: large;
+  background-color: #627280;
+  color: white;
+}
+
+.checkoutButton {
+  width: auto;
+  height: auto;
+  font-size: large;
+  color: white;
+  background-color: #e17007;
+}

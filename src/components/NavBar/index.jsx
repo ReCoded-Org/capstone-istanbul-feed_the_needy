@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Icon from "@ant-design/icons";
+import Icon, { GlobalOutlined } from "@ant-design/icons";
 import { Layout, Menu } from "antd";
 import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 import { ReactComponent as AdminSvg } from "./images/admin.svg";
 import { ReactComponent as CartSvg } from "./images/cart.svg";
 import { ReactComponent as LogoSvg } from "../../images/logo.svg";
@@ -11,6 +12,7 @@ import { ReactComponent as StackedTitleSvg } from "../../images/stackedTitle.svg
 import "./style.css";
 
 const { Header } = Layout;
+const { SubMenu } = Menu;
 
 const NavBar = ({ isTesting }) => {
   const { t } = useTranslation();
@@ -42,12 +44,38 @@ const NavBar = ({ isTesting }) => {
           <Menu.Item key="3">
             <Link to="/blog">{t("navbar.headers.header2")}</Link>
           </Menu.Item>
-          <Menu.Item key="4" className="navbarCart">
+          <SubMenu key="sub1" icon={<GlobalOutlined />}>
+            <Menu.Item
+              onClick={() => {
+                i18next.changeLanguage("tr");
+              }}
+              key="4"
+            >
+              {t("navbar.languages.lang0")}
+            </Menu.Item>
+            <Menu.Item
+              onClick={() => {
+                i18next.changeLanguage("en");
+              }}
+              key="5"
+            >
+              {t("navbar.languages.lang1")}
+            </Menu.Item>
+            <Menu.Item
+              onClick={() => {
+                i18next.changeLanguage("ar");
+              }}
+              key="6"
+            >
+              {t("navbar.languages.lang2")}
+            </Menu.Item>
+          </SubMenu>
+          <Menu.Item key="7" className="navbarCart">
             <Link to="/cart">
               <Icon style={{ transform: "scale(2)" }} component={CartSvg} />
             </Link>
           </Menu.Item>
-          <Menu.Item key="5" className="navbarAdmin">
+          <Menu.Item key="8" className="navbarAdmin">
             <Link to="/admin">
               <Icon style={{ transform: "scale(2)" }} component={AdminSvg} />
             </Link>

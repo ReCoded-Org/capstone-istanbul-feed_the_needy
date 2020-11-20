@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UsedCoupons renders correctly 1`] = `
+<div
+  className="usedCoupons"
+>
+  <div
+    className="ant-divider ant-divider-horizontal ant-divider-with-text ant-divider-with-text-center"
+    role="separator"
+  >
+    <span
+      className="ant-divider-inner-text"
+    >
+      <h3
+        className="ant-typography"
+        style={
+          Object {
+            "WebkitLineClamp": null,
+          }
+        }
+      >
+        usedCoupons.title
+      </h3>
+    </span>
+  </div>
+  <div
+    className="ant-spin ant-spin-lg ant-spin-spinning ant-spin-show-text spin"
+  >
+    <span
+      className="ant-spin-dot ant-spin-dot-spin"
+    >
+      <i
+        className="ant-spin-dot-item"
+      />
+      <i
+        className="ant-spin-dot-item"
+      />
+      <i
+        className="ant-spin-dot-item"
+      />
+      <i
+        className="ant-spin-dot-item"
+      />
+    </span>
+    <div
+      className="ant-spin-text"
+    >
+      spin
+    </div>
+  </div>
+</div>
+`;
