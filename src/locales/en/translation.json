@@ -80,6 +80,16 @@
       "title6": "The restaurant delete the used coupon in the website"
     }
   },
+  "activeCoupons": {
+    "title": "Active Coupons",
+    "button": "Mark One Used",
+    "text": "sold",
+    "message": {
+      "success": "Succesfully marked one of the coupons as used!",
+      "warning0": "Failed to mark one of the coupons!",
+      "warning1": "No coupons to count!"
+    }
+  },
   "couponsChart": {
     "title": "Sold Coupons",
     "statistics": [

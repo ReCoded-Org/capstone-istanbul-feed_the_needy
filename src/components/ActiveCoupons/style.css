@@ -1,0 +1,22 @@
+.activeCoupons {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.ant-card-head-title {
+  font-weight: bold;
+}
+
+.ant-btn.ant-btn-primary {
+  background-color: #e17007;
+}
+
+.spin {
+  padding-top: inherit;
+  color: #e17007;
+  width: 100%;
+}
+
+.spin .ant-spin-dot-item {
+  background-color: #e17007;
+}
