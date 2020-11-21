@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Typography, Card, Button } from "antd";
 import { useTranslation } from "react-i18next";
 import "./style.css";
+import SingleCouponModal from "../SingleCouponModal";
 
 const { Title, Text } = Typography;
 
@@ -15,6 +16,11 @@ const Coupon = ({ id, createdAt, amounts, compName, img, isTesting }) => {
   });
   const [selectedPrice, setSelectedPrice] = useState(0);
   const [cart, setCart] = useState([]);
+  const [visibleModal, setVisibleModal] = useState(false);
+
+  const showModal = () => {
+    setVisibleModal(true);
+  };
 
   const handleSelect = (e) => {
     setIsSelected({ [e.target.name]: true });
@@ -56,7 +62,20 @@ const Coupon = ({ id, createdAt, amounts, compName, img, isTesting }) => {
       </Title>
       <div className="couponBody">
         <Card className="couponCard" hoverable style={{ width: 350 }}>
-          <img width={200} src={img} alt="logo" />
+          <button
+            className="singleCouponModalButton"
+            title={t("couponsPage.link")}
+            type="button"
+            onClick={showModal}
+          >
+            <img width={200} src={img} alt="logo" />
+          </button>
+          <SingleCouponModal
+            compName={compName}
+            price={selectedPrice}
+            visibleModal={visibleModal}
+            setVisibleModal={setVisibleModal}
+          />
           <Text style={{ fontSize: "2em" }} strong>
             {selectedPrice
               ? selectedPrice + "₺"

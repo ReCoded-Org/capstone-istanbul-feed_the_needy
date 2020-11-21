@@ -30,9 +30,19 @@ exports[`Coupon renders correctly 1`] = `
         className="ant-card-body"
         style={Object {}}
       >
-        <img
-          alt="logo"
-          width={200}
+        <button
+          className="singleCouponModalButton"
+          onClick={[Function]}
+          title="couponsPage.link"
+          type="button"
+        >
+          <img
+            alt="logo"
+            width={200}
+          />
+        </button>
+        <div
+          className="singleCouponModal"
         />
         <span
           className="ant-typography"

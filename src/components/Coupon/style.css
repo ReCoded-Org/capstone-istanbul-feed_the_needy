@@ -51,3 +51,12 @@
 .singlePrice > * {
   pointer-events: none;
 }
+
+.singleCouponModalButton {
+  border: unset;
+  background-color: unset;
+}
+
+.singleCouponModalButton:hover {
+  cursor: pointer;
+}

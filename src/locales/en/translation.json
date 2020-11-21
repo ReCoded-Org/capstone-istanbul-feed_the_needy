@@ -150,7 +150,8 @@
       "amount": "Selected amount"
     },
     "header": "Your donation can help people!",
-    "restaurants": "Restaurants"
+    "restaurants": "Restaurants",
+    "link": "Click to see coupon details!"
   },
   "createCoupons": {
     "title": "Choose Your Coupons",
@@ -184,6 +185,11 @@
     "exampleCoupon": {
       "link": "Go to restaurant's website"
     }
+  },
+  "singleCouponModal": {
+    "title": "Selected Coupon",
+    "alt": "Restaurant's logo",
+    "OK": "OK"
   },
   "usedCoupons": {
     "title": "Used Coupons",
