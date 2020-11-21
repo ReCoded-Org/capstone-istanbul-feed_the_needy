@@ -79,9 +79,13 @@
 @media (min-width: 576px) and (max-width: 768px) {
   .footerSocial {
     transform: scale(1.5);
-    bottom: -8rem;
     position: absolute;
-    left: 18.5rem;
+    left: 17rem;
+  }
+
+  .footerSocial .ant-space.ant-space-horizontal.ant-space-align-center {
+    position: absolute;
+    top: 3.5rem;
   }
 
   .footerMiddle {
