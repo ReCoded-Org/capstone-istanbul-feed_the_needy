@@ -85,10 +85,14 @@ const NavBar = ({ isTesting }) => {
             </Link>
           </Menu.Item>
           <Menu.Item key="9" className="navbarAdmin" onClick={enableDarkMode}>
-            <span>Dark</span>
+            <span role="img" aria-label="dayTheme">
+              🌙
+            </span>
           </Menu.Item>
           <Menu.Item key="10" className="navbarAdmin" onClick={disableDarkMode}>
-            <span>Moon</span>
+            <span role="img" aria-label="nightTheme">
+              ☀️
+            </span>
           </Menu.Item>
         </Menu>
       </Header>
