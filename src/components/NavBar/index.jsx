@@ -1,21 +1,25 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Icon, { GlobalOutlined } from "@ant-design/icons";
-import { Layout, Menu } from "antd";
-import { useTranslation } from "react-i18next";
-import i18next from "i18next";
-import { ReactComponent as AdminSvg } from "./images/admin.svg";
-import { ReactComponent as CartSvg } from "./images/cart.svg";
-import { ReactComponent as LogoSvg } from "../../images/logo.svg";
-import { ReactComponent as FoodOnCouponSvg } from "../../images/foodOnCoupon.svg";
-import { ReactComponent as StackedTitleSvg } from "../../images/stackedTitle.svg";
-import "./style.css";
+import React from "react"
+import { Link } from "react-router-dom"
+import {
+  enable as enableDarkMode,
+  disable as disableDarkMode,
+} from "darkreader"
+import Icon, { GlobalOutlined } from "@ant-design/icons"
+import { Layout, Menu } from "antd"
+import { useTranslation } from "react-i18next"
+import i18next from "i18next"
+import { ReactComponent as AdminSvg } from "./images/admin.svg"
+import { ReactComponent as CartSvg } from "./images/cart.svg"
+import { ReactComponent as LogoSvg } from "../../images/logo.svg"
+import { ReactComponent as FoodOnCouponSvg } from "../../images/foodOnCoupon.svg"
+import { ReactComponent as StackedTitleSvg } from "../../images/stackedTitle.svg"
+import "./style.css"
 
-const { Header } = Layout;
-const { SubMenu } = Menu;
+const { Header } = Layout
+const { SubMenu } = Menu
 
 const NavBar = ({ isTesting }) => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return (
     <>
@@ -47,7 +51,7 @@ const NavBar = ({ isTesting }) => {
           <SubMenu key="sub1" icon={<GlobalOutlined />}>
             <Menu.Item
               onClick={() => {
-                i18next.changeLanguage("tr");
+                i18next.changeLanguage("tr")
               }}
               key="4"
             >
@@ -55,7 +59,7 @@ const NavBar = ({ isTesting }) => {
             </Menu.Item>
             <Menu.Item
               onClick={() => {
-                i18next.changeLanguage("en");
+                i18next.changeLanguage("en")
               }}
               key="5"
             >
@@ -63,7 +67,7 @@ const NavBar = ({ isTesting }) => {
             </Menu.Item>
             <Menu.Item
               onClick={() => {
-                i18next.changeLanguage("ar");
+                i18next.changeLanguage("ar")
               }}
               key="6"
             >
@@ -83,7 +87,7 @@ const NavBar = ({ isTesting }) => {
         </Menu>
       </Header>
     </>
-  );
-};
+  )
+}
 
-export default NavBar;
+export default NavBar
