@@ -4,16 +4,25 @@ exports[`CreateCoupons renders correctly 1`] = `
 <div
   className="coupons"
 >
-  <h3
-    className="ant-typography ant-typography-primary createCouponsTitle"
-    style={
-      Object {
-        "WebkitLineClamp": null,
-      }
-    }
+  <div
+    className="ant-divider ant-divider-horizontal ant-divider-with-text ant-divider-with-text-center createCouponsTitle"
+    role="separator"
   >
-    createCoupons.title
-  </h3>
+    <span
+      className="ant-divider-inner-text"
+    >
+      <h3
+        className="ant-typography ant-typography-primary"
+        style={
+          Object {
+            "WebkitLineClamp": null,
+          }
+        }
+      >
+        createCoupons.title
+      </h3>
+    </span>
+  </div>
   <div
     className="ant-row"
     style={
