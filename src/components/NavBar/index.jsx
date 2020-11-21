@@ -80,6 +80,12 @@ const NavBar = ({ isTesting }) => {
               <Icon style={{ transform: "scale(2)" }} component={AdminSvg} />
             </Link>
           </Menu.Item>
+          <Menu.Item key="9" className="navbarLogin">
+            <Link to="/register">Sign-In/Sign-Up</Link>
+          </Menu.Item>
+          <Menu.Item key="10" className="navbarLogout">
+            <Link to="/home">LogOut</Link>
+          </Menu.Item>
         </Menu>
       </Header>
     </>

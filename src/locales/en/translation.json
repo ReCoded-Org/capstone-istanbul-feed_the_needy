@@ -80,6 +80,37 @@
       "title6": "The restaurant delete the used coupon in the website"
     }
   },
+  "login": {
+    "loginTitle": {
+      "loginTitle0": "Login",
+      "loginTitle1": "Email",
+      "loginTitle2": "Password",
+      "loginTitle3": "Remember Me",
+      "logintTitle4": "Forgot Your Password?",
+      "loginSuccessMessage": "You succesfully logged in.",
+      "loginErrorMessage": "Check your email and password"
+    }
+  },
+  "register": {
+    "registerTitle": {
+      "registerTitle0": "Register",
+      "registerTitle1": "Email",
+      "registerTitle2": "Password",
+      "registerTitle3": "I Accept Terms and Conditions",
+      "registerTitle4": "Name of Organization",
+      "registerSuccessMessage": "You succesfully sign up ",
+      "registerErrorMessage": "Please register with another email address."
+    }
+  },
+  "forgotEmail": {
+    "forgotEmailtitle": {
+      "forgotEmailTitle0": "Reset Your Password",
+      "forgotEmailTitle1": "Email",
+      "forgotEmailSuccess": "Please check your email",
+      "forgotEmailError": "Please re-type your email.",
+      "forgotEmailError2": "Please type your email."
+    }
+  },
   "activeCoupons": {
     "title": "Active Coupons",
     "button": "Mark One Used",

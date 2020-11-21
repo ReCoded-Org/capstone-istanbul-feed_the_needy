@@ -1,0 +1,239 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login renders correctly 1`] = `
+<div
+  className="formInputSection"
+  labelCol={
+    Object {
+      "span": 4,
+    }
+  }
+  wrapperCol={
+    Object {
+      "offset": 8,
+      "span": 16,
+    }
+  }
+>
+  <form
+    className="ant-form ant-form-horizontal"
+    onSubmit={[Function]}
+  >
+    <div
+      className="ant-row ant-form-item"
+      style={Object {}}
+    >
+      <div
+        className="ant-col ant-form-item-control"
+        style={Object {}}
+      >
+        <div
+          className="ant-form-item-control-input"
+        >
+          <div
+            className="ant-form-item-control-input-content"
+          >
+            <input
+              action="click"
+              className="ant-input ant-input"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              placeholder="register.registerTitle.registerTitle4"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-row ant-form-item"
+      onChange={[Function]}
+      style={Object {}}
+      value=""
+    >
+      <div
+        className="ant-col ant-form-item-control"
+        style={Object {}}
+      >
+        <div
+          className="ant-form-item-control-input"
+        >
+          <div
+            className="ant-form-item-control-input-content"
+          >
+            <span
+              className="ant-input-affix-wrapper ant-input"
+              onMouseUp={[Function]}
+            >
+              <span
+                className="ant-input-prefix"
+              >
+                <span
+                  aria-label="mail"
+                  className="anticon anticon-mail"
+                  role="img"
+                >
+                  <svg
+                    aria-hidden="true"
+                    className=""
+                    data-icon="mail"
+                    fill="currentColor"
+                    focusable="false"
+                    height="1em"
+                    viewBox="64 64 896 896"
+                    width="1em"
+                  >
+                    <path
+                      d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-40 110.8V792H136V270.8l-27.6-21.5 39.3-50.5 42.8 33.3h643.1l42.8-33.3 39.3 50.5-27.7 21.5zM833.6 232L512 482 190.4 232l-42.8-33.3-39.3 50.5 27.6 21.5 341.6 265.6a55.99 55.99 0 0068.7 0L888 270.8l27.6-21.5-39.3-50.5-42.7 33.2z"
+                    />
+                  </svg>
+                </span>
+              </span>
+              <input
+                action="click"
+                className="ant-input"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="register.registerTitle.registerTitle1"
+                style={null}
+                type="email"
+                value=""
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-row ant-form-item"
+      onChange={[Function]}
+      style={Object {}}
+      value=""
+    >
+      <div
+        className="ant-col ant-form-item-control"
+        style={Object {}}
+      >
+        <div
+          className="ant-form-item-control-input"
+        >
+          <div
+            className="ant-form-item-control-input-content"
+          >
+            <input
+              action="click"
+              className="ant-input ant-input"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              placeholder="register.registerTitle.registerTitle2"
+              type="password"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-row ant-form-item"
+      onChange={[Function]}
+      style={Object {}}
+      value=""
+    >
+      <div
+        className="ant-col ant-form-item-control"
+        style={Object {}}
+      >
+        <div
+          className="ant-form-item-control-input"
+        >
+          <div
+            className="ant-form-item-control-input-content"
+          >
+            <input
+              action="click"
+              className="ant-input ant-input"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              placeholder="register.registerTitle.registerTitle2"
+              type="password"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-row ant-form-item"
+      style={Object {}}
+    >
+      <div
+        className="ant-col ant-form-item-control"
+        style={Object {}}
+      >
+        <div
+          className="ant-form-item-control-input"
+        >
+          <div
+            className="ant-form-item-control-input-content"
+          >
+            <label
+              className="ant-checkbox-wrapper"
+            >
+              <span
+                className="ant-checkbox"
+                style={Object {}}
+              >
+                <input
+                  checked={false}
+                  className="ant-checkbox-input"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  required={true}
+                  type="checkbox"
+                />
+                <span
+                  className="ant-checkbox-inner"
+                />
+              </span>
+              <span>
+                register.registerTitle.registerTitle3
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ant-row ant-form-item"
+      style={Object {}}
+    >
+      <div
+        className="ant-col ant-form-item-control"
+        style={Object {}}
+      >
+        <div
+          className="ant-form-item-control-input"
+        >
+          <div
+            className="ant-form-item-control-input-content"
+          >
+            <button>
+              Donate
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+`;

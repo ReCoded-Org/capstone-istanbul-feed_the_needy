@@ -191,6 +191,36 @@ exports[`Navbar renders correctly 1`] = `
         </span>
       </a>
     </li>
+    <li
+      className="ant-menu-item ant-menu-item-only-child navbarLogin"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      role="menuitem"
+      style={Object {}}
+    >
+      <a
+        href="/register"
+        onClick={[Function]}
+      >
+        Sign-In/Sign-Up
+      </a>
+    </li>
+    <li
+      className="ant-menu-item ant-menu-item-only-child navbarLogout"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      role="menuitem"
+      style={Object {}}
+    >
+      <a
+        href="/home"
+        onClick={[Function]}
+      >
+        LogOut
+      </a>
+    </li>
   </ul>
 </header>
 `;

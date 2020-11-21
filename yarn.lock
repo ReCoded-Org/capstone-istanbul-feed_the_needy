@@ -10337,6 +10337,14 @@ react-error-overlay@^6.0.7:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.8.tgz#474ed11d04fc6bda3af643447d85e9127ed6b5de"
   integrity sha512-HvPuUQnLp5H7TouGq3kzBeioJmXms1wHy9EGjz2OURWBp4qZO6AfGEcnxts1D/CbwPLRAgTMPCEgYhA3sEM4vw==
 
+react-firebase@^2.2.8:
+  version "2.2.8"
+  resolved "https://registry.yarnpkg.com/react-firebase/-/react-firebase-2.2.8.tgz#415a45c3d59c9b75dc25c09ebb98bea09e47c5f7"
+  integrity sha512-OHvGL8Jvy1/k8o95XqGostBnz142t0nQhNMnRY6YThkeCXnquVIqlHJr1t6EIEu1fpaV++InV/j2s6E7oVkNPw==
+  dependencies:
+    prop-types "^15.5.8"
+    shallowequal "^1.0.2"
+
 react-firebaseui@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/react-firebaseui/-/react-firebaseui-4.1.0.tgz#fbd8381432b53b58ce56ee86df81e2a6e40af7b6"
