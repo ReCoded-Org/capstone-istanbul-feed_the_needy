@@ -84,12 +84,24 @@ const NavBar = ({ isTesting }) => {
               <Icon style={{ transform: "scale(2)" }} component={AdminSvg} />
             </Link>
           </Menu.Item>
-          <Menu.Item key="9" className="navbarAdmin" onClick={enableDarkMode}>
+          <Menu.Item
+            key="9"
+            className="navbarAdmin"
+            onClick={() => {
+              enableDarkMode()
+            }}
+          >
             <span role="img" aria-label="dayTheme">
               🌙
             </span>
           </Menu.Item>
-          <Menu.Item key="10" className="navbarAdmin" onClick={disableDarkMode}>
+          <Menu.Item
+            key="10"
+            className="navbarAdmin"
+            onClick={() => {
+              disableDarkMode()
+            }}
+          >
             <span role="img" aria-label="nightTheme">
               ☀️
             </span>

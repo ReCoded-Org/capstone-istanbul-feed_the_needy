@@ -1,13 +1,13 @@
-import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
-import renderer from "react-test-renderer";
-import NavBar from "./index";
+import React from "react"
+import { BrowserRouter as Router } from "react-router-dom"
+import renderer from "react-test-renderer"
+import NavBar from "./index"
 
 jest.mock("react-i18next", () => ({
   useTranslation: () => ({ t: (key) => key }),
-}));
+}))
 
-const isTesting = true;
+const isTesting = true
 
 it("Navbar renders correctly", () => {
   const tree = renderer
@@ -16,6 +16,6 @@ it("Navbar renders correctly", () => {
         <NavBar isTesting={isTesting} />
       </Router>
     )
-    .toJSON();
-  expect(tree).toMatchSnapshot();
-});
+    .toJSON()
+  expect(tree).toMatchSnapshot()
+})
