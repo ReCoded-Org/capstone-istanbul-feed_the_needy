@@ -24,8 +24,9 @@
   background-color: #e17007;
   color: white;
 }
-.coupons {
-  padding-top: 1rem;
+
+.createCoupons {
+  padding: 1rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
