@@ -89,12 +89,12 @@ const NavBar = ({ isTesting }) => {
               {t("navbar.languages.lang2")}
             </Menu.Item>
           </SubMenu>
-          {/* <Menu.Item key="7" className="navbarCart">
+          <Menu.Item key="7" className="navbarCart">
             <Link to="/cart">
               <Icon style={{ transform: "scale(2)" }} component={CartSvg} />
             </Link>
           </Menu.Item>
-          <Menu.Item
+          {/* <Menu.Item
             key="9"
             className="navbarAdmin"
             onClick={() => {
