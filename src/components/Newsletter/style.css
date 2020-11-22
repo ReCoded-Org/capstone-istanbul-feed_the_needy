@@ -1,0 +1,38 @@
+.newsletterContent {
+  height: auto;
+  width: 60em;
+}
+
+Button {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin: 3em;
+  color: white;
+  background-color: #e17007;
+  padding: auto;
+}
+
+.popover {
+  border: none;
+  font-size: large;
+  height: auto;
+  margin-bottom: 2em;
+  background-color: #e17007;
+  color: white;
+}
+
+.popoverImage {
+  width: 20em;
+  height: 20em;
+}
+
+@media (max-width: 1000px) {
+  .hidden-mobile {
+    display: none;
+  }
+  .newsletterContent {
+    height: auto;
+    width: 10em;
+  }
+}

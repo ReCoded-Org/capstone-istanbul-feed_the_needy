@@ -7,11 +7,13 @@ import OurSponsors from "../../components/OurSponsors";
 import Team from "../../components/Team";
 import WorkingTogether from "../../components/WorkingTogether";
 import YouCanHelp from "../../components/YouCanHelp";
+import Newsletter from "../../components/Newsletter";
 
 const HomePage = () => {
   return (
     <div>
       <YouCanHelp />
+      <Newsletter />
       <DonationProcess />
       <OurGoals />
       <WorkingTogether />
