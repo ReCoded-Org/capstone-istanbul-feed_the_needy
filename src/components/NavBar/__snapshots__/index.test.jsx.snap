@@ -166,7 +166,7 @@ exports[`Navbar renders correctly 1`] = `
       style={Object {}}
     >
       <a
-        href="/admin"
+        href="/register"
         onClick={[Function]}
       >
         <span

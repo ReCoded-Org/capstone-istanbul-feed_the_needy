@@ -1,0 +1,38 @@
+.formInputSection {
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.inputSec {
+  width: 30em;
+}
+
+.ant-input {
+  width: 40em;
+  display: flex;
+}
+
+.loginButton {
+  width: 40em;
+}
+
+@media only screen and (max-width: 943px) {
+  Form {
+    width: 10em;
+    float: none;
+    margin: 0px;
+  }
+  .ant-input,
+  .loginButton {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 943px) {
+  Input {
+    width: 5em;
+    margin: 0;
+    padding: 0;
+  }
+}

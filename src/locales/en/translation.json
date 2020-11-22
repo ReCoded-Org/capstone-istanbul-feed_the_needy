@@ -8,7 +8,8 @@
     "headers": {
       "header0": "Home",
       "header1": "Coupons",
-      "header2": "Blog"
+      "header2": "Blog",
+      "header3": "Log-Out"
     },
     "languages": {
       "lang0": "Turkish",
@@ -80,6 +81,37 @@
       "title6": "The restaurant delete the used coupon in the website"
     }
   },
+  "login": {
+    "loginTitle": {
+      "loginTitle0": "Login",
+      "loginTitle1": "Email",
+      "loginTitle2": "Password",
+      "loginTitle3": "Remember Me",
+      "logintTitle4": "Forgot Your Password?",
+      "loginSuccessMessage": "You succesfully logged in.",
+      "loginErrorMessage": "Check your email and password"
+    }
+  },
+  "register": {
+    "registerTitle": {
+      "registerTitle0": "Register",
+      "registerTitle1": "Email",
+      "registerTitle2": "Password",
+      "registerTitle3": "I Accept Terms and Conditions",
+      "registerTitle4": "Name of Organization",
+      "registerSuccessMessage": "You succesfully sign up ",
+      "registerErrorMessage": "Please register with another email address."
+    }
+  },
+  "forgotEmail": {
+    "forgotEmailtitle": {
+      "forgotEmailTitle0": "Reset Your Password",
+      "forgotEmailTitle1": "Email",
+      "forgotEmailSuccess": "Please check your email",
+      "forgotEmailError": "Please re-type your email.",
+      "forgotEmailError2": "Please type your email."
+    }
+  },
   "activeCoupons": {
     "title": "Active Coupons",
     "button": "Mark One Used",
@@ -119,7 +151,8 @@
       "amount": "Selected amount"
     },
     "header": "Your donation can help people!",
-    "restaurants": "Restaurants"
+    "restaurants": "Restaurants",
+    "link": "Click to see coupon details!"
   },
   "createCoupons": {
     "title": "Choose Your Coupons",
@@ -154,6 +187,11 @@
       "link": "Go to restaurant's website"
     }
   },
+  "singleCouponModal": {
+    "title": "Selected Coupon",
+    "alt": "Restaurant's logo",
+    "OK": "OK"
+  },
   "usedCoupons": {
     "title": "Used Coupons",
     "placeholder": "Search",
@@ -183,5 +221,9 @@
       "goToCheckout": "Go to Checkout"
     }
   },
-  "spin": "Loading..."
+  "spin": "Loading...",
+  "newsletter": {
+    "title0": "We need you to stop the hunger!",
+    "button0": "Subscribe to Newsletter"
+  }
 }

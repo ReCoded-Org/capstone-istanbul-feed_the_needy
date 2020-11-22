@@ -1,0 +1,14 @@
+.ant-card-meta-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: -webkit-xxx-large;
+}
+
+.singleCouponContent {
+  padding-top: inherit;
+  text-align: center;
+}
+
+.ant-btn.ant-btn-primary {
+  background-color: #e17007;
+}

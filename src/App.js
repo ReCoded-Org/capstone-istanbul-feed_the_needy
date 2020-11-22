@@ -8,6 +8,8 @@ import i18n from "./i18n";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import HomePage from "./containers/HomePage";
+import Authentication from "./containers/Authentication";
+import Forgot from "./components/Forgot/index.jsx";
 import Cart from "./containers/Cart";
 import CouponsPage from "./containers/CouponsPage";
 import AdminDashboard from "./containers/AdminDashboard";
@@ -27,6 +29,8 @@ function App() {
               <Route path="/blog" component="#" />
               <Route path="/cart" component={Cart} />
               <Route path="/admin" component={AdminDashboard} />
+              <Route path="/register" component={Authentication} />
+              <Route path="/forgot" component={Forgot} />
             </div>
           </Content>
           <Footer />

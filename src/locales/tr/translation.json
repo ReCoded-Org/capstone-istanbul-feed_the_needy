@@ -24,5 +24,36 @@
       "textSection1": "İlgilendiğiniz nedenlere bağış yapmak yalnızca hayır kurumlarına fayda sağlamakla kalmaz, aynı zamanda sizin için de son derece ödüllendirici olabilir. Milyonlarca insan inandıkları nedenleri ve bunun kendi yaşamları üzerindeki olumlu etkisini desteklemek için düzenli olarak hayır kurumlarına bağış yapıyor ..",
       "button": "Bağış Yap"
     }
+  },
+  "login": {
+    "loginTitle": {
+      "loginTitle0": "Giriş Yap",
+      "loginTitle1": "Email",
+      "loginTitle2": "Şifre",
+      "loginTitle3": "Beni Hatırla",
+      "logintTitle4": "Şifrenizi mi unuttunuz?",
+      "loginSuccessMessage": "Giriş yaptınız.",
+      "loginErrorMessage": "Giriş Hatalı, Tekrar Deneyiniz"
+    }
+  },
+  "register": {
+    "registerTitle": {
+      "registerTitle0": "Kayıt Ol",
+      "registerTitle1": "Email",
+      "registerTitle2": "Şifre",
+      "registerTitle3": "Üyelik şartlarını kabul ediyorum",
+      "registerTitle4": "Restoran Adı",
+      "registerSuccessMessage": "Başarıyla kayıt oldunuz ",
+      "registerErrorMessage": "Kayıt bilgilerini kontrol ediniz. "
+    }
+  },
+  "forgotEmail": {
+    "forgotEmailtitle": {
+      "forgotEmailTitle0": "Reset Your Password",
+      "forgotEmailTitle1": "Email",
+      "forgotEmailSuccess": "Lütfen Emailinizi Kontrol ediniz.",
+      "forgotEmailError": "Lütfen emailinizi kontrol ediniz..",
+      "forgotEmailError2": "lütfen email adresinizi giriniz.."
+    }
   }
 }

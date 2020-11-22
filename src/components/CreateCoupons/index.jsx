@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
-import { Typography, Button, Row, Col, Avatar, message } from "antd";
+import { Typography, Button, Row, Col, Avatar, message, Divider } from "antd";
 import { InfoCircleOutlined } from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
 import firebase from "../../firebaseConfig";
@@ -112,9 +112,11 @@ const CreateCoupons = ({ isTesting }) => {
 
   return (
     <div className="coupons">
-      <Title className="createCouponsTitle" level={3} type="primary">
-        {t("createCoupons.title")}
-      </Title>
+      <Divider className="createCouponsTitle">
+        <Title level={3} type="primary">
+          {t("createCoupons.title")}
+        </Title>
+      </Divider>
       <Row gutter={[16, 16]}>
         {firstRowList.map((row) => (
           <Col key={row.text} span={8}>

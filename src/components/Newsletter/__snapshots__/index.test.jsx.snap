@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Newsletter renders correctly 1`] = `
+<div
+  align="center"
+  justify="center"
+>
+  <button
+    className="myButton subscribeNewsletterButton popover"
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    type="button"
+  >
+    newsletter.button0
+  </button>
+</div>
+`;

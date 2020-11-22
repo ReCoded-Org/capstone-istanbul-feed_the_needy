@@ -1,0 +1,28 @@
+.registerButton:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+.registerButton {
+  width: 20em;
+  height: 3em;
+}
+
+.authButton {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 943px) {
+  .ant-input,
+  .loginButton {
+    width: 10em;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  /*mobile*/
+  .authButton {
+    margin-left: 2em;
+  }
+}
