@@ -1,9 +1,9 @@
 import React from "react"
 import { Link } from "react-router-dom"
-/* import {
+import {
   enable as enableDarkMode,
   disable as disableDarkMode,
-} from "darkreader" */
+} from "darkreader"
 import Icon, { GlobalOutlined } from "@ant-design/icons"
 import { Layout, Menu } from "antd"
 import { useTranslation } from "react-i18next"
