@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Icon, { GlobalOutlined } from "@ant-design/icons";
 import { Layout, Menu } from "antd";
@@ -10,12 +10,27 @@ import { ReactComponent as LogoSvg } from "../../images/logo.svg";
 import { ReactComponent as FoodOnCouponSvg } from "../../images/foodOnCoupon.svg";
 import { ReactComponent as StackedTitleSvg } from "../../images/stackedTitle.svg";
 import "./style.css";
+import firebase from "../../firebaseConfig";
 
 const { Header } = Layout;
 const { SubMenu } = Menu;
+const auth = firebase.auth();
 
 const NavBar = ({ isTesting }) => {
   const { t } = useTranslation();
+  const [userExist, setUserExist] = useState(false);
+
+  const authListener = () => {
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        setUserExist(true);
+      }
+    });
+  };
+
+  useEffect(() => {
+    authListener();
+  }, []);
 
   return (
     <>
@@ -75,17 +90,27 @@ const NavBar = ({ isTesting }) => {
               <Icon style={{ transform: "scale(2)" }} component={CartSvg} />
             </Link>
           </Menu.Item>
-          <Menu.Item key="8" className="navbarAdmin">
-            <Link to="/admin">
-              <Icon style={{ transform: "scale(2)" }} component={AdminSvg} />
-            </Link>
-          </Menu.Item>
-          <Menu.Item key="9" className="navbarLogin">
-            <Link to="/register">Sign-In/Sign-Up</Link>
-          </Menu.Item>
-          <Menu.Item key="10" className="navbarLogout">
-            <Link to="/home">LogOut</Link>
-          </Menu.Item>
+          {userExist ? (
+            <>
+              <Menu.Item key="8" className="navbarAdmin">
+                <Link to="/admin">
+                  <Icon
+                    style={{ transform: "scale(2)" }}
+                    component={AdminSvg}
+                  />
+                </Link>
+              </Menu.Item>
+              <Menu.Item key="9" className="navbarLogout">
+                <Link to="/">{t("navbar.headers.header3")}</Link>
+              </Menu.Item>
+            </>
+          ) : (
+            <Menu.Item key="8" className="navbarAdmin">
+              <Link to="/register">
+                <Icon style={{ transform: "scale(2)" }} component={AdminSvg} />
+              </Link>
+            </Menu.Item>
+          )}
         </Menu>
       </Header>
     </>

@@ -8,7 +8,8 @@
     "headers": {
       "header0": "Home",
       "header1": "Coupons",
-      "header2": "Blog"
+      "header2": "Blog",
+      "header3": "Log-Out"
     },
     "languages": {
       "lang0": "Turkish",
