@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-/* import {
+import {
   enable as enableDarkMode,
   disable as disableDarkMode,
-} from "darkreader" */
+} from "darkreader"
 import Icon, { GlobalOutlined } from "@ant-design/icons"
 import { Layout, Menu } from "antd"
 import { useTranslation } from "react-i18next"
@@ -94,12 +94,7 @@ const NavBar = ({ isTesting }) => {
               <Icon style={{ transform: "scale(2)" }} component={CartSvg} />
             </Link>
           </Menu.Item>
-          <Menu.Item key="8" className="navbarAdmin">
-            <Link to="/admin">
-              <Icon style={{ transform: "scale(2)" }} component={AdminSvg} />
-            </Link>
-          </Menu.Item>
-          {/* <Menu.Item
+          <Menu.Item
             key="9"
             className="navbarAdmin"
             onClick={() => {
@@ -120,10 +115,10 @@ const NavBar = ({ isTesting }) => {
             <span role="img" aria-label="nightTheme">
               ☀️
             </span>
-          </Menu.Item> */}
+          </Menu.Item>
           {userExist ? (
             <>
-              <Menu.Item key="11" className="navbarAdmin">
+              <Menu.Item key="8" className="navbarAdmin">
                 <Link to="/admin">
                   <Icon
                     style={{ transform: "scale(2)" }}
@@ -136,7 +131,7 @@ const NavBar = ({ isTesting }) => {
               </Menu.Item>
             </>
           ) : (
-            <Menu.Item key="13" className="navbarAdmin">
+            <Menu.Item key="11" className="navbarAdmin">
               <Link to="/register">
                 <Icon style={{ transform: "scale(2)" }} component={AdminSvg} />
               </Link>
