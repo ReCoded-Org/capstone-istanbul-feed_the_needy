@@ -1,5 +1,16 @@
-.ourSponsorsTitle {
-  padding-bottom: 2em;
+.ourSponsorsWrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.ourSponsorLogos {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  text-align: center;
 }
 
 .burgerKing {
@@ -7,7 +18,7 @@
   height: 10em;
 }
 
-.tesco {
-  width: 25em;
-  height: 10em;
+.arby {
+  width: auto;
+  height: 11em;
 }

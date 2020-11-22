@@ -1,15 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Our Sponsors renders correctly 1`] = `
-<div>
+<div
+  className="ant-row ourSponsorsWrapper"
+  style={Object {}}
+>
   <div
-    className="ant-row ourSponsorsTitle"
-    style={
-      Object {
-        "marginLeft": -8,
-        "marginRight": -8,
-      }
-    }
+    className="ant-col ant-col-24 ourSponsorsWrapper"
+    style={Object {}}
   >
     <h1
       className="ant-typography"
@@ -23,11 +21,13 @@ exports[`Our Sponsors renders correctly 1`] = `
     </h1>
   </div>
   <div
-    className="ant-row ant-row-space-around"
+    className="ant-row ourSponsorLogos"
     style={
       Object {
-        "marginLeft": -8,
-        "marginRight": -8,
+        "marginBottom": 4,
+        "marginLeft": -24,
+        "marginRight": -24,
+        "marginTop": -4,
       }
     }
   >
@@ -35,8 +35,10 @@ exports[`Our Sponsors renders correctly 1`] = `
       className="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-12 ant-col-xl-6"
       style={
         Object {
-          "paddingLeft": 8,
-          "paddingRight": 8,
+          "paddingBottom": 4,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 4,
         }
       }
     >
@@ -50,8 +52,10 @@ exports[`Our Sponsors renders correctly 1`] = `
       className="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-12 ant-col-xl-6"
       style={
         Object {
-          "paddingLeft": 8,
-          "paddingRight": 8,
+          "paddingBottom": 4,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 4,
         }
       }
     >
@@ -63,23 +67,27 @@ exports[`Our Sponsors renders correctly 1`] = `
       className="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-12 ant-col-xl-6"
       style={
         Object {
-          "paddingLeft": 8,
-          "paddingRight": 8,
+          "paddingBottom": 4,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 4,
         }
       }
     >
       <svg
-        className="tesco"
+        className="arby"
       >
-        Tesco.svg
+        Arby.svg
       </svg>
     </div>
     <div
       className="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-12 ant-col-xl-6"
       style={
         Object {
-          "paddingLeft": 8,
-          "paddingRight": 8,
+          "paddingBottom": 4,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 4,
         }
       }
     >

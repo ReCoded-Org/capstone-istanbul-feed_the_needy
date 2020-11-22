@@ -1,0 +1,8 @@
+.logoutButton {
+  background-color: unset;
+  border: unset;
+}
+
+.logoutButton:hover {
+  cursor: pointer;
+}
