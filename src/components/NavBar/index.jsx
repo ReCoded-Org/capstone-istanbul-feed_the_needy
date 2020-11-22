@@ -9,6 +9,7 @@ import { ReactComponent as CartSvg } from "./images/cart.svg";
 import { ReactComponent as LogoSvg } from "../../images/logo.svg";
 import { ReactComponent as FoodOnCouponSvg } from "../../images/foodOnCoupon.svg";
 import { ReactComponent as StackedTitleSvg } from "../../images/stackedTitle.svg";
+import Signout from "../Signout";
 import "./style.css";
 import firebase from "../../firebaseConfig";
 
@@ -101,7 +102,7 @@ const NavBar = ({ isTesting }) => {
                 </Link>
               </Menu.Item>
               <Menu.Item key="9" className="navbarLogout">
-                <Link to="/">{t("navbar.headers.header3")}</Link>
+                <Signout setUserExist={setUserExist} />
               </Menu.Item>
             </>
           ) : (
