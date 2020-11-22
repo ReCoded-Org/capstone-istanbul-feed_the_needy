@@ -1,40 +1,40 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
 import {
   enable as enableDarkMode,
   disable as disableDarkMode,
-} from "darkreader";
-import Icon, { GlobalOutlined } from "@ant-design/icons";
-import { Layout, Menu } from "antd";
-import { useTranslation } from "react-i18next";
-import i18next from "i18next";
-import { ReactComponent as AdminSvg } from "./images/admin.svg";
-import { ReactComponent as CartSvg } from "./images/cart.svg";
-import { ReactComponent as LogoSvg } from "../../images/logo.svg";
-import { ReactComponent as FoodOnCouponSvg } from "../../images/foodOnCoupon.svg";
-import { ReactComponent as StackedTitleSvg } from "../../images/stackedTitle.svg";
-import "./style.css";
-import firebase from "../../firebaseConfig";
+} from "darkreader"
+import Icon, { GlobalOutlined } from "@ant-design/icons"
+import { Layout, Menu } from "antd"
+import { useTranslation } from "react-i18next"
+import i18next from "i18next"
+import { ReactComponent as AdminSvg } from "./images/admin.svg"
+import { ReactComponent as CartSvg } from "./images/cart.svg"
+import { ReactComponent as LogoSvg } from "../../images/logo.svg"
+import { ReactComponent as FoodOnCouponSvg } from "../../images/foodOnCoupon.svg"
+import { ReactComponent as StackedTitleSvg } from "../../images/stackedTitle.svg"
+import "./style.css"
+import firebase from "../../firebaseConfig"
 
-const { Header } = Layout;
-const { SubMenu } = Menu;
-const auth = firebase.auth();
+const { Header } = Layout
+const { SubMenu } = Menu
+const auth = firebase.auth()
 
 const NavBar = ({ isTesting }) => {
-  const { t } = useTranslation();
-  const [userExist, setUserExist] = useState(false);
+  const { t } = useTranslation()
+  const [userExist, setUserExist] = useState(false)
 
   const authListener = () => {
     auth.onAuthStateChanged((user) => {
       if (user) {
-        setUserExist(true);
+        setUserExist(true)
       }
-    });
-  };
+    })
+  }
 
   useEffect(() => {
-    authListener();
-  }, []);
+    authListener()
+  }, [])
 
   return (
     <>
@@ -66,7 +66,7 @@ const NavBar = ({ isTesting }) => {
           <SubMenu key="sub1" icon={<GlobalOutlined />}>
             <Menu.Item
               onClick={() => {
-                i18next.changeLanguage("tr");
+                i18next.changeLanguage("tr")
               }}
               key="4"
             >
@@ -74,7 +74,7 @@ const NavBar = ({ isTesting }) => {
             </Menu.Item>
             <Menu.Item
               onClick={() => {
-                i18next.changeLanguage("en");
+                i18next.changeLanguage("en")
               }}
               key="5"
             >
@@ -82,7 +82,7 @@ const NavBar = ({ isTesting }) => {
             </Menu.Item>
             <Menu.Item
               onClick={() => {
-                i18next.changeLanguage("ar");
+                i18next.changeLanguage("ar")
               }}
               key="6"
             >
@@ -103,7 +103,7 @@ const NavBar = ({ isTesting }) => {
             key="9"
             className="navbarAdmin"
             onClick={() => {
-              enableDarkMode();
+              enableDarkMode()
             }}
           >
             <span role="img" aria-label="dayTheme">
@@ -114,7 +114,7 @@ const NavBar = ({ isTesting }) => {
             key="10"
             className="navbarAdmin"
             onClick={() => {
-              disableDarkMode();
+              disableDarkMode()
             }}
           >
             <span role="img" aria-label="nightTheme">
@@ -131,12 +131,12 @@ const NavBar = ({ isTesting }) => {
                   />
                 </Link>
               </Menu.Item>
-              <Menu.Item key="9" className="navbarLogout">
+              <Menu.Item key="12" className="navbarLogout">
                 <Link to="/">{t("navbar.headers.header3")}</Link>
               </Menu.Item>
             </>
           ) : (
-            <Menu.Item key="8" className="navbarAdmin">
+            <Menu.Item key="11" className="navbarAdmin">
               <Link to="/register">
                 <Icon style={{ transform: "scale(2)" }} component={AdminSvg} />
               </Link>
@@ -145,7 +145,7 @@ const NavBar = ({ isTesting }) => {
         </Menu>
       </Header>
     </>
-  );
-};
+  )
+}
 
-export default NavBar;
+export default NavBar
