@@ -111,7 +111,7 @@ const CreateCoupons = ({ isTesting }) => {
   const MAXSELECTABLECOUPON = 4;
 
   return (
-    <div className="coupons">
+    <div className="createCoupons">
       <Divider className="createCouponsTitle">
         <Title level={3} type="primary">
           {t("createCoupons.title")}
