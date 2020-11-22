@@ -199,36 +199,6 @@ exports[`Navbar renders correctly 1`] = `
       role="menuitem"
       style={Object {}}
     >
-      <span
-        aria-label="dayTheme"
-        role="img"
-      >
-        🌙
-      </span>
-    </li>
-    <li
-      className="ant-menu-item ant-menu-item-only-child navbarAdmin"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      role="menuitem"
-      style={Object {}}
-    >
-      <span
-        aria-label="nightTheme"
-        role="img"
-      >
-        ☀️
-      </span>
-    </li>
-    <li
-      className="ant-menu-item ant-menu-item-only-child navbarAdmin"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      role="menuitem"
-      style={Object {}}
-    >
       <a
         href="/register"
         onClick={[Function]}

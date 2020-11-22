@@ -99,7 +99,7 @@ const NavBar = ({ isTesting }) => {
               <Icon style={{ transform: "scale(2)" }} component={AdminSvg} />
             </Link>
           </Menu.Item>
-          <Menu.Item
+          {/* <Menu.Item
             key="9"
             className="navbarAdmin"
             onClick={() => {
@@ -120,7 +120,7 @@ const NavBar = ({ isTesting }) => {
             <span role="img" aria-label="nightTheme">
               ☀️
             </span>
-          </Menu.Item>
+          </Menu.Item> */}
           {userExist ? (
             <>
               <Menu.Item key="11" className="navbarAdmin">
