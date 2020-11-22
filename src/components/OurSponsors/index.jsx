@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import { Row, Col, Typography } from "antd";
 import { ReactComponent as BurgerKing } from "./BurgerKing.svg";
 import { ReactComponent as McDonalds } from "./McDonalds.svg";
-import { ReactComponent as Tesco } from "./Tesco.svg";
+import { ReactComponent as Arby } from "./Arby.svg";
 import { ReactComponent as PizzaHut } from "./PizzaHut.svg";
 
 const { Title } = Typography;
@@ -14,11 +14,11 @@ const OurSponsors = () => {
   const { t } = useTranslation();
 
   return (
-    <div>
-      <Row gutter={16} className="ourSponsorsTitle">
+    <Row className="ourSponsorsWrapper">
+      <Col span={24} className="ourSponsorsWrapper">
         <Title>{t("ourSponsorsComp.card.title0")}</Title>
-      </Row>
-      <Row gutter={16} justify="space-around">
+      </Col>
+      <Row gutter={[48, 8]} className="ourSponsorLogos">
         <Col xs={24} sm={24} md={12} xl={6}>
           <BurgerKing className="burgerKing" />
         </Col>
@@ -26,13 +26,13 @@ const OurSponsors = () => {
           <McDonalds />
         </Col>
         <Col xs={24} sm={24} md={12} xl={6}>
-          <Tesco className="tesco" />
+          <Arby className="arby" />
         </Col>
         <Col xs={24} sm={24} md={12} xl={6}>
           <PizzaHut />
         </Col>
       </Row>
-    </div>
+    </Row>
   );
 };
 
