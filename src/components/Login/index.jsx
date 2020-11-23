@@ -16,20 +16,23 @@ const Login = ({ isTesting }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const signin = (e) => {
-    e.preventDefault();
-    routeChangeAdmin();
-    firebase
-      .auth()
-      .signInWithEmailAndPassword(email, password)
-      .then(() => message.success(t("login.loginTitle.loginSuccessMessage")))
-      .catch(() => message.warning(t("login.loginTitle.loginErrorMessage")));
-  };
-
   let historyAdmin = useHistory();
   const routeChangeAdmin = () => {
     let path = "/admin";
     historyAdmin.push(path);
+  };
+
+  const signin = (e) => {
+    e.preventDefault();
+
+    firebase
+      .auth()
+      .signInWithEmailAndPassword(email, password)
+      .then(() => {
+        routeChangeAdmin();
+        message.success(t("login.loginTitle.loginSuccessMessage"));
+      })
+      .catch(() => message.warning(t("login.loginTitle.loginErrorMessage")));
   };
 
   let historyForgot = useHistory();
