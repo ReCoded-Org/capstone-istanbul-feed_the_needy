@@ -1,11 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Signout renders correctly 1`] = `
-<button
+<span
   className="logoutButton"
   onClick={[Function]}
   type="button"
 >
   navbar.headers.header3
-</button>
+</span>
 `;

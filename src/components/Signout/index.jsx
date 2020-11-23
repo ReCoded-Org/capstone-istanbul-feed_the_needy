@@ -28,13 +28,13 @@ const Signout = ({ setUserExist }) => {
 
   return (
     <>
-      <button
+      <span
         className="logoutButton"
         type="button"
         onClick={() => setModalVisible(true)}
       >
         {t("navbar.headers.header3")}
-      </button>
+      </span>
       <Modal
         title={t("navbar.headers.header3")}
         visible={modalVisible}
