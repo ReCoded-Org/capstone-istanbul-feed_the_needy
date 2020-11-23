@@ -45,7 +45,7 @@ exports[`EditOrganization renders correctly 1`] = `
     <div
       className="ant-spin-text"
     >
-      Loading...
+      spin
     </div>
   </div>
 </div>

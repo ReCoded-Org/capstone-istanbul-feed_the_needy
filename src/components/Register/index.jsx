@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { Form, Input, Button, Checkbox, message } from "antd";
 import { useHistory } from "react-router-dom";
 import firebase from "../../firebaseConfig";
@@ -16,33 +16,36 @@ const Register = ({ isTesting }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
-  const uid = useRef();
-
-  firebase.auth().onAuthStateChanged(function (user) {
-    if (user) {
-      uid.current = user.uid;
-    }
-  });
 
   const addOrganization = () => {
-    db.collection("restaurants").doc(uid.current).set({
-      name: name,
-      email: email,
-      uid: uid.current,
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        db.collection("restaurants").doc(user.uid).set({
+          name: name,
+          email: email,
+          uid: user.uid,
+          website: "",
+          description: "",
+          logo: "",
+          logoURL: "",
+          logoName: "",
+        });
+        setName("");
+      }
     });
-    setName("");
   };
 
   const handleClick = () => {
     firebase
       .auth()
       .createUserWithEmailAndPassword(email, password)
-      .then(() =>
-        message.success(t("register.registerTitle.registerSuccessMessage"))
-      )
-      .catch(() =>
-        message.warning(t("register.registerTitle.registerErrorMessage"))
-      );
+      .then(() => {
+        message.success(t("register.registerTitle.registerSuccessMessage"));
+      })
+      .catch((err) => {
+        console.log("err", err);
+        message.warning(err.message);
+      });
   };
 
   let history = useHistory();
@@ -53,8 +56,8 @@ const Register = ({ isTesting }) => {
   };
 
   const addDetails = (e) => {
-    addOrganization();
     handleClick();
+    addOrganization();
     routeChange();
   };
 

@@ -32,6 +32,11 @@
 
 .editOrgFlexChild:first-child {
   padding-right: 1rem;
+  width: 100%;
+}
+
+.editOrgFlexChild:first-child .ant-input.ant-input-lg {
+  width: 100%;
 }
 
 .editOrgFlexChild:last-child {

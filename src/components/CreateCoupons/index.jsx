@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./style.css";
 import { Typography, Button, Row, Col, Avatar, message, Divider } from "antd";
 import { InfoCircleOutlined } from "@ant-design/icons";
@@ -6,14 +6,15 @@ import { useTranslation } from "react-i18next";
 import firebase from "../../firebaseConfig";
 
 const db = firebase.firestore();
+const auth = firebase.auth();
 const timestamp = firebase.firestore.FieldValue.serverTimestamp;
 const { Title, Text } = Typography;
 
 const CreateCoupons = ({ isTesting }) => {
   const { t } = useTranslation();
   const [count, setCount] = useState(1);
+  const [restaurant, setRestaurant] = useState({});
   const [newCoupons, setNewCoupons] = useState({
-    compName: "",
     amounts: {
       25: false,
       50: false,
@@ -33,23 +34,36 @@ const CreateCoupons = ({ isTesting }) => {
     "200₺": true,
   });
 
+  const getRestaurantInfo = async (id) => {
+    const res = await db.collection("restaurants").doc(id).get();
+    const data = res.data();
+    setRestaurant(data);
+  };
+
+  useEffect(() => {
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        getRestaurantInfo(user.uid);
+      }
+    });
+  }, []);
+
   const postCoupons = () => {
-    // db.collection("restaurants").where("uid", "==", "") get the uid from the auth()
-    db.collection("coupons")
-      .add({
-        compName: newCoupons.compName,
-        amounts: { ...newCoupons.amounts },
-        createdAt: timestamp(),
-        img:
-          "https://image.freepik.com/free-photo/wooden-board-empty-table-top-blurred-background_1253-1584.jpg",
-      })
-      .then((docRef) =>
-        db.collection("coupons").doc(docRef.id).update({
-          id: docRef.id,
-        })
-      )
-      .then(() => message.success(t("createCoupons.message.success")))
-      .catch(() => message.warning(t("createCoupons.message.warning")));
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        db.collection("coupons")
+          .doc(user.uid)
+          .set({
+            compName: restaurant.name,
+            amounts: { ...newCoupons.amounts },
+            createdAt: timestamp(),
+            id: user.uid,
+            img: restaurant.logoURL,
+          })
+          .then(() => message.success(t("createCoupons.message.success")))
+          .catch(() => message.warning(t("createCoupons.message.warning")));
+      }
+    });
   };
 
   const selectCoupon = (e) => {
@@ -62,7 +76,6 @@ const CreateCoupons = ({ isTesting }) => {
 
     setNewCoupons({
       ...newCoupons,
-      compName: "Arby's",
       amounts: {
         ...newCoupons.amounts,
         [slicedKey]: !newCoupons.amounts[slicedKey],
