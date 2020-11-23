@@ -14,6 +14,7 @@ import { useTranslation } from "react-i18next";
 import firebase from "../../firebaseConfig";
 
 const db = firebase.firestore();
+const auth = firebase.auth();
 const { Title, Text } = Typography;
 const timestamp = firebase.firestore.FieldValue.serverTimestamp;
 
@@ -23,32 +24,26 @@ const ActiveCoupons = ({ isTesting }) => {
   const [loading, setLoading] = useState(true);
   const docID = useRef(null);
 
-  const getDocId = async () => {
-    // get the id of the doc to fetch later in snapshot
-    const res = await db
-      .collection("sampleSoldCoupons")
-      .where("compName", "==", "Arby's")
-      .get();
-    const data = res.docs.map((x) => x.id);
-    [docID.current] = data;
-  };
-
   useEffect(() => {
-    getDocId().then(() => {
-      const unsubscribe = db
-        .collection("sampleSoldCoupons") // this collection is a test, we don't have the real collection yet
-        .doc(docID.current)
-        .collection("coupons")
-        .where("isActive", "==", true)
-        .onSnapshot((snapshot) => {
-          const dataArr = [];
-          snapshot.forEach((doc) => {
-            dataArr.push({ ...doc.data(), docId: doc.id });
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        docID.current = user.uid;
+        const unsubscribe = db
+          .collection("sampleSoldCoupons")
+          .doc(user.uid)
+          .collection("coupons")
+          .where("isActive", "==", true)
+          .onSnapshot((snapshot) => {
+            const dataArr = [];
+            snapshot.forEach((doc) => {
+              dataArr.push({ ...doc.data(), docId: doc.id });
+            });
+            setSoldCoupons(dataArr);
+            setLoading(false);
           });
-          setSoldCoupons(dataArr);
-          setLoading(false);
-        });
-      return unsubscribe;
+        return unsubscribe;
+      }
+      return user;
     });
   }, []);
 
