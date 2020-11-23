@@ -60,6 +60,7 @@ const CheckoutDrawer = ({
               .add({
                 amount: `${coupon.amount}₺`,
                 isActive: true,
+                sellDate: todaysDate,
               });
           }
         })
