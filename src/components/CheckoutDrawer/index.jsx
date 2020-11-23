@@ -1,5 +1,5 @@
 import React from "react";
-import { Drawer, Form, Input, Button } from "antd";
+import { Drawer, Form, Input, Button, message } from "antd";
 import { CardElement } from "@stripe/react-stripe-js";
 import { useTranslation } from "react-i18next";
 import firebase from "../../firebaseConfig";
@@ -8,6 +8,8 @@ import "./style.css";
 const db = firebase.firestore();
 
 const CheckoutDrawer = ({
+  setCart,
+  setTotalAmount,
   drawerVisible,
   setDrawerVisible,
   cart,
@@ -41,6 +43,10 @@ const CheckoutDrawer = ({
         color: "#9e2146",
       },
     },
+  };
+
+  const success = () => {
+    message.success(t("checkoutDrawer.success"));
   };
 
   const handleSubmit = () => {
@@ -80,6 +86,11 @@ const CheckoutDrawer = ({
                   [`${coupon.amount}₺`]: sinlgePriceStatistics,
                 });
             });
+          setCart([]);
+          setTotalAmount(0);
+          onClose();
+          success();
+          localStorage.removeItem("cart");
         });
     });
   };

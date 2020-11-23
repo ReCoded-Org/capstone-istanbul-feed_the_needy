@@ -233,7 +233,8 @@
     "emailErr": "Please input your email!",
     "creditLabel": "Credit Details",
     "emailLabel": "Email",
-    "nameLabel": "Full Name"
+    "nameLabel": "Full Name",
+    "success": "Coupons were bought successfully! Thank you for your donation!"
   },
   "logout": {
     "text": "Do you want to log out?",

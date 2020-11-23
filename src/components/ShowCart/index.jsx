@@ -127,6 +127,8 @@ const ShowCart = ({ isTesting }) => {
         </Col>
       </Row>
       <CheckoutDrawer
+        setCart={setCart}
+        setTotalAmount={setTotalAmount}
         cart={cart}
         setDrawerVisible={setDrawerVisible}
         drawerVisible={drawerVisible}
