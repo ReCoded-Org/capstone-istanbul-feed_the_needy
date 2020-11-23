@@ -4,9 +4,11 @@ import { Button, Row, Col, Image } from "antd";
 import { useTranslation } from "react-i18next";
 import "antd/dist/antd.css";
 import "./index.css";
+import { useHistory } from "react-router-dom";
 
 const YouCanHelp = ({ isTesting }) => {
   const { t } = useTranslation();
+  const history = useHistory();
 
   return (
     <div className="containerYoucanhelp">
@@ -26,7 +28,10 @@ const YouCanHelp = ({ isTesting }) => {
               {isTesting ? (
                 <button>Donate</button>
               ) : (
-                <Button className="donateButton">
+                <Button
+                  onClick={() => history.push("/coupons")}
+                  className="donateButton"
+                >
                   {t("youcanhelp.headers.button")}
                 </Button>
               )}
