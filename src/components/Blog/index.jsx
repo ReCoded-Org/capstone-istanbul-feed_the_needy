@@ -5,11 +5,13 @@ import { useTranslation } from "react-i18next";
 import BlogPost2 from "./images/blogpost2.png";
 import BlogPost1 from "./images/blogpost1.png";
 import "./style.css";
+import { useHistory } from "react-router-dom";
 
 const { Title, Text, Paragraph } = Typography;
 
 const Blog = ({ isTesting }) => {
   const { t } = useTranslation();
+  const history = useHistory();
 
   return (
     <div className="blogSection">
@@ -29,6 +31,7 @@ const Blog = ({ isTesting }) => {
               ) : (
                 <Button
                   type="primary"
+                  onClick={() => history.push("/blog")}
                   style={{
                     backgroundColor: "#5a7282",
                     borderRadius: 0,
@@ -55,6 +58,7 @@ const Blog = ({ isTesting }) => {
             ) : (
               <Button
                 type="primary"
+                onClick={() => history.push("/blog")}
                 style={{
                   backgroundColor: "#5a7282",
                   borderRadius: 0,
