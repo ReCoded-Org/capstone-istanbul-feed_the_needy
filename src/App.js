@@ -9,6 +9,8 @@ import { loadStripe } from "@stripe/stripe-js";
 import i18n from "./i18n";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import BlogCards from "./containers/BlogCards";
+import BlogCard from "./containers/BlogCard";
 import HomePage from "./containers/HomePage";
 import Authentication from "./containers/Authentication";
 import Forgot from "./components/Forgot/index.jsx";
@@ -25,6 +27,26 @@ function App() {
   return (
     <I18nextProvider i18n={i18n}>
       <Router>
+        <Layout className="layout">
+          <NavBar />
+          <Content style={{ background: "white", padding: "0 5px" }}>
+            <div className="site-layout-content">
+              <Route
+                exact
+                path="/blogs/:id"
+                render={(props) => <BlogCard {...props} />}
+              />
+              <Route path="/blog" component={BlogCards} />
+              <Route exact path="/" component={HomePage} />
+              <Route path="/coupons" component={CouponsPage} />
+              <Route path="/cart" component={Cart} />
+              <Route path="/admin" component={AdminDashboard} />
+              <Route path="/register" component={Authentication} />
+              <Route path="/forgot" component={Forgot} />
+            </div>
+          </Content>
+          <Footer />
+        </Layout>
         <Elements stripe={stripePromise}>
           <Layout className="layout">
             <NavBar />

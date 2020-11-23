@@ -26,6 +26,9 @@
       "button": "Bağış Yap"
     }
   },
+  "blogSingleCard": {
+    "button": "Daha fazla oku"
+  },
   "login": {
     "loginTitle": {
       "loginTitle0": "Giriş Yap",

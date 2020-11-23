@@ -1,0 +1,104 @@
+:root {
+  --title-browse-color: #6c567b;
+  --storyBody-color: #000000;
+  --background-color: #fc9e01;
+  --hover-browse-color: #074081;
+  --shadow-color: rgba(0, 0, 0, 0.25);
+}
+
+.blogContainer {
+  width: auto;
+  height: auto;
+}
+
+.blogBodyHolder {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.blogTitle {
+  color: #020203;
+  text-align: center;
+  font-size: 2.5em;
+  display: inline-block;
+  justify-content: center;
+  margin-left: 23em;
+}
+
+.blogImage {
+  width: 30rem;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.blogBody {
+  line-height: 2rem;
+  margin: 3rem auto;
+  color: var(--storyBody-color);
+  width: 60em;
+  height: 20em;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+@media only screen and (max-width: 576px) {
+  /*mobile*/
+  .blogContainer,
+  .blogImage,
+  .blogBody {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .blogTitle {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  /*mobile*/
+  .blogContainer,
+  .blogImage,
+  .blogBody {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .blogTitle {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+  /*ipad*/
+  .blogContainer,
+  .blogImage,
+  .blogBody {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .blogTitle {
+    margin-right: 4em;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  /*ipad pro*/
+  .blogContainer,
+  .blogImage,
+  .blogBody {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .blogTitle {
+    margin-left: 6em;
+  }
+}

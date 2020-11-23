@@ -1,0 +1,111 @@
+:root {
+  --title-browse-color: #6c567b;
+  --storyBody-color: #000000;
+  --background-color: #fc9e01;
+  --hover-browse-color: #074081;
+  --button-text-color: #fff;
+  --shadow-color: rgba(0, 0, 0, 0.25);
+}
+
+.articleContainer2 {
+  display: flex;
+  justify-content: center;
+}
+
+.containerBlog2 {
+  display: flex;
+  flex-direction: row;
+  width: 90em;
+  padding: 3em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.articleTitle2 {
+  color: #020203;
+  font-size: 1.5em;
+  text-align: start;
+  padding-top: 1em;
+}
+
+.articleBody2 {
+  line-height: 2rem;
+  color: var(--storyBody-color);
+  width: 80em;
+  font-size: 1.3em;
+}
+
+.blogCardBox2 {
+  width: 55em;
+  padding-top: 10em;
+}
+
+.readMoreButton2 {
+  color: var(--button-text-color);
+  display: block;
+  background: #979797;
+  box-shadow: 0rem 0.3rem 0.6rem var(--shadow-color);
+  border: none;
+  margin: 0;
+}
+
+.readMoreButton:active {
+  outline: none;
+}
+
+.readMoreButton:hover {
+  text-decoration-color: none;
+}
+
+.roundImage2 {
+  width: 20em;
+  height: 25em;
+  display: flex;
+}
+
+@media only screen and (max-width: 576px) {
+  /*mobile*/
+  .containerBlog2,
+  .articleContainer2,
+  .articleBody2,
+  .blogCardBox2 {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    padding: 0;
+    width: 23em;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+  /*ipad*/
+  .containerBlog2,
+  .articleContainer2,
+  .articleBody2 {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    padding: 0;
+    width: 23em;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  /*ipad pro*/
+  .articleContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    padding: 0;
+    width: 23em;
+    font-size: 1em;
+  }
+  .blogCardBox2 {
+    width: 42em;
+    margin-top: -2em;
+  }
+}

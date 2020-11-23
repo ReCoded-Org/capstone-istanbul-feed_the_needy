@@ -223,6 +223,9 @@
       "goToCheckout": "Go to Checkout"
     }
   },
+  "blogSingleCard": {
+    "button": "Read More"
+  },
   "spin": "Loading...",
   "checkoutDrawer": {
     "pay": "Pay",
