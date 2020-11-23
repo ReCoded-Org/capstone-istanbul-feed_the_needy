@@ -10,6 +10,7 @@ import {
   Spin,
   message,
 } from "antd";
+import { useHistory } from "react-router-dom";
 import { InboxOutlined } from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
 import firebase from "../../firebaseConfig";
@@ -31,6 +32,7 @@ const EditOrganization = ({ isTesting }) => {
   const folderName = useRef(null);
   const fileURL = useRef(null);
   const fileName = useRef(null);
+  const history = useHistory();
 
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
@@ -111,7 +113,7 @@ const EditOrganization = ({ isTesting }) => {
               email: organization.email,
               website: organization.website,
               description: organization.description,
-              logo: /* organization.logo ?  */ [defaultLogo] /* : null */,
+              logo: [defaultLogo],
             }}
           >
             <Form.Item
@@ -160,9 +162,7 @@ const EditOrganization = ({ isTesting }) => {
                 name="files"
                 listType="picture"
                 beforeUpload={() => false}
-                defaultFileList={
-                  /* organization.logo ? */ [defaultLogo] /* : null */
-                }
+                defaultFileList={[defaultLogo]}
               >
                 <p className="ant-upload-drag-icon">
                   <InboxOutlined />
@@ -193,7 +193,7 @@ const EditOrganization = ({ isTesting }) => {
               {isTesting ? (
                 <button type="button">Reset Password</button>
               ) : (
-                <Button block danger>
+                <Button onClick={() => history.push("/forgot")} block danger>
                   {t("editOrganization.buttons.button1")}
                 </Button>
               )}
