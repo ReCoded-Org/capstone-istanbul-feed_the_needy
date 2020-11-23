@@ -15,7 +15,16 @@ const Register = ({ isTesting }) => {
   const { t } = useTranslation();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [passwordCheck, setPasswordCheck] = useState("");
   const [name, setName] = useState("");
+  const defaultLogoUrl =
+    "https://image.freepik.com/free-photo/wooden-board-empty-table-top-blurred-background_1253-1584.jpg";
+  let history = useHistory();
+
+  const routeChange = () => {
+    let path = "/admin";
+    history.push(path);
+  };
 
   const addOrganization = () => {
     firebase.auth().onAuthStateChanged((user) => {
@@ -27,7 +36,7 @@ const Register = ({ isTesting }) => {
           website: "",
           description: "",
           logo: "",
-          logoURL: "",
+          logoURL: defaultLogoUrl,
           logoName: "",
         });
         const chartStatistics = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
@@ -46,29 +55,25 @@ const Register = ({ isTesting }) => {
   };
 
   const handleClick = () => {
-    firebase
-      .auth()
-      .createUserWithEmailAndPassword(email, password)
-      .then(() => {
-        message.success(t("register.registerTitle.registerSuccessMessage"));
-      })
-      .catch((err) => {
-        console.log("err", err);
-        message.warning(err.message);
-      });
+    if (password === passwordCheck) {
+      firebase
+        .auth()
+        .createUserWithEmailAndPassword(email, password)
+        .then(() => {
+          message.success(t("register.registerTitle.registerSuccessMessage"));
+          routeChange();
+        })
+        .catch((err) => {
+          message.warning(err.message);
+        });
+    } else {
+      message.warning("Please enter matching passwords!");
+    }
   };
 
-  let history = useHistory();
-
-  const routeChange = () => {
-    let path = "/admin";
-    history.push(path);
-  };
-
-  const addDetails = (e) => {
+  const addDetails = () => {
     handleClick();
     addOrganization();
-    routeChange();
   };
 
   return (
@@ -110,9 +115,11 @@ const Register = ({ isTesting }) => {
           />
         </Form.Item>
         <Form.Item
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          rules={[{ required: true, message: "Please input your password!" }]}
+          value={passwordCheck}
+          onChange={(e) => setPasswordCheck(e.target.value)}
+          rules={[
+            { required: true, message: "Please input your password again!" },
+          ]}
         >
           <Input
             placeholder={t("register.registerTitle.registerTitle2")}
@@ -132,7 +139,7 @@ const Register = ({ isTesting }) => {
           ) : (
             <Button
               style={{ background: "#2F80ED" }}
-              type="submit"
+              type="primary"
               htmlType="submit"
               className="loginButton"
             >
