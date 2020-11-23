@@ -93,6 +93,8 @@ const ShowCart = ({ isTesting }) => {
             <Button
               onClick={() => {
                 localStorage.removeItem("cart");
+                setCart([]);
+                setTotalAmount(0);
               }}
               className="clearCartButton"
             >
