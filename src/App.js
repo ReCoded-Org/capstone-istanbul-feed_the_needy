@@ -27,34 +27,19 @@ function App() {
   return (
     <I18nextProvider i18n={i18n}>
       <Router>
-        <Layout className="layout">
-          <NavBar />
-          <Content style={{ background: "white", padding: "0 5px" }}>
-            <div className="site-layout-content">
-              <Route
-                exact
-                path="/blogs/:id"
-                render={(props) => <BlogCard {...props} />}
-              />
-              <Route path="/blog" component={BlogCards} />
-              <Route exact path="/" component={HomePage} />
-              <Route path="/coupons" component={CouponsPage} />
-              <Route path="/cart" component={Cart} />
-              <Route path="/admin" component={AdminDashboard} />
-              <Route path="/register" component={Authentication} />
-              <Route path="/forgot" component={Forgot} />
-            </div>
-          </Content>
-          <Footer />
-        </Layout>
         <Elements stripe={stripePromise}>
           <Layout className="layout">
             <NavBar />
             <Content style={{ background: "white", padding: "0 5px" }}>
               <div className="site-layout-content">
+                <Route
+                  exact
+                  path="/blogs/:id"
+                  render={(props) => <BlogCard {...props} />}
+                />
+                <Route path="/blog" component={BlogCards} />
                 <Route exact path="/" component={HomePage} />
                 <Route path="/coupons" component={CouponsPage} />
-                <Route path="/blog" component="#" />
                 <Route path="/cart" component={Cart} />
                 <Route path="/admin" component={AdminDashboard} />
                 <Route path="/register" component={Authentication} />
