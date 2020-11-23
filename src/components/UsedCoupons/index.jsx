@@ -6,6 +6,7 @@ import firebase from "../../firebaseConfig";
 import SearchColumns from "./SearchColumns";
 
 const db = firebase.firestore();
+const auth = firebase.auth();
 const { Title } = Typography;
 
 const UsedCoupons = ({ isTesting }) => {
@@ -14,41 +15,35 @@ const UsedCoupons = ({ isTesting }) => {
   const [loading, setLoading] = useState(true);
   const docID = useRef(null);
 
-  const getDocId = async () => {
-    // get the id of the doc to fetch later in snapshot
-    const res = await db
-      .collection("sampleSoldCoupons")
-      .where("compName", "==", "Arby's")
-      .get();
-    const data = res.docs.map((x) => x.id);
-    [docID.current] = data;
-  };
-
   useEffect(() => {
-    getDocId().then(() => {
-      const unsubscribe = db
-        .collection("sampleSoldCoupons") // this collection is a test, we don't have the real collection yet
-        .doc(docID.current)
-        .collection("coupons")
-        .where("isActive", "==", false)
-        .onSnapshot((snapshot) => {
-          const dataArr = [];
-          snapshot.forEach((doc) => {
-            dataArr.push({
-              ...doc.data(),
-              key: doc.id,
-              // convert the timestamp into a usable date
-              date:
-                doc.data().markDate &&
-                `${doc.data().markDate.toDate().getDate()}/${
-                  doc.data().markDate.toDate().getMonth() + 1
-                }/${doc.data().markDate.toDate().getFullYear()}`,
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        docID.current = user.uid;
+        const unsubscribe = db
+          .collection("sampleSoldCoupons")
+          .doc(user.uid)
+          .collection("coupons")
+          .where("isActive", "==", false)
+          .onSnapshot((snapshot) => {
+            const dataArr = [];
+            snapshot.forEach((doc) => {
+              dataArr.push({
+                ...doc.data(),
+                key: doc.id,
+                // convert the timestamp into a usable date
+                date:
+                  doc.data().markDate &&
+                  `${doc.data().markDate.toDate().getDate()}/${
+                    doc.data().markDate.toDate().getMonth() + 1
+                  }/${doc.data().markDate.toDate().getFullYear()}`,
+              });
             });
+            setUsedCoupons(dataArr);
+            setLoading(false);
           });
-          setUsedCoupons(dataArr);
-          setLoading(false);
-        });
-      return unsubscribe;
+        return unsubscribe;
+      }
+      return user;
     });
   }, []);
 
