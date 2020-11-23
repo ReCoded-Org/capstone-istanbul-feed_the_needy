@@ -38,19 +38,31 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className="ant-col ant-col-36 imageSection ant-col-xs-8 ant-col-sm-20 ant-col-md-24 ant-col-xl-12"
+      className="ant-col ant-col-16 imageSection ant-col-xs-24 ant-col-sm-20 ant-col-md-24 ant-col-xl-10"
       style={Object {}}
     >
-      <img
-        alt="help"
-        className="foodImage"
-        md={24}
+      <div
+        className="ant-image foodImage"
+        md={10}
+        onClick={[Function]}
         sm={20}
-        span={36}
-        src="image.png"
-        xl={12}
-        xs={8}
-      />
+        style={
+          Object {
+            "height": undefined,
+            "width": undefined,
+          }
+        }
+        xl={10}
+        xs={20}
+      >
+        <img
+          alt="help"
+          className="ant-image-img"
+          onError={[Function]}
+          onLoad={[Function]}
+          src="image.png"
+        />
+      </div>
     </div>
   </div>
 </div>

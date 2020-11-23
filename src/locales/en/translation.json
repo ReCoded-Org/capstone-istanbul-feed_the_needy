@@ -34,7 +34,8 @@
   },
   "youcanhelp": {
     "headers": {
-      "textSection1": "Donation to the causes you care about not only benefits the charities themselves, it can be deeply rewarding for you too. Millions of people give to charity on a regular basis to support causes they believe in, as well as for the positive effect it has on their own lives..",
+      "textSection1": "Donation to the causes you care about not only benefits the charities themselves, it can be deeply rewarding for you too.",
+      "texSection2": "Millions of people give to charity on a regular basis to support causes they believe in, as well as for the positive effect it has on their own lives..",
       "button": "Donate"
     }
   },

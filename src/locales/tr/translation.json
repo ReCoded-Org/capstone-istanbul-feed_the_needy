@@ -21,7 +21,8 @@
   },
   "youcanhelp": {
     "headers": {
-      "textSection1": "İlgilendiğiniz nedenlere bağış yapmak yalnızca hayır kurumlarına fayda sağlamakla kalmaz, aynı zamanda sizin için de son derece ödüllendirici olabilir. Milyonlarca insan inandıkları nedenleri ve bunun kendi yaşamları üzerindeki olumlu etkisini desteklemek için düzenli olarak hayır kurumlarına bağış yapıyor ..",
+      "textSection1": "İlgilendiğiniz nedenlere bağış yapmak yalnızca hayır kurumlarına fayda sağlamakla kalmaz, aynı zamanda sizin için de son derece ödüllendirici olabilir.",
+      "textSection2": " Milyonlarca insan inandıkları nedenleri ve bunun kendi yaşamları üzerindeki olumlu etkisini desteklemek için düzenli olarak hayır kurumlarına bağış yapıyor ..",
       "button": "Bağış Yap"
     }
   },

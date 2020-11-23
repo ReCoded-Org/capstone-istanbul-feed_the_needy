@@ -1,6 +1,6 @@
 import React from "react";
 import HelpImage from "./image.png";
-import { Button, Row, Col } from "antd";
+import { Button, Row, Col, Image } from "antd";
 import { useTranslation } from "react-i18next";
 import "antd/dist/antd.css";
 import "./index.css";
@@ -33,14 +33,13 @@ const YouCanHelp = ({ isTesting }) => {
             </Col>
           </Col>
         </Col>
-        <Col className="imageSection" span={36} xs={8} sm={20} md={24} xl={12}>
-          <img
+        <Col className="imageSection" span={16} xs={24} sm={20} md={24} xl={10}>
+          <Image
             className="foodImage"
-            span={36}
-            xs={8}
+            xs={20}
             sm={20}
-            md={24}
-            xl={12}
+            md={10}
+            xl={10}
             src={HelpImage}
             alt="help"
           />
@@ -49,4 +48,5 @@ const YouCanHelp = ({ isTesting }) => {
     </div>
   );
 };
+
 export default YouCanHelp;
