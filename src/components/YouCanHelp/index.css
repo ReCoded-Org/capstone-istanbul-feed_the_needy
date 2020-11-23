@@ -22,6 +22,10 @@
   border-top-left-radius: 10em;
 }
 
+.ant-col.ant-col-16.imageSection.ant-col-xs-24.ant-col-sm-20.ant-col-md-24.ant-col-xl-10 {
+  height: min-content;
+}
+
 .youCanHelpText {
   width: 40em;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
