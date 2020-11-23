@@ -78,6 +78,14 @@
   .sliderrender {
     width: auto;
   }
+  .slick-prev,
+  .slick-next {
+    display: none;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
@@ -85,11 +93,27 @@
   .sliderrender {
     width: auto;
   }
+  .slick-prev,
+  .slick-next {
+    display: none;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 576px) {
   /*ipad phone*/
   .sliderrender {
     width: auto;
+  }
+  .slick-prev,
+  .slick-next {
+    display: none;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    display: none;
   }
 }
