@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import firebase from "../../firebaseConfig";
 
 const db = firebase.firestore();
+const auth = firebase.auth();
 const { Title } = Typography;
 
 const CouponsChart = () => {
@@ -14,18 +15,21 @@ const CouponsChart = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const unsubscribe = db
-      .collection("soldCoupons")
-      .where("compName", "==", "Arby's")
-      .onSnapshot((snapshot) => {
-        const dataArr = [];
-        snapshot.forEach((doc) => {
-          dataArr.push({ ...doc.data(), docId: doc.id });
-        });
-        setSoldCoupons(dataArr[0]);
-        setLoading(false);
-      });
-    return unsubscribe;
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        const unsubscribe = db
+          .collection("soldCoupons")
+          .doc(user.uid)
+          .onSnapshot((snapshot) => {
+            const dataArr = [];
+            dataArr.push({ ...snapshot.data() });
+            setSoldCoupons(dataArr[0]);
+            setLoading(false);
+          });
+        return unsubscribe;
+      }
+      return user;
+    });
   }, []);
 
   const labelList = t("couponsChart.labels", { returnObjects: true });
