@@ -1,12 +1,14 @@
 import React from "react";
 import { Typography, Image, Button } from "antd";
 import { useTranslation } from "react-i18next";
+import { useHistory } from "react-router-dom";
 import JoinHands from "./images/joinHands.png";
 import "./style.css";
 
 const JoinUs = ({ isTesting }) => {
   const { t } = useTranslation();
   const { Title, Paragraph } = Typography;
+  const history = useHistory();
 
   return (
     <div className="joinUsSection">
@@ -22,7 +24,11 @@ const JoinUs = ({ isTesting }) => {
           {isTesting ? (
             <button type="button">Create account</button>
           ) : (
-            <Button className="joinUsSectionBtn" type="primary">
+            <Button
+              onClick={() => history.push("/register")}
+              className="joinUsSectionBtn"
+              type="primary"
+            >
               {t("joinUs.button")}
             </Button>
           )}
