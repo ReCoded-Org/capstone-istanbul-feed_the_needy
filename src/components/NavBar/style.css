@@ -1,14 +1,18 @@
 .logo {
   width: 50px;
   height: 31px;
-  margin: 4px 16px 16px 24px;
+  margin: 4px 0px 16px 24px;
   float: left;
 }
 
 .navbarTitle {
   height: 31px;
-  margin: 8px 80px 16px 16px;
+  margin: 16px 80px 0px 0px;
   float: left;
+}
+
+.navbarTitle rect {
+  transform: scale(1.1);
 }
 
 .navbarCart {
@@ -32,7 +36,7 @@
   display: none;
   margin-right: 16px;
   height: 10%;
-  transform: scale(1.5);
+  transform: scale(0.35);
 }
 
 .ant-menu.ant-menu-dark .ant-menu-item-selected {
@@ -67,7 +71,7 @@
   }
 
   .logo {
-    margin: 4px 16px 16px 0px;
+    margin: 4px 0px 16px 0px;
   }
 
   .navbarTitle {
@@ -75,7 +79,7 @@
   }
 
   .navbarStackedTitle {
-    display: none;
+    display: initial;
   }
 }
 
@@ -87,7 +91,6 @@
 
   .navbarStackedTitle {
     display: initial;
-    margin: 0px 24px 0px 16px;
   }
 
   .navbarAdmin {
@@ -107,7 +110,7 @@
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
   /*ipad pro*/
   .navbarTitle {
-    transform: scale(0.8);
+    /*  transform: scale(0.8); */
     margin-right: auto;
   }
 }

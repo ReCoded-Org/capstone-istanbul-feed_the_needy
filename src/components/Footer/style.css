@@ -83,6 +83,10 @@
     left: 17rem;
   }
 
+  .footerLogo .footerTitleLogo {
+    display: inline;
+  }
+
   .footerSocial .ant-space.ant-space-horizontal.ant-space-align-center {
     position: absolute;
     top: 3.5rem;

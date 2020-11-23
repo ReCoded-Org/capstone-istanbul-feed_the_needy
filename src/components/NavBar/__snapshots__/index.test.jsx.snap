@@ -15,14 +15,14 @@ exports[`Navbar renders correctly 1`] = `
     className="navbarTitle"
   >
     <svg>
-      foodOnCoupon.svg
+      itsonus.svg
     </svg>
   </div>
   <div
     className="navbarStackedTitle"
   >
     <svg>
-      stackedTitle.svg
+      itsonusStacked.svg
     </svg>
   </div>
   <ul

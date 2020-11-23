@@ -7,8 +7,8 @@ import i18next from "i18next";
 import { ReactComponent as AdminSvg } from "./images/admin.svg";
 import { ReactComponent as CartSvg } from "./images/cart.svg";
 import { ReactComponent as LogoSvg } from "../../images/logo.svg";
-import { ReactComponent as FoodOnCouponSvg } from "../../images/foodOnCoupon.svg";
-import { ReactComponent as StackedTitleSvg } from "../../images/stackedTitle.svg";
+import { ReactComponent as Itsonus } from "../../images/itsonus.svg";
+import { ReactComponent as ItsonusStacked } from "../../images/itsonusStacked.svg";
 import Signout from "../Signout";
 import "./style.css";
 import firebase from "../../firebaseConfig";
@@ -40,10 +40,10 @@ const NavBar = ({ isTesting }) => {
           <LogoSvg />
         </div>
         <div className="navbarTitle">
-          <FoodOnCouponSvg />
+          <Itsonus />
         </div>
         <div className="navbarStackedTitle">
-          <StackedTitleSvg />
+          <ItsonusStacked />
         </div>
         <Menu
           style={{ background: "#F0B32C" }}

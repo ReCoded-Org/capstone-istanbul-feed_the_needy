@@ -35,8 +35,10 @@ Array [
             className="ant-space-item"
             style={Object {}}
           >
-            <svg>
-              foodOnCoupon.svg
+            <svg
+              className="footerTitleLogo"
+            >
+              itsonus.svg
             </svg>
           </div>
         </div>

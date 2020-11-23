@@ -10,7 +10,7 @@ import {
 import { Space, Typography } from "antd";
 import { useTranslation } from "react-i18next";
 import { ReactComponent as LogoSvg } from "../../images/logo.svg";
-import { ReactComponent as FoodOnCouponSvg } from "../../images/foodOnCoupon.svg";
+import { ReactComponent as Itsonus } from "../../images/itsonus.svg";
 import { ReactComponent as LocationSvg } from "./images/location.svg";
 import { ReactComponent as PhoneSvg } from "./images/phone.svg";
 import { ReactComponent as MailSvg } from "./images/mail.svg";
@@ -28,7 +28,7 @@ const Footer = () => {
           <div className="footerLogo">
             <Space size="middle">
               <LogoSvg />
-              <FoodOnCouponSvg />
+              <Itsonus className="footerTitleLogo" />
             </Space>
           </div>
           <Text className="footerSummary">{t("footer.summary")}</Text>
