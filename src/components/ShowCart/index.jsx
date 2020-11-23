@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
-import { Button, Row, Col } from "antd";
+import { Button, Row, Col, Empty } from "antd";
 import { useTranslation } from "react-i18next";
 import SingleCoupon from "../SingleCoupon";
 import CheckoutDrawer from "../CheckoutDrawer";
@@ -66,15 +66,25 @@ const ShowCart = ({ isTesting }) => {
     <>
       <br />
       <Row gutter={[24, 40]} justify="space-around">
-        {cart.map((coupon) => (
-          <SingleCoupon
-            coupon={coupon}
-            changeAmount={changeAmount}
-            deleteSingleCoupon={deleteSingleCoupon}
-            setTotalAmount={setTotalAmount}
-            adjustCouponQuantity={adjustCouponQuantity}
+        {cart.length < 1 ? (
+          <Empty
+            image={Empty.PRESENTED_IMAGE_SIMPLE}
+            imageStyle={{
+              height: 100,
+            }}
+            description={<span>Cart is empty</span>}
           />
-        ))}
+        ) : (
+          cart.map((coupon) => (
+            <SingleCoupon
+              coupon={coupon}
+              changeAmount={changeAmount}
+              deleteSingleCoupon={deleteSingleCoupon}
+              setTotalAmount={setTotalAmount}
+              adjustCouponQuantity={adjustCouponQuantity}
+            />
+          ))
+        )}
       </Row>
       <Row gutter={[48, 48]} justify="center">
         <Col className="totalAmount">
