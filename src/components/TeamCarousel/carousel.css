@@ -1,21 +1,39 @@
-.teamBorder {
-  width: 80em;
-  height: auto;
-}
-
 .slick-slider {
   margin: 5em auto 5em;
 }
 
+.slick-prev,
+.slick-next {
+  font-size: 29px;
+  line-height: 0;
+  position: absolute;
+  display: block;
+  width: 10em;
+  height: 40em;
+  transform: translate(0, -30%);
+  cursor: pointer;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 22px;
+  opacity: 0.75;
+  color: white;
+  padding-top: 0.2em;
+  -webkit-font-smoothing: antialiased;
+  background-color: #637381;
+}
+
 .rcorners {
   color: #3e4042;
-  line-height: 1.5em;
+  line-height: 1.7em;
   margin-bottom: 1em;
 }
 
 .sliderrender {
   justify-content: center;
   display: flex;
+  width: 100em;
 }
 
 .teamImage {
@@ -51,6 +69,27 @@
 
 .teamText {
   padding-top: 5em;
-  width: 100em;
   height: 20em;
+  width: 100em;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 576px) {
+  /*ipad*/
+  .sliderrender {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  /*ipad pro*/
+  .sliderrender {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /*ipad phone*/
+  .sliderrender {
+    width: auto;
+  }
 }

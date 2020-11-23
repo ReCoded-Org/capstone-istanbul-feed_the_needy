@@ -4,13 +4,8 @@ import "slick-carousel/slick/slick.css";
 import "./carousel.css";
 import "slick-carousel/slick/slick-theme.css";
 import { teamMembers } from "../Team/TeamDetails.js";
-import {
-  InstagramOutlined,
-  FacebookFilled,
-  TwitterCircleFilled,
-  LinkedinFilled,
-} from "@ant-design/icons";
-import { Row, Col } from "antd";
+import { GithubOutlined, LinkedinFilled } from "@ant-design/icons";
+import { Row, Space } from "antd";
 import { useTranslation } from "react-i18next";
 
 const settings = {
@@ -64,21 +59,17 @@ const Carousel = () => {
             </div>
             <div className="teamSection">
               <div className="teamText">
-                <h2 className="rcorners">{team.name}</h2>
+                <h1 className="rcorners">{team.name}</h1>
                 <div className="rcorners">{t(team.description)}</div>
-                <Row align="center" around="xs">
-                  <Col span={4}>
-                    <InstagramOutlined href="#" /> {team.instagram}
-                  </Col>
-                  <Col span={4}>
-                    <FacebookFilled href="#" /> {team.facebook}
-                  </Col>
-                  <Col span={4}>
-                    <TwitterCircleFilled href="#" /> {team.twitter}
-                  </Col>
-                  <Col span={4}>
-                    <LinkedinFilled href="#" /> {team.linkedin}
-                  </Col>
+                <Row align="center" around="xs" className="teamSocial">
+                  <Space>
+                    <a href={team.github}>
+                      <GithubOutlined className="teamSocialIcon" />
+                    </a>
+                    <a href={team.linkedin}>
+                      <LinkedinFilled className="teamSocialIcon" />
+                    </a>
+                  </Space>
                 </Row>
               </div>
             </div>
