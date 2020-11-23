@@ -11,6 +11,7 @@ const { Title } = Typography;
 const CouponsPage = () => {
   const { t } = useTranslation();
   const [availableCoupons, setAvailableCoupons] = useState([]);
+  const [cart, setCart] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -35,6 +36,11 @@ const CouponsPage = () => {
         setAvailableCoupons(modifiedCouponsArray);
         setLoading(false);
       });
+    const localCart = localStorage.getItem("cart");
+    const parsedLocalCart = JSON.parse(localCart);
+    if (parsedLocalCart) {
+      setCart(parsedLocalCart);
+    }
   }, []);
 
   return (
@@ -51,6 +57,8 @@ const CouponsPage = () => {
         availableCoupons.map((coupon) => {
           return (
             <Coupon
+              cart={cart}
+              setCart={setCart}
               id={coupon.id}
               createdAt={coupon.createdAt}
               amounts={coupon.amounts}

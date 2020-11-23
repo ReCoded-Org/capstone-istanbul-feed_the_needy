@@ -30,6 +30,16 @@ const Register = ({ isTesting }) => {
           logoURL: "",
           logoName: "",
         });
+        const chartStatistics = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+        db.collection("soldCoupons").doc(user.uid).set({
+          compName: name,
+          "25₺": chartStatistics,
+          "50₺": chartStatistics,
+          "75₺": chartStatistics,
+          "100₺": chartStatistics,
+          "150₺": chartStatistics,
+          "200₺": chartStatistics,
+        });
         setName("");
       }
     });

@@ -3,11 +3,32 @@ import "./style.css";
 import { Button, Row, Col } from "antd";
 import { useTranslation } from "react-i18next";
 import SingleCoupon from "../SingleCoupon";
+import CheckoutDrawer from "../CheckoutDrawer";
 
 const ShowCart = ({ isTesting }) => {
   const { t } = useTranslation();
   const [cart, setCart] = useState([]);
   const [totalAmount, setTotalAmount] = useState(0);
+  const [drawerVisible, setDrawerVisible] = useState(false);
+
+  const showDrawer = () => {
+    setDrawerVisible(true);
+  };
+
+  const adjustCouponQuantity = (id, operation) => {
+    const modifiedCart = cart.map((coupon) => {
+      if (coupon.id === id) {
+        operation === "increment"
+          ? (coupon.quantity += 1)
+          : (coupon.quantity -= 1);
+        return coupon;
+      }
+      return coupon;
+    });
+    setCart(modifiedCart);
+    const modifiedCartJson = JSON.stringify(modifiedCart);
+    localStorage.setItem("cart", modifiedCartJson);
+  };
 
   useEffect(() => {
     const cartJSON = localStorage.getItem("cart");
@@ -17,7 +38,7 @@ const ShowCart = ({ isTesting }) => {
       setTotalAmount((totalAmount) => {
         let sum = 0;
         for (let i = 0; i < cartParsed.length; i++) {
-          sum += cartParsed[i].amount;
+          sum += cartParsed[i].amount * cartParsed[i].quantity;
         }
         return sum;
       });
@@ -51,6 +72,7 @@ const ShowCart = ({ isTesting }) => {
             changeAmount={changeAmount}
             deleteSingleCoupon={deleteSingleCoupon}
             setTotalAmount={setTotalAmount}
+            adjustCouponQuantity={adjustCouponQuantity}
           />
         ))}
       </Row>
@@ -82,12 +104,21 @@ const ShowCart = ({ isTesting }) => {
           {isTesting ? (
             <button type="button">{}</button>
           ) : (
-            <Button className="checkoutButton" type="primary">
+            <Button
+              onClick={showDrawer}
+              className="checkoutButton"
+              type="primary"
+            >
               {t("cartCont.showCartComp.goToCheckout")}
             </Button>
           )}
         </Col>
       </Row>
+      <CheckoutDrawer
+        cart={cart}
+        setDrawerVisible={setDrawerVisible}
+        drawerVisible={drawerVisible}
+      />
     </>
   );
 };

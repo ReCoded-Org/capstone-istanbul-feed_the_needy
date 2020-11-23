@@ -1,12 +1,21 @@
-import React, { useState, useEffect } from "react";
-import { Typography, Card, Button } from "antd";
+import React, { useState } from "react";
+import { Typography, Card, Button, message } from "antd";
 import { useTranslation } from "react-i18next";
 import "./style.css";
 import SingleCouponModal from "../SingleCouponModal";
 
 const { Title, Text } = Typography;
 
-const Coupon = ({ id, createdAt, amounts, compName, img, isTesting }) => {
+const Coupon = ({
+  id,
+  createdAt,
+  amounts,
+  compName,
+  img,
+  isTesting,
+  cart,
+  setCart,
+}) => {
   const { t } = useTranslation();
   const [isSelected, setIsSelected] = useState({
     price0: false,
@@ -15,11 +24,14 @@ const Coupon = ({ id, createdAt, amounts, compName, img, isTesting }) => {
     price3: false,
   });
   const [selectedPrice, setSelectedPrice] = useState(0);
-  const [cart, setCart] = useState([]);
   const [visibleModal, setVisibleModal] = useState(false);
 
   const showModal = () => {
     setVisibleModal(true);
+  };
+
+  const success = () => {
+    message.success(t("couponsPage.success"));
   };
 
   const handleSelect = (e) => {
@@ -39,21 +51,16 @@ const Coupon = ({ id, createdAt, amounts, compName, img, isTesting }) => {
         img,
         organizationName: compName,
         amount: selectedPrice,
+        restaurantId: id,
+        quantity: 1,
       };
       cartCopy.push(addedCoupn);
       setCart(cartCopy);
       const stringCart = JSON.stringify(cartCopy);
       localStorage.setItem("cart", stringCart);
+      success();
     }
   };
-
-  useEffect(() => {
-    const localCart = localStorage.getItem("cart");
-    const parsedLocalCart = JSON.parse(localCart);
-    if (parsedLocalCart) {
-      setCart(parsedLocalCart);
-    }
-  }, []);
 
   return (
     <div className="coupon">

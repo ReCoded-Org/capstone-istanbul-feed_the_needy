@@ -6,11 +6,11 @@ const { Title } = Typography;
 const SingleCoupon = ({
   coupon,
   deleteSingleCoupon,
-  setTotalAmount,
   changeAmount,
   isTesting,
+  adjustCouponQuantity,
 }) => {
-  const [amount, setAmount] = useState(1);
+  const [amount, setAmount] = useState(coupon ? coupon.quantity : 1);
 
   return (
     <div>
@@ -51,6 +51,7 @@ const SingleCoupon = ({
                   if (amount > 1) {
                     setAmount(amount - 1);
                     changeAmount(coupon ? coupon.amount : null, "decrement");
+                    adjustCouponQuantity(coupon.id, "decrement");
                   }
                 }}
               >
@@ -67,6 +68,7 @@ const SingleCoupon = ({
                 onClick={() => {
                   setAmount(amount + 1);
                   changeAmount(coupon ? coupon.amount : null, "increment");
+                  adjustCouponQuantity(coupon.id, "increment");
                 }}
               >
                 +

@@ -153,7 +153,8 @@
     },
     "header": "Your donation can help people!",
     "restaurants": "Restaurants",
-    "link": "Click to see coupon details!"
+    "link": "Click to see coupon details!",
+    "success": "Coupon was added to the cart sucessfully!"
   },
   "createCoupons": {
     "title": "Choose Your Coupons",
@@ -223,6 +224,14 @@
     }
   },
   "spin": "Loading...",
+  "checkoutDrawer": {
+    "pay": "Pay",
+    "nameErr": "Please input your full name!",
+    "emailErr": "Please input your email!",
+    "creditLabel": "Credit Details",
+    "emailLabel": "Email",
+    "nameLabel": "Full Name"
+  },
   "logout": {
     "text": "Do you want to log out?",
     "ok": "OK",
