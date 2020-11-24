@@ -1,5 +1,4 @@
 {
-  "example": "Merhaba",
   "workingTogether": {
     "title": "Açlığa Son Vermek İçin Birlikte Çalışıyoruz",
     "text": "Dünya Gıda Programı'na göre, 135 milyon insan; savaşlar, iklim değişikliği ve ekonomik gerileme yüzünden akut bir şekilde açlık çekiyor. Bu sayıları, COVID-19 salgını iki katına çıkararak, 2020'nin sonuna kadar 130 milyon insan daha aç kalabilir. Çeyrek milyardan fazla insan potansiyel olarak açlığın eşiğinde olduğundan, en riskli bölgelere gıda ve insani yardım sağlamak için hızlı hareket edilmesi gerekiyor."
@@ -63,12 +62,12 @@
   },
   "blog": {
     "blog0": {
-      "title": "Şimdi geleceğe umutla bakıyoruz",
-      "paragraph": "Trussell Trust ağındaki gıda bankaları tarafından dağıtılan gıdanın% 90'ından fazlası halk tarafından bağışlanmaktadır - bu nedenle, bize yönlendirilen herkese dengeli ve besleyici üç günlük yiyecek sağlama kabiliyetimiz için gıda bağışlarınız kesinlikle hayati önem taşımaktadır."
+      "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe.",
+      "paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At magni iste quos, deserunt eaque aut quae porro asperiores voluptate, quod molestiae quibusdam quidem similique. Enim."
     },
     "blog1": {
-      "title": "Kuponlarınız beni mutlu ediyor",
-      "paragraph": "İyi niyetiniz olmasaydı, gıda bankalarımız gerçekten faaliyet göstermekte zorlanırdı. Bu nedenle, bize yönlendirilen herkese dengeli ve besleyici üç günlük yiyecek sağlama becerimiz için gıda bağışlarınız kesinlikle hayati önem taşır."
+      "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe.",
+      "paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At magni iste quos, deserunt eaque aut quae porro asperiores voluptate, quod molestiae quibusdam quidem similique. Enim."
     },
     "readMoreBtn": "Daha fazlasını oku"
   },

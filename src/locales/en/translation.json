@@ -1,5 +1,4 @@
 {
-  "example": "Hello",
   "workingTogether": {
     "title": "Working Together to End Hunger",
     "text": "According to the World Food Programme, 135 million suffer from acute hunger largely due to man-made conflicts, climate change and economic downturns. The COVID-19 pandemic could now double that number, putting an additional 130 million people at risk of suffering acute hunger by the end of 2020. With more than a quarter of a billion people potentially at the brink of starvation, swift action needs to be taken to provide food and humanitarian relief to the most at-risk regions."
@@ -28,7 +27,7 @@
       "header1": "COUPONS",
       "header2": "BLOG"
     },
-    "summary": "It's on us is a food donation platform for people in need",
+    "summary": "It's on us is a platform in which donors can donate food coupons to people in need from the chosen restaurants.",
     "location": "Istanbul/Turkey",
     "rights": "All rights reserved"
   },
@@ -53,7 +52,7 @@
       "title0": "Our Goals",
       "title1": "End poverty in all its forms everywhere",
       "title2": "End hunger and achieve food security ",
-      "title3": "Ensure healthy lives and promote well-being at for all at all ages"
+      "title3": "Ensure healthy lives and promote well-being for all at all ages"
     }
   },
   "ourSponsorsComp": {
@@ -63,12 +62,12 @@
   },
   "blog": {
     "blog0": {
-      "title": "Now we are looking to future with hope",
-      "paragraph": "Over 90% of the food distributed by food banks in the Trussell Trust network is donated by the public – that’s why your food donations are absolutely vital to our ability to give everyone referred to us a balanced and nutritious three day supply of food."
+      "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe.",
+      "paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At magni iste quos, deserunt eaque aut quae porro asperiores voluptate, quod molestiae quibusdam quidem similique. Enim."
     },
     "blog1": {
-      "title": "Your coupons making me happy",
-      "paragraph": "Without your goodwill, our food banks would really struggle to operate.That’s why your food donations are absolutely vital to our ability to give everyone referred to us a balanced and nutritious three day supply of food."
+      "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe.",
+      "paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At magni iste quos, deserunt eaque aut quae porro asperiores voluptate, quod molestiae quibusdam quidem similique. Enim."
     },
     "readMoreBtn": "Read more"
   },
@@ -78,9 +77,9 @@
       "title1": "Step 1",
       "title2": "Step 2",
       "title3": "Step 3",
-      "title4": "Donator buy the coupon in the website",
-      "title5": "The person in need can eat without asking in available restaurants",
-      "title6": "The restaurant delete the used coupon in the website"
+      "title4": "Donor buys the coupon on the website",
+      "title5": "The restaurants display these coupons for needy people to use",
+      "title6": "The person in need can use these coupons to buy food from our partnered restaurants"
     }
   },
   "login": {
@@ -101,7 +100,7 @@
       "registerTitle2": "Password",
       "registerTitle3": "I Accept Terms and Conditions",
       "registerTitle4": "Name of Organization",
-      "registerSuccessMessage": "You succesfully sign up ",
+      "registerSuccessMessage": "You successfully signed up ",
       "registerErrorMessage": "Please register with another email address."
     }
   },
@@ -119,7 +118,7 @@
     "button": "Mark One Used",
     "text": "sold",
     "message": {
-      "success": "Succesfully marked one of the coupons as used!",
+      "success": "Successfully marked one of the coupons as used!",
       "warning0": "Failed to mark one of the coupons!",
       "warning1": "No coupons to count!"
     }
@@ -162,7 +161,7 @@
     "text": "Please choose four coupon amounts for your restaurant and we'll create them for you. You can choose again later!",
     "createButton": "Create",
     "message": {
-      "success": "Successfully created your coupons!",
+      "success": "Your coupons Have been created Successfully!",
       "warning": "Failed to create your coupons!"
     }
   },
@@ -175,7 +174,7 @@
       "placeholder3": "Organization description"
     },
     "upload": {
-      "text": "Click or drag image file to this area to upload your logo",
+      "text": "Click or drag the image file to this area to upload your logo",
       "tip": "Accepted file types are; jpeg, png, etc."
     },
     "buttons": {
@@ -187,7 +186,7 @@
       "message1": "Input must be a valid email!"
     },
     "exampleCoupon": {
-      "link": "Go to restaurant's website"
+      "link": "Go to the restaurant's website"
     }
   },
   "singleCouponModal": {
@@ -220,7 +219,7 @@
     "title": "Your Donation Cart",
     "showCartComp": {
       "totalAmount": "Total Amount:",
-      "clearCart": "Clear Cart",
+      "clearCart": "Empty The Cart",
       "goToCheckout": "Go to Checkout"
     }
   },
@@ -232,7 +231,7 @@
     "pay": "Pay",
     "nameErr": "Please input your full name!",
     "emailErr": "Please input your email!",
-    "creditLabel": "Credit Details",
+    "creditLabel": "Credit Card Details",
     "emailLabel": "Email",
     "nameLabel": "Full Name",
     "success": "Coupons were bought successfully! Thank you for your donation!"
@@ -243,8 +242,8 @@
     "cancel": "Cancel"
   },
   "newsletter": {
-    "heading": "Haber bültenimize abone olun!",
-    "title0": "We need you, to stop the hunger!",
-    "button0": "Subscribe to Newsletter"
+    "heading": "Subscribe to our Newsletter",
+    "title0": "Help us to end hunger!",
+    "button0": "Subscribe to our Newsletter"
   }
 }

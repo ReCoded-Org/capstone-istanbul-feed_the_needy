@@ -16,7 +16,7 @@ exports[`Blog renders correctly 1`] = `
         }
       }
     >
-      Blog
+      footer.headers.header2
     </h2>
   </div>
   <div
