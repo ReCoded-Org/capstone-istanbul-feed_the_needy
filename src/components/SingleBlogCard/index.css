@@ -123,12 +123,7 @@
   font-size: 1.3em;
 }
 
-.blogCardBox2 {
-  width: 55em;
-  padding-top: 10em;
-}
-
-.readMoreButton2 {
+.readMoreButton {
   color: var(--button-text-color);
   display: block;
   background: #979797;
@@ -142,6 +137,8 @@
 
 .readMoreButton:hover {
   text-decoration-color: none;
+  background-color: rgb(185, 176, 176);
+  cursor: pointer;
 }
 
 .roundImage2 {

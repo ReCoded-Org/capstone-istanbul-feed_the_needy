@@ -46,15 +46,16 @@
   background: #979797;
   box-shadow: 0rem 0.3rem 0.6rem var(--shadow-color);
   border: none;
-  margin: 0;
 }
 
-.readMoreButton:active {
+.readMoreButton2:active {
   outline: none;
 }
 
 .readMoreButton:hover {
   text-decoration-color: none;
+  background-color: rgb(185, 176, 176);
+  cursor: pointer;
 }
 
 .roundImage2 {

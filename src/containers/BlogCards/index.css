@@ -38,6 +38,9 @@
   .titlelates {
     margin: 0;
   }
+  .blogTitle {
+    font-size: 2em;
+  }
 }
 
 @media only screen and (max-width: 768px) and (min-width: 576px) {
@@ -50,8 +53,13 @@
     flex-direction: column;
     align-items: center;
   }
+
   .titlelates {
     margin: 0;
+  }
+
+  .blogTitle {
+    margin-left: 6em;
   }
 }
 
