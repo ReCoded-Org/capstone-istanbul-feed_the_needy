@@ -8,15 +8,29 @@ import firebase from "../../firebaseConfig";
 const db = firebase.firestore();
 const auth = firebase.auth();
 const { Title } = Typography;
+const date = new Date();
 
 const CouponsChart = () => {
   const { t } = useTranslation();
   const [soldCoupons, setSoldCoupons] = useState([]);
+  const [statistics, setStatistics] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
       if (user) {
+        const unsubscribeStats = db
+          .collection("sampleSoldCoupons")
+          .doc(user.uid)
+          .collection("coupons")
+          .where("sellDate", "<=", date)
+          .onSnapshot((snapshot) => {
+            const dataArr = [];
+            snapshot.forEach((doc) => {
+              dataArr.push({ ...doc.data() });
+              setStatistics(dataArr);
+            });
+          });
         const unsubscribe = db
           .collection("soldCoupons")
           .doc(user.uid)
@@ -24,9 +38,9 @@ const CouponsChart = () => {
             const dataArr = [];
             dataArr.push({ ...snapshot.data() });
             setSoldCoupons(dataArr[0]);
-            setLoading(false);
           });
-        return unsubscribe;
+        setLoading(false);
+        return [unsubscribe, unsubscribeStats];
       }
       return user;
     });
@@ -61,8 +75,27 @@ const CouponsChart = () => {
     })),
   };
 
+  const values = [];
+  let dayCount = 0;
+  let monthCount = 0;
+  let yearCount = 0;
+  let totalCount = 0;
+
+  statistics.forEach((obj) => {
+    if (obj.sellDate.toDate().getDate() === date.getDate()) {
+      dayCount += 1;
+    }
+    if (obj.sellDate.toDate().getMonth() === date.getMonth()) {
+      monthCount += 1;
+    }
+    if (obj.sellDate.toDate().getFullYear() === date.getFullYear()) {
+      yearCount += 1;
+    }
+    totalCount += 1;
+  });
+  values.push(dayCount, monthCount, yearCount, totalCount);
+
   const statisticsData = [];
-  const values = [10, 50, 500, 1000];
   const titles = t("couponsChart.statistics", { returnObjects: true });
 
   for (let i = 0; i < values.length; i += 1) {
