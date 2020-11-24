@@ -16,7 +16,7 @@ const Blog = ({ isTesting }) => {
   return (
     <div className="blogSection">
       <Row justify="center">
-        <Title level={2}>{t("footer.headers.header2")}</Title>
+        <Title level={2}>Blog</Title>
       </Row>
       <Row justify="center" align="middle">
         <Col xs={20} sm={20} md={10} xl={10} className="blogSectionPost">
