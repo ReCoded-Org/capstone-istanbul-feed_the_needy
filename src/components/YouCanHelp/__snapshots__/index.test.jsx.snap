@@ -22,7 +22,7 @@ exports[`renders correctly 1`] = `
         style={Object {}}
       >
         <h1>
-          You can help too!
+          youcanhelp.headers.title
         </h1>
         <span>
           youcanhelp.headers.textSection1

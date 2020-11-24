@@ -6,9 +6,38 @@
   },
   "navbar": {
     "headers": {
-      "header0": "Anasayfa",
+      "header0": "Ana sayfa",
       "header1": "Kuponlar",
-      "header2": "Blog"
+      "header2": "Blog",
+      "header3": "Çıkış"
+    },
+    "languages": {
+      "lang0": "Türkçe",
+      "lang1": "İngilizce",
+      "lang2": "Arapça"
+    }
+  },
+  "joinUs": {
+    "title": "Bize katılın",
+    "description": "Açlığa son verme misyonumuza katılın. Restoran sahibi olarak katılıp, kendi kuponlarınızı oluşturabilirsiniz, böylelikle bağış yapmak isteyenler kuponları satın alarak bağış yapabilirler",
+    "button": "Hesap aç"
+  },
+  "footer": {
+    "headers": {
+      "header0": "ANA SAYA",
+      "header1": "KUPONLAR",
+      "header2": "BLOG"
+    },
+    "summary": "Bizdensin kuponlar ile yemek bağışı yapılabilen bir bağış platformudur",
+    "location": "Istanbul/Turkey",
+    "rights": "Bütün hakları saklıdır"
+  },
+  "youcanhelp": {
+    "headers": {
+      "title": "Sende yardım edebilirsin!",
+      "textSection1": "İlgilendiğiniz nedenlere bağış yapmak yalnızca hayır kurumlarına fayda sağlamakla kalmaz, aynı zamanda sizin için de son derece ödüllendirici olabilir.",
+      "textSection2": " Milyonlarca insan inandıkları nedenleri ve bunun kendi yaşamları üzerindeki olumlu etkisini desteklemek için düzenli olarak hayır kurumlarına bağış yapıyor ..",
+      "button": "Bağış Yap"
     }
   },
   "team": {
@@ -19,45 +48,202 @@
       "cihandesription": "Jr. Yazılım Geliştirici"
     }
   },
-  "youcanhelp": {
-    "headers": {
-      "textSection1": "İlgilendiğiniz nedenlere bağış yapmak yalnızca hayır kurumlarına fayda sağlamakla kalmaz, aynı zamanda sizin için de son derece ödüllendirici olabilir.",
-      "textSection2": " Milyonlarca insan inandıkları nedenleri ve bunun kendi yaşamları üzerindeki olumlu etkisini desteklemek için düzenli olarak hayır kurumlarına bağış yapıyor ..",
-      "button": "Bağış Yap"
+  "ourGoalsComp": {
+    "card": {
+      "title0": "Hedeflerimiz",
+      "title1": "Yoksulluğa her yerde son vermek",
+      "title2": "Açlığı sona erdirmek ve gıda güvenliğini sağlamak",
+      "title3": "Sağlıklı bir yaşam sağlamak ve her yaşta, herkes için refahı teşvik etmek"
     }
   },
-  "blogSingleCard": {
-    "button": "Daha fazla oku"
+  "ourSponsorsComp": {
+    "card": {
+      "title0": "Sponsorlarımız"
+    }
+  },
+  "blog": {
+    "blog0": {
+      "title": "Şimdi geleceğe umutla bakıyoruz",
+      "paragraph": "Trussell Trust ağındaki gıda bankaları tarafından dağıtılan gıdanın% 90'ından fazlası halk tarafından bağışlanmaktadır - bu nedenle, bize yönlendirilen herkese dengeli ve besleyici üç günlük yiyecek sağlama kabiliyetimiz için gıda bağışlarınız kesinlikle hayati önem taşımaktadır."
+    },
+    "blog1": {
+      "title": "Kuponlarınız beni mutlu ediyor",
+      "paragraph": "İyi niyetiniz olmasaydı, gıda bankalarımız gerçekten faaliyet göstermekte zorlanırdı. Bu nedenle, bize yönlendirilen herkese dengeli ve besleyici üç günlük yiyecek sağlama becerimiz için gıda bağışlarınız kesinlikle hayati önem taşır."
+    },
+    "readMoreBtn": "Daha fazlasını oku"
+  },
+  "donationProcessComp": {
+    "card": {
+      "title0": "Bağış Süreci",
+      "title1": "Adım 1",
+      "title2": "Adım 2",
+      "title3": "Adım 3",
+      "title4": "Bağışçı kuponu web sitesinden satın alır",
+      "title5": "İhtiyaç sahibi mevcut restoranlarda sormaya ihtiyaç duymadan yemek yiyebilir",
+      "title6": "Restoran, web sitesinde kullanılan kuponu siler"
+    }
   },
   "login": {
     "loginTitle": {
-      "loginTitle0": "Giriş Yap",
+      "loginTitle0": "Giriş",
       "loginTitle1": "Email",
       "loginTitle2": "Şifre",
-      "loginTitle3": "Beni Hatırla",
-      "logintTitle4": "Şifrenizi mi unuttunuz?",
-      "loginSuccessMessage": "Giriş yaptınız.",
-      "loginErrorMessage": "Giriş Hatalı, Tekrar Deneyiniz"
+      "loginTitle3": "Beni hatırla",
+      "logintTitle4": "Şifrenizi unuttunuz?",
+      "loginSuccessMessage": "Başarıyla giriş yaptınız",
+      "loginErrorMessage": "Email ve şifrenizi kontrol ediniz"
     }
   },
   "register": {
     "registerTitle": {
-      "registerTitle0": "Kayıt Ol",
+      "registerTitle0": "Kayıt",
       "registerTitle1": "Email",
       "registerTitle2": "Şifre",
-      "registerTitle3": "Üyelik şartlarını kabul ediyorum",
-      "registerTitle4": "Restoran Adı",
-      "registerSuccessMessage": "Başarıyla kayıt oldunuz ",
-      "registerErrorMessage": "Kayıt bilgilerini kontrol ediniz. "
+      "registerTitle3": "Bütün şartları ve koşulları kabul ediyorum",
+      "registerTitle4": "Organizasyonun ismi",
+      "registerSuccessMessage": "Başarıyla giriş yaptınız",
+      "registerErrorMessage": "Lütfen başka Email ile kayıt olun"
     }
   },
   "forgotEmail": {
     "forgotEmailtitle": {
-      "forgotEmailTitle0": "Reset Your Password",
+      "forgotEmailTitle0": "Şifreni sıfırla",
       "forgotEmailTitle1": "Email",
-      "forgotEmailSuccess": "Lütfen Emailinizi Kontrol ediniz.",
-      "forgotEmailError": "Lütfen emailinizi kontrol ediniz..",
-      "forgotEmailError2": "lütfen email adresinizi giriniz.."
+      "forgotEmailSuccess": "Lütfen Emailinizi kontrol edin",
+      "forgotEmailError": "Lüften Emailinizi tekrar girin",
+      "forgotEmailError2": "Lütfen Email adresinizi yazın"
     }
+  },
+  "activeCoupons": {
+    "title": "Aktif kuponlar",
+    "button": "Birini kullanılmış olarak işaretle",
+    "text": "satıldı",
+    "message": {
+      "success": "Kuponlardan biri başarıyla kullanıldı!",
+      "warning0": "Kuponlardan biri işaretlenemedi!",
+      "warning1": "Sayılacak kupon yok!"
+    }
+  },
+  "couponsChart": {
+    "title": "Satılan Kuponlar",
+    "statistics": [
+      "Satılan Günlük Kuponlar",
+      "Aylık Satılan Kuponlar",
+      "Yıllık Satılan Kuponlar",
+      "Satılan Toplam Kupon Sayısı"
+    ],
+    "labels": [
+      "Ocak",
+      "Şubat",
+      "Mart",
+      "Nisan",
+      "Mayıs",
+      "Haziran",
+      "Temmuz",
+      "Ağustos",
+      "Eylül",
+      "Ekim",
+      "kasım",
+      "Aralık"
+    ]
+  },
+  "couponsPage": {
+    "coupon": {
+      "addBtn": "Sepete ekle",
+      "amount": "Seçilen miktar"
+    },
+    "header": "Bağışınız insanlara yardımcı olabilir!",
+    "restaurants": "Restoranlar",
+    "link": "Kupon detaylarını görmek için tıklayın!",
+    "success": "Kupon sepete başarıyla eklendi!"
+  },
+  "createCoupons": {
+    "title": "Kuponlarınızı Seçin",
+    "text": "Lütfen restoranınız için dört kupon miktarı seçin, biz de sizin için yaratalım. Daha sonra tekrar seçebilirsiniz!",
+    "createButton": "Yaratın",
+    "message": {
+      "success": "Kuponlarınız başarıyla oluşturuldu!",
+      "warning": "Kuponlarınız oluşturulamadı!"
+    }
+  },
+  "editOrganization": {
+    "title": "Organizasyon Detayları",
+    "placeholders": {
+      "placeholder0": "Kuruluş Adı",
+      "placeholder1": "Kuruluş Email",
+      "placeholder2": "Kuruluş Web sitesi",
+      "placeholder3": "Kuruluş açıklaması"
+    },
+    "upload": {
+      "text": "Logonuzu yüklemek için resim dosyasını bu alana tıklayın veya sürükleyin",
+      "tip": "Accepted file types are; jpeg, png, etc."
+    },
+    "buttons": {
+      "button0": "Kayıt",
+      "button1": "Şifreyi sıfırla"
+    },
+    "messages": {
+      "message0": "İsim gereklidir!",
+      "message1": "Giriş, geçerli bir e-posta olmalıdır!"
+    },
+    "exampleCoupon": {
+      "link": "Go to restaurant's website"
+    }
+  },
+  "singleCouponModal": {
+    "title": "Seçili Kupon",
+    "alt": "Restoran logosu",
+    "OK": "OK"
+  },
+  "usedCoupons": {
+    "title": "Kullanılmış Kuponlar",
+    "placeholder": "Arama",
+    "message": {
+      "success": "Kupon etkin olarak başarıyla işaretlendi!",
+      "warning": "Kupon aktif olarak işaretlenemedi!"
+    },
+    "columns": {
+      "titles": {
+        "title0": "Tip",
+        "title1": "Kullanım tarihi",
+        "title2": "ID",
+        "title3": "Aksiyon"
+      }
+    },
+    "buttons": {
+      "button0": "Ara",
+      "button1": "Sıfırla",
+      "button2": "Aktif olarak işaretle"
+    }
+  },
+  "cartCont": {
+    "title": "Bağış Sepetiniz",
+    "showCartComp": {
+      "totalAmount": "Toplamm miktar:",
+      "clearCart": "Sepeti sıfırla",
+      "goToCheckout": "Ödemeye git"
+    }
+  },
+  "blogSingleCard": {
+    "button": "Daha fazlasını oku"
+  },
+  "spin": "Yükleniyor...",
+  "checkoutDrawer": {
+    "pay": "Öde",
+    "nameErr": "Lütfen tam adınızı girin!",
+    "emailErr": "Lütfen e-postanızı girin!",
+    "creditLabel": "Kredi Ayrıntıları",
+    "emailLabel": "Email",
+    "nameLabel": "Tam isim"
+  },
+  "logout": {
+    "text": "Çıkış yapmak istiyor musunuz?",
+    "ok": "OK",
+    "cancel": "İptal"
+  },
+  "newsletter": {
+    "heading": "Haber bültenimize abone olun!",
+    "title0": "Açlığı durdurmada size ihtiyacımız var!",
+    "button0": "Haber bültenimize abone olun!"
   }
 }

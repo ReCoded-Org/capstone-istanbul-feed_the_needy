@@ -28,12 +28,13 @@
       "header1": "COUPONS",
       "header2": "BLOG"
     },
-    "summary": "Food On Coupon is a platform which donators can donate food coupons to people in need from the chosen restaurants.",
+    "summary": "It's on us is a food donation platform for people in need",
     "location": "Istanbul/Turkey",
     "rights": "All rights reserved"
   },
   "youcanhelp": {
     "headers": {
+      "title": "You can help too!",
       "textSection1": "Donation to the causes you care about not only benefits the charities themselves, it can be deeply rewarding for you too.",
       "texSection2": "Millions of people give to charity on a regular basis to support causes they believe in, as well as for the positive effect it has on their own lives..",
       "button": "Donate"
@@ -62,12 +63,12 @@
   },
   "blog": {
     "blog0": {
-      "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe.",
-      "paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At magni iste quos, deserunt eaque aut quae porro asperiores voluptate, quod molestiae quibusdam quidem similique. Enim."
+      "title": "Now we are looking to future with hope",
+      "paragraph": "Over 90% of the food distributed by food banks in the Trussell Trust network is donated by the public – that’s why your food donations are absolutely vital to our ability to give everyone referred to us a balanced and nutritious three day supply of food."
     },
     "blog1": {
-      "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe.",
-      "paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At magni iste quos, deserunt eaque aut quae porro asperiores voluptate, quod molestiae quibusdam quidem similique. Enim."
+      "title": "Your coupons making me happy",
+      "paragraph": "Without your goodwill, our food banks would really struggle to operate.That’s why your food donations are absolutely vital to our ability to give everyone referred to us a balanced and nutritious three day supply of food."
     },
     "readMoreBtn": "Read more"
   },
@@ -154,14 +155,14 @@
     "header": "Your donation can help people!",
     "restaurants": "Restaurants",
     "link": "Click to see coupon details!",
-    "success": "Coupon was added to the cart sucessfully!"
+    "success": "Coupon was added to the cart successfully!"
   },
   "createCoupons": {
     "title": "Choose Your Coupons",
-    "text": "Please choose four coupon amounts for your restaurant and we'll create them for you. You can rechoose later!",
+    "text": "Please choose four coupon amounts for your restaurant and we'll create them for you. You can choose again later!",
     "createButton": "Create",
     "message": {
-      "success": "Succesfully created your coupons!",
+      "success": "Successfully created your coupons!",
       "warning": "Failed to create your coupons!"
     }
   },
@@ -198,7 +199,7 @@
     "title": "Used Coupons",
     "placeholder": "Search",
     "message": {
-      "success": "Succesfully marked the coupon as active!",
+      "success": "Successfully marked the coupon as active!",
       "warning": "Failed to mark the coupon as active!"
     },
     "columns": {
@@ -242,7 +243,8 @@
     "cancel": "Cancel"
   },
   "newsletter": {
-    "title0": "We need you to stop the hunger!",
+    "heading": "Haber bültenimize abone olun!",
+    "title0": "We need you, to stop the hunger!",
     "button0": "Subscribe to Newsletter"
   }
 }

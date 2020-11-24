@@ -31,7 +31,7 @@ const Newsletter = (isTesting) => {
       <Popover
         content={content}
         className="popover"
-        title="Subscribe to our newsletter!"
+        title={t("newsletter.heading")}
       >
         {isTesting ? (
           <button type="button" className="myButton subscribeNewsletterButton">

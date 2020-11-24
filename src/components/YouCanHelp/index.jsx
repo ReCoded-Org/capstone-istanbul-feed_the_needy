@@ -22,7 +22,7 @@ const YouCanHelp = ({ isTesting }) => {
           xl={10}
         >
           <Col className="youCanHelpText">
-            <h1>You can help too!</h1>
+            <h1>{t("youcanhelp.headers.title")}</h1>
             <span>{t("youcanhelp.headers.textSection1")}</span>
             <Col>
               {isTesting ? (
