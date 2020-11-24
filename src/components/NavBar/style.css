@@ -70,8 +70,13 @@
     float: none;
   }
 
+  .navbarHeader {
+    margin: 0;
+    padding: 0;
+  }
+
   .logo {
-    margin: 4px 0px 16px 0px;
+    display: none;
   }
 
   .navbarTitle {
@@ -79,7 +84,24 @@
   }
 
   .navbarStackedTitle {
+    display: none;
+  }
+
+  .navbarStackedTitle {
     display: initial;
+  }
+
+  .navbarHeader .svg {
+    display: none;
+  }
+
+  .navbarHeader {
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbarStackedTitle {
+    display: none;
   }
 }
 
