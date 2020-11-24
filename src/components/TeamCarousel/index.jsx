@@ -5,7 +5,7 @@ import "./carousel.css";
 import "slick-carousel/slick/slick-theme.css";
 import { teamMembers } from "../Team/TeamDetails.js";
 import { GithubOutlined, LinkedinFilled } from "@ant-design/icons";
-import { Row, Space } from "antd";
+import { Row, Space, Typography } from "antd";
 import { useTranslation } from "react-i18next";
 
 const settings = {
@@ -45,8 +45,14 @@ const settings = {
 
 const Carousel = () => {
   const { t } = useTranslation();
+  const { Title } = Typography;
   return (
     <div className="sliderTeam">
+      <Row justify="center">
+        <Title style={{ marginTop: "2em" }} level={2}>
+          Team
+        </Title>
+      </Row>
       <Slider className="sliderrender" {...settings}>
         {teamMembers.map((team) => (
           <div className="teamBorder">

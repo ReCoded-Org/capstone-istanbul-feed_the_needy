@@ -4,24 +4,12 @@
 
 .slick-prev,
 .slick-next {
-  font-size: 29px;
-  line-height: 0;
-  position: absolute;
-  display: block;
-  width: 10em;
-  height: 40em;
-  transform: translate(0, -30%);
-  cursor: pointer;
+  display: none;
 }
 
 .slick-prev:before,
 .slick-next:before {
-  font-size: 22px;
-  opacity: 0.75;
-  color: white;
-  padding-top: 0.2em;
-  -webkit-font-smoothing: antialiased;
-  background-color: #637381;
+  display: none;
 }
 
 .rcorners {
@@ -78,14 +66,6 @@
   .sliderrender {
     width: auto;
   }
-  .slick-prev,
-  .slick-next {
-    display: none;
-  }
-  .slick-prev:before,
-  .slick-next:before {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
@@ -93,27 +73,11 @@
   .sliderrender {
     width: auto;
   }
-  .slick-prev,
-  .slick-next {
-    display: none;
-  }
-  .slick-prev:before,
-  .slick-next:before {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 576px) {
   /*ipad phone*/
   .sliderrender {
     width: auto;
-  }
-  .slick-prev,
-  .slick-next {
-    display: none;
-  }
-  .slick-prev:before,
-  .slick-next:before {
-    display: none;
   }
 }
